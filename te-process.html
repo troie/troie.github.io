@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/te.css">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">-->
+
+
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+</head>
+
+<body>
+    <div class="main col s12 m8 l9">
+        <h1>Test Engineer 工作流程規劃</h1>
+        <h2>需求確認</h2>
+        <ul>
+            <li><strong>項目說明：</strong>透過 PM 瞭解項目開發目的以及想解決的問題。</li>
+            <li><strong>頁面確認：</strong>透過 designer 或 PM 瞭解頁面規劃設計及功能細節。</li>
+            <li><strong>測試裝置：</strong>項目會運行在哪些裝置，如 desktop, Mobile, Pad...</li>
+            <li><strong>驗證瀏覽器：</strong>項目需測試那些瀏覽器。</li>
+            <li><strong>測試時程：</strong>測試起始及結束時間確認。</li>
+        </ul>
+
+        <h3>測試分為六個部分：</h3>
+        <ol>
+            <li>功能測試</li>
+            <li>性能測試(包括負載/壓力測試)</li>
+            <li>用戶界面測試</li>
+            <li>兼容性測試</li>
+            <li>安全測試</li>
+            <li>接口測試</li>
+        </ol>
+
+        <h3>功能測試</h3>
+        <ul>
+            <li><strong>連結測試：</strong>連結測試可分為三個部分。首先，測試所有連結是否按指示的那樣確實連結到了該連結的頁面;其次，測試連結的頁面是否存在；最後，確認 Website 沒有孤立頁面，所謂孤立頁面是指沒有連結指向該頁面，只有知道正確的URL地址才能訪問。
+                <p>測試工具：<a href="https://www.webpagetest.org/">WebPageTest</a> or <a href="https://www.google.com/webmasters/tools/">Google Search Console</a></p>
+            </li>
+            <li><strong>表單測試：</strong>當用戶使用表單進行註冊，登錄，資料填寫等操作時，我們必須測試資料的完整性，以確認伺服器接收資料的正確性。例如：用戶填寫的出生日期與職業是否正確，填寫的省份與所在城市是否錯誤。如果使用了默認值，還要檢驗默認值的正確性。如果表單只能接受指定的某些值，也要進行測試。例如：只能接受某些符號，測試時可以跳過這些符號，看系統是否會出錯。</li>
+            <li><strong>cookies 測試：</strong>Cookies 通常用來存儲用戶資料和用戶在某應用系統的操作記錄，當一個用戶使用Cookies 使用了某一個功能時，網頁伺服器將發送關於用戶的訊息，將該訊息以Cookies的形式存儲在客戶端電腦上，這可用來創建動態和客製化頁面或存儲登入訊息。
+                <p>測試工具：Chrome DevTools : Ctrl+Shift+I (Windows) or Cmd+Opt+I (Mac)</p>
+            </li>
+            <li><strong>資料庫測試：</strong>在使用資料庫的Web應用系統中，一般情況可能發生兩種錯誤，分別是數據一致性錯誤和輸出錯誤。數據一致性錯誤主要是由於用戶提交的表單信息不正確而造成的，而輸出錯誤主要是由於網絡速度或程序設計問題等引起的，針對這兩種情況，可分別進行測試。</li>
+            <li><strong>特定功能需求：</strong>下單、更改訂單、取消訂單、核對訂單狀態、在商品發送之前更改送貨訊息、線上支付等等。這些用戶使用網站的原因，一定要確認網站能提供正確的服務。</li>
+        </ul>
+        <h3>性能測試(包括負載/壓力測試)</h3>
+        <h3>用戶界面測試</h3>
+        <h3>兼容性測試</h3>
+        <ul>
+            <li><strong>測試平台：</strong>不同的操作系統，常見的有Windows，Mac OS，Linux等。</li>
+            <li><strong>測試瀏覽器：</strong>框架和層次結構在不同的瀏覽器中會有不同的呈現方式，甚至無法正常顯示。不同的瀏覽器對安全性和 Java 的設置也不一樣。</li>
+            <li><strong>分辨率測試：</strong>頁面版型在 640x400、600x800或1024x768 的分辨率模式下是否顯示正常？字體是否太小無法瀏覽？或太大？文本和圖片是否對齊？</li>
+            <li><strong>連接速度：</strong>測試頁面下載速度。用戶在下載文章或頁面時，可能會因等待時間過長，失去耐心等待頁面出現。最後還需要確認圖片是不是太大。</li>
+            <li><strong>列印測試：</strong>如頁面提供列印功能，需測試是否提供最佳測試模式。</li>
+
+        </ul>
+        <h3>安全測試</h3>
+        <ul>
+            <li><strong>目錄設定：</strong>Web 安全的第一步就是正確設置目錄。在頁面上選一張圖片，單擊滑鼠右鍵，找到圖片所在的路徑"/objects/images"。然後在瀏覽器地址欄中手工輸入該路徑，發現該站點所有圖片的列表；然後試著進入下一級目錄"/objects" ，在該目錄下有很多資料檔，這樣就是沒做好目錄設定。</li>
+            <li><strong>登錄：</strong>如果網站需要進行用戶登錄，這樣對用戶很方便，可以不需要每次都輸入個人資料。你需要驗證系統阻止非法的帳號登錄，並且能有效驗證。用戶登錄是否有次數限制？如果登錄失敗次數限制是 3，你在第三次登錄的時候輸入正確的帳號密碼，能通過驗證嗎？密碼有規則限制嗎？是否可以不登錄直接瀏覽某個頁面？</li>
+            <li><strong>腳本語言：</strong>每種語言的特性都不同，有些腳本允許訪問根目錄。有經驗的駭客可以將伺服器用戶名跟密碼發送給自己。找出網站使用了哪些腳本語言，並研究該語言的缺陷。</li>
+        </ul>
+        <h3>接口測試</h3>
+
+        <h2>測試流程及方法</h2>
+        <h3>測試流程</h3>
+        <ol>
+            <li>使用測試工具將網站中的錯誤連結找出來； </li>
+            <li>測試的順序為：ㄧ、由上而下，自左到右； </li>
+            <li>查看頁面 title 是否正確。 （不只首頁，所有頁面都要查）； </li>
+            <li>LOGO下的一級標題、二級標題的連結是否正確； </li>
+            <li>首頁登錄、註冊的功能是否完整；</li>
+            <li>首頁左側欄目下的文章標題、圖片等連結是否正確； </li>
+            <li>首頁中間欄目下的文章標題、圖片等連結是否正確； </li>
+            <li>首頁右側欄目下的文章標題、圖片等連結是否正確； </li>
+            <li>首頁最下方的【友情鏈接】、【關於我們】等連結是否正確； </li>
+            <li>進入一級選單或二級選單的列表頁。查看左側選單名稱，右側文章列表是否正確； </li>
+            <li>列表頁的分頁功能是否正確，樣式是否統一； </li>
+            <li>查看文章詳細頁面的內容是否存在亂碼、頁面樣式是否統一； </li>
+            <li>站內搜索（各個頁面都要查）功能是否完成； </li>
+            <li>前後台交互的部分，數據傳遞是否正確； </li>
+            <li>默認按鈕要支持 Enter 及點擊操作，就是按下 Enter 等同於點擊按鈕。</li>
+        </ol>
+        <h3>UI（用戶介面）測試</h3>
+        <ol>
+            <li>頁面的樣式風格要統一；</li>
+            <li>頁面的大小是否一致；同樣的LOGO圖片在各個頁面中顯示是否大小一致；頁面及圖片是否居中顯示； </li>
+            <li>欄位名稱、文章內容等的文字是否正確，有無錯別字或亂碼；同一級別的字體、大小、顏色是否統一； </li>
+            <li>提示、警告或錯誤說明應清楚易懂； </li>
+            <li>切換窗口大小，將窗口縮小後，頁面是否按比例縮小或出現滾動條；各個頁面縮小的風格是否一致，文字是否跨行； </li>
+            <li>按鈕大小基本相近，最好不要用長的名稱，免得佔用過多的界面位置；按鈕的樣式風格要統一；按鈕之間的間距要一致； </li>
+            <li>頁面顏色是否統一；前景與背景色搭配是否協調，反差不宜太大，最好少用深色或刺眼的顏色； </li>
+            <li>若有自動捲動內容或圖片，將滑鼠放在上面，看自動捲動內容或圖片是否停止；</li>
+            <li>所有的圖片是否都被正確下載，在不同的瀏覽器、分辨率下圖片是否能正確顯示（包括位置、大小）； </li>
+            <li>文章列表頁，左側的欄目是否與一級、二級欄位的名稱、順序一致； </li>
+            <li>調整分辨率驗證頁面格式是否有錯位現象；</li>
+            <li>滑鼠移動到物件焦點上特效是否正確反應，移出焦點特效是否消失； </li>
+            <li>文字顏色與頁面配色協調，不使用與背景色相近的顏色。 </li>
+            <li>同一界面上的控件最好不要超過10個，多於10個時可以考慮使用分頁顯示。 超過一屏的內容，在底部應有go top按鈕</li>
+            <li>導航的文字要簡明扼要，字數限制在一行以內</li>
+            <li>報表顯示時應考慮數據顯示寬度的自適應或自動換行。 </li>
+            <li>所有有數據展現的界面（如統計、查詢、編輯錄入、打印預覽、打印等），必須使測試數據的記錄數超過一屏/一頁，以驗證滿屏/頁時其窗體是否有橫向、縱向滾動條或換頁打(L)印，界面顯示是否正常； </li>
+            <li>對統計的數據應按用戶習慣進行分類、排序。 </li>
+            <li>用戶在退出系統後重新登錄時應考慮是否需要自動返回到上次退出系統時的位置； </li>
+            <li>用戶提示應具有一定的指導性，在應用程序正在進行關鍵業務的處理時，應考慮在前台界面提示用戶應用程序正在進行的處理，以及相應的處理過程，在處理結束後再提示用戶處理完畢。 </li>
+            <li>某些數據輸入界面，如果要求輸入的數據符合某項規則，應在輸入界面提供相應的規則描述；當輸入數據不符合規則時應提示用戶是否繼續。 </li>
+            <li>用戶做了任何修改都應該在用戶退出該頁面時提示用戶保存（如果用戶沒有主動保存的情況下）； </li>
+            <li>在對某些查詢功能進行測試時，應考慮查詢條件的設置的合理性以及查詢結果的互補性。如某些後台處理時間不應該作為查詢條件。 </li>
+            <li>界面測試時，應考慮某一界面上按鈕先後使用的順序問題，以免用戶對此產生迷惑。例如只能在查詢成功後顯示執行按鈕。 </li>
+            <li>在某些對數據進行處理的操作界面，應考慮用戶可能對數據進行處理的頻繁程度和工作量，考慮是否可以進行批量操作。</li>
+            <li>界面測試不只要考慮合理的鍵盤輸入，還要測試是不是可以用滑鼠複製貼上。 </li>
+            <li>數字精確度顯示的統一：如單價0元，應顯示為0.00元； </li>
+            <li>時間和日期顯示格式的統一；</li>
+            <li>對所有可能產生的提示訊息頁面內容和位置進行驗證，確保所有的提示訊息居中。</li>
+        </ol>
+        <h3>連結測試</h3>
+        <ol>
+            
+        </ol>
+
+        <h3>驗證規則參考</h3>
+        <table>
+            <tr>
+                <th>驗證規則</th>
+                <th>說明</th>
+            </tr>
+            <tr>
+                <td>&lt;>0</td>
+                <td>不等於零，輸入一個不是零的值。</td>
+            </tr>
+            <tr>
+                <td>&gt;=0</td>
+                <td>輸入零或大於零的數字；必須是一個正數。</td>
+            </tr>
+            <tr>
+                <td>0 or &gt;100</td>
+                <td>輸入零或一個大於一百的數。</td>
+            </tr>
+            <tr>
+                <td>BETWEEN 0 AND 1</td>
+                <td>輸入帶百分比符號的值。</td>
+            </tr>
+            <tr>
+                <td>&lt;#01/01/2007#</td>
+                <td>輸入2007年之前的日期</td>
+            </tr>
+            <tr>
+                <td>&gt;=#01/01/2007# AND &lt;#01/01/2008#</td>
+                <td>日期必須在2007年</td>
+            </tr>
+            <tr>
+                <td>&lt;Date()</td>
+                <td>出生日期不能是未來。</td>
+            </tr>
+            <tr>
+                <td>StrComp(UCase([LastName]),[LastName],0) = 0</td>
+                <td>LastName的字段中首字必須為大寫。</td>
+            </tr>
+            <tr>
+                <td>&gt;=Int(Now())</td>
+                <td>輸入今天的日期。</td>
+            </tr>
+            <tr>
+                <td>M Or F</td>
+                <td>輸入M表示男性，F表示女性。</td>
+            </tr>
+            <tr>
+                <td>LIKE "[A-Z]*@[A-Z].com" OR "[A-Z]*@[A-Z].net" OR "[A-Z]*@[A-Z].org"</td>
+                <td>輸入有效的.com，.net或.org電子郵件地址。</td>
+            </tr>
+            <tr>
+                <td>[RequiredDate]&lt;=[OrderDate]+30</td>
+                <td>輸入日期不可以是30天後的日期。</td>
+            </tr>
+            <tr>
+                <td>[EndDate]&gt;=[StartDate]</td>
+                <td>輸入結束日期在開始日期之前</td>
+            </tr>
+        </table>
+
+        <h3>輸入限制驗證</h3>
+        <ul>
+            <li><strong>數據類型：</strong>限制用戶輸入時選擇的資料類型。例如：日期/時間格式只接受日期和時間，一個貨幣格式只接受數字，等等。</li>
+            <li><strong>文字類型：</strong>文字類型輸入限制。例如：如> 100 &lt;1000的有效性規則屬性強制用戶輸入100至1000輸入值。規則如[結束日期] >= [起始日期]限制用戶結束日期不可在起始日期之前。或當用戶犯了一個錯誤，如何修復錯誤。</li>
+            <li><strong>輸入隱碼：</strong>使用輸入隱碼強制用戶以特定的方式來輸入以驗證數值。例如，一個輸入隱碼可以強制用戶特定格式輸入日期，例如2007年4月14日。</li>
+        </ul>
+    </div>
+
+
+    <!--<div class="comm_title">RESEARCH /& STRATEGY</div>,<div>Yining</div>,<div>Tian</div>,<div>Joanna</div>,<div class="comm_title">USER EXPERIENCE DESIGN</div>,<div>Zixi</div>,<div>Ningling</div>,<div>Yijing</div>,<div class="comm_title">COMMUNICATION DESIGN</div>,<div>Leo</div>,<div>Silvia</div>,<div>Sayid</div>,<div>Rubbie</div>-->
+    <!--
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')
+    </script>
+-->
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/vendor/jQuery.print.js"></script>
+    <script src="js/main.js"></script>
+
+     Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+-->
+</body>
+
+</html>
