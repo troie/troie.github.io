@@ -4,15 +4,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
    Troei custom styles
    ========================================================================== */
 section{width: 400px;margin:0 auto;}
-.canvas h1{position: absolute;left: 10px;top:10px;color:#fff}
-.canvas a{color: rgba(255,255,255,0);}
-.canvas li{width: 100%;height: 100px;border: 1px solid #333;position: relative;}
-.canvas li:before{content: "";display: block;width: 100%;height: 100%;background: rgba(0,0,0,.5);position: absolute;left: 0;top: 0;pointer-events: none;}
-.canvas li:hover:before{background: rgba(0,0,0,0);}
-.canvas li:hover h1{color: #000;}
+.menu h1{position: absolute;left: 10px;top:10px;color:#fff}
+.menu a{color: rgba(255,255,255,0);}
+.menu li{width: 100%;height: 100px;border: 1px solid #333;position: relative;}
+.menu li:before{content: "";display: block;width: 100%;height: 100%;background: rgba(0,0,0,.5);position: absolute;left: 0;top: 0;pointer-events: none;}
+.menu li:hover:before{background: rgba(0,0,0,0);}
+.menu li:hover h1{color: #000;}
 
-.slider{width: 100%;height: 100%;}
-.slider li{width: 100%;height: 100%;}
+
 .view section{width: 400px;height: 400px;background: #F7CA18;margin:0 auto;position: relative;}
 .view section:nth-child(2) a{position: absolute;bottom: 0;left: 31%;color: #fff;background: #1BBC9B;display: block;padding: 1em 3em;text-decoration: none;}
 
@@ -24,6 +23,13 @@ section{width: 400px;margin:0 auto;}
 .more footer{bottom: 0;}
 .more footer a{display: block;padding: 1em 3em;width: 20px;}
 .more p{font-size: 18px;}
+
+.banner{width: 100%;height: 100%;}
+.banner li{width: 100%;height: 100%;}
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+
 
 
 
