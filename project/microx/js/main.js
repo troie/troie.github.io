@@ -3,15 +3,16 @@ $(".content a").mouseenter(function(){
 }).mouseleave(function(){
     $("section").css("background","rgba(0,0,0,1)")
 });
-window.onload=scaleVideo;
-window.onresize=scaleVideo;
-
+//window.onload=scaleVideo;
+//window.onresize=scaleVideo;
+video.loop=true;
+    video.muted=true;
 function scaleVideo(){
     var video = document.getElementById('video');
     //get window size
     var windowWidth = document.documentElement.clientWidth;
     var windowHeight = document.documentElement.clientHeight;
-    
+    console.log(windowWidth +"......"+windowHeight)
     //get movie size
     var videoWidth = video.offsetWidth;
     var videoHeight = video.offsetHeight;

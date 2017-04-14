@@ -38,7 +38,9 @@ video {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-section{position: absolute;background: rgba(0,0,0,1);width: 100%;height: 100%;left: 0;top: 0;z-index: 1;}
+html,body,section{width: 100%;height: 100%;overflow: hidden}
+video{width: 100vw;}
+section{position: absolute;background: rgba(0,0,0,1);left: 0;top: 0;z-index: 1;}
 section a{color: #fff;text-decoration: none}
 section{color: #fff;}
 h1{font-size: 60px;position: absolute;top: 50%;left: 10%;margin-bottom: .5em;}
