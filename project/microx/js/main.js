@@ -1,17 +1,18 @@
-$("h1 a").mouseenter(function(){
+$(".content a").mouseenter(function(){
     $("section").css("background","rgba(0,0,0,0)")
 }).mouseleave(function(){
     $("section").css("background","rgba(0,0,0,1)")
 });
-window.onload=scaleVideo;
-window.onresize=scaleVideo;
-
+//window.onload=scaleVideo;
+//window.onresize=scaleVideo;
+video.loop=true;
+    video.muted=true;
 function scaleVideo(){
     var video = document.getElementById('video');
     //get window size
     var windowWidth = document.documentElement.clientWidth;
     var windowHeight = document.documentElement.clientHeight;
-    
+    console.log(windowWidth +"......"+windowHeight)
     //get movie size
     var videoWidth = video.offsetWidth;
     var videoHeight = video.offsetHeight;
@@ -39,13 +40,4 @@ function scaleVideo(){
 }
 
 
-window.addEventListener("scroll",parallax,false);
-function parallax(){
-    var palx1 = document.getElementById('palx1');
-//    var palx2 = document.getElementById('palx2');
-//    var here = document.getElementById('here');
-    var scroll = window.pageYOffset;
-    palx1.style.top = (window.pageYOffset*1)+"px";
-//    palx2.style.left = (window.pageYOffset*4)+"px";
-//    here.innerHTML = scroll;
-}
+

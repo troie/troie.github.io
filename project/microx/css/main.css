@@ -1,6 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}select,input{margin:0;padding:0;}
-body{font-family: 'Shadows Into Light', cursive;}
+/*body{font-family: 'Shadows Into Light', cursive;}*/
 html {
     color: #222;
     font-size: 1em;
@@ -38,9 +38,18 @@ video {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-section{position: absolute;background: rgba(0,0,0,1);width: 100%;height: 100%;left: 0;top: 0;z-index: 1;}
-h1{font-size: 60px;color: #fff;position: absolute;top: 50%;left: 10%;margin-bottom: .5em;}
-a{color: #f00;}
+html,body,section{width: 100%;height: 100%;overflow: hidden}
+video{width: 100vw;}
+section{position: absolute;background: rgba(0,0,0,1);left: 0;top: 0;z-index: 1;}
+section a{color: #fff;text-decoration: none}
+section{color: #fff;}
+h1{font-size: 60px;position: absolute;top: 50%;left: 10%;margin-bottom: .5em;}
+
+.content, footer{position: absolute;}
+.content{left: 80px;width: 460px;top: 140px;}
+.content p{line-height: 1.5;}
+.content a{display: block;width: 136px;line-height: 32px;text-align: center;border:1px solid #fff;}
+footer{right: 60px;bottom: 17px;}
 
 
 
