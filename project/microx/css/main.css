@@ -40,16 +40,18 @@ video {
    ========================================================================== */
 html,body,section{width: 100%;height: 100%;overflow: hidden}
 video{width: 100vw;}
-section{position: absolute;background: rgba(0,0,0,1);left: 0;top: 0;z-index: 1;}
+section{position: absolute;background: rgba(0,0,0,0);left: 0;top: 0;z-index: 1;}
 section a{color: #fff;text-decoration: none}
 section{color: #fff;}
-h1{font-size: 60px;position: absolute;top: 50%;left: 10%;margin-bottom: .5em;}
+h1{font-size: 4.6666667vw;}
 
-.content, footer{position: absolute;}
-.content{left: 80px;width: 460px;top: 140px;}
+.content, footer, aside{position: absolute;}
+.content, footer{left: 4.6666667vw;}
+aside{right: 4.6666667vw;bottom: 1.38888889vw;}
+.content{width: 460px;top: 140px;}
 .content p{line-height: 1.5;}
 .content a{display: block;width: 136px;line-height: 32px;text-align: center;border:1px solid #fff;}
-footer{right: 60px;bottom: 17px;}
+footer{bottom: 1.38888889vw;}
 
 
 
