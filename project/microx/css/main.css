@@ -38,20 +38,22 @@ video {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html,body,section{width: 100%;height: 100%;overflow: hidden}
+html,body,section{font-family: DecimaMonoX-Bold;width: 100%;height: 100%;overflow: hidden}
+body{background: #000;}
 video{width: 100vw;}
 section{position: absolute;background: rgba(0,0,0,0);left: 0;top: 0;z-index: 1;}
 section a{color: #fff;text-decoration: none}
 section{color: #fff;}
-h1{font-size: 4.6666667vw;}
+h1{font-size: 4.6666667vw;font-family: 'Noto Serif', serif;font-style: italic}
 
 .content, footer, aside{position: absolute;}
 .content, footer{left: 4.6666667vw;}
 aside{right: 4.6666667vw;bottom: 1.38888889vw;}
 .content{width: 460px;top: 140px;}
 .content p{line-height: 1.5;}
-.content a{display: block;width: 136px;line-height: 32px;text-align: center;border:1px solid #fff;}
+aside a{display: block;width: 136px;line-height: 32px;text-align: center;border:1px solid #fff;}
 footer{bottom: 1.38888889vw;}
+footer a{text-decoration: underline}
 
 
 
