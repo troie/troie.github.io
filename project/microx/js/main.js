@@ -8,8 +8,8 @@ $(".content a").mouseenter(function(){
 //    $("section").css("background","rgba(0,0,0,1)")
     video.pause();
 });
-//window.onload=scaleVideo;
-//window.onresize=scaleVideo;
+window.onload=scaleVideo;
+window.onresize=scaleVideo;
 
 function scaleVideo(){
     var video = document.getElementById('video');
