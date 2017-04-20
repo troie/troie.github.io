@@ -78,7 +78,8 @@ footer a{text-decoration: underline}
 
 @media only screen and (min-width: 26em) and (max-width: 46em){
     .content p{font-size: 3vh;margin-top: 4vh;}
-    aside a{line-height: 10vh;}
+    aside, footer{font-size: 3vh;}
+    aside a{line-height: 10vh;font-size: 2.8vh;}
 }
 
 @media print,
