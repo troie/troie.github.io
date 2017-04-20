@@ -47,7 +47,7 @@ section{color: #fff;}
 .content, footer{left: 8.33333333vw}
 aside{right: 8.33333333vw;}
 .content{top: 18.3333333vh;}
-.content h1{font-size: 8vh;font-family: 'Noto Serif', arial;font-style:italic;}
+.content h1{font-size: 8vh;font-family: 'Noto Serif Italic', helvetica;font-style:italic;}
 .content p{line-height: 1.5;font-size: 3vh;margin-top: 6.11111111vh;}
 .content h1 span{display:block;cursor: pointer;
   position:absolute;
