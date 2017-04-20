@@ -9,6 +9,7 @@ $(".content span").mouseenter(function(){
 
 window.onload=scaleVideo;
 window.onresize=scaleVideo;
+window.blur=scaleVideo;
 
 function scaleVideo(){
     var video = document.getElementById('video');
