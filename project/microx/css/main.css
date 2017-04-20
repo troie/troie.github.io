@@ -76,8 +76,9 @@ footer a{text-decoration: underline}
     aside{bottom: 18vh;left: 8.33333333vw}
 }
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (min-width: 26em) and (max-width: 46em){
+    .content p{font-size: 3vh;margin-top: 4vh;}
+    aside a{line-height: 10vh;}
 }
 
 @media print,
