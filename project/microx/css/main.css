@@ -57,7 +57,7 @@ aside{right: 8.33333333vw;}
   width:22.8vw;
   height:11vh;}
 .content h1 img{width:22.8vw;}
-aside a{display: block;width: 136px;line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;padding: 0 1.8vw;}
+aside a{display: block;width: 14.72222222vw;min-width: 150px; line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;}
 aside p{margin-bottom: 1.88888889vh;}
 aside, footer{bottom: 6.66666667vh;font-size: 2.22222222vh;}
 footer{line-height: 1.5;}
@@ -67,19 +67,14 @@ footer a{text-decoration: underline}
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media only screen and (min-width: 20em) and (max-width: 46em) {
+    .content h1 img{width:70vw;}
+    .content p{font-size: 2.3vh;margin-top: 4vh;}
+    aside{bottom: 18vh;left: 8.33333333vw}
+}
 
 @media only screen and (min-width: 35em) {
 
