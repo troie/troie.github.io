@@ -1,6 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}select,input{margin:0;padding:0;}
-/*body{font-family: 'Shadows Into Light', cursive;}*/
+
 html {
     color: #222;
     font-size: 1em;
@@ -26,7 +26,6 @@ video {
     vertical-align: middle;
 }
 
-
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -34,25 +33,34 @@ video {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html,body,section{font-family: DecimaMonoX-Bold;width: 100%;height: 100%;overflow: hidden}
+html,body,section{font-family: DecimaMonoX-Bold;width: 100%;height: 100%;overflow: hidden;}
 body{background: #000;}
 /*video{width: 100vw;}*/
 section{position: absolute;background: rgba(0,0,0,0);left: 0;top: 0;z-index: 1;}
 section a{color: #fff;text-decoration: none}
 section{color: #fff;}
-h1{font-size: 4.6666667vw;font-family: 'Noto Serif Italic', arial;}
 
 .content, footer, aside{position: absolute;}
-.content, footer{left: 4.6666667vw;}
-aside{right: 4.6666667vw;bottom: 1.38888889vw;}
-.content{width: 460px;top: 140px;}
-.content p{line-height: 1.5;}
-aside a{display: block;width: 136px;line-height: 32px;text-align: center;border:1px solid #fff;}
-footer{bottom: 1.38888889vw;}
+.content, footer{left: 8.33333333vw}
+aside{right: 8.33333333vw;}
+.content{top: 18.3333333vh;}
+.content h1{font-size: 8vh;font-family: 'Noto Serif Italic', arial;}
+.content p{line-height: 1.5;font-size: 3vh;margin-top: 6.11111111vh;}
+.content h1 span{display:block;cursor: pointer;
+  position:absolute;
+  text-indent:  100%;
+  white-space:  nowrap;
+  overflow:  hidden;
+  width:22.8vw;
+  height:11vh;}
+.content h1 img{width:22.8vw;}
+aside a{display: block;width: 136px;line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;padding: 0 1.8vw;}
+aside p{margin-bottom: 1.88888889vh;}
+aside, footer{bottom: 6.66666667vh;font-size: 2.22222222vh;}
+footer{line-height: 1.5;}
 footer a{text-decoration: underline}
 
 

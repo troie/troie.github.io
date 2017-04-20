@@ -1,13 +1,12 @@
 var video = document.getElementById('video');
-video.loop=true;
+
 video.poster="poster.jpg";
-$(".content a").mouseenter(function(){
-//    $("section").css("background","rgba(0,0,0,0)")
+$(".content span").mouseenter(function(){
     video.play();
 }).mouseleave(function(){
-//    $("section").css("background","rgba(0,0,0,1)")
     video.pause();
 });
+
 window.onload=scaleVideo;
 window.onresize=scaleVideo;
 
@@ -40,7 +39,6 @@ function scaleVideo(){
     video.height=scarlVideoHeight;
     
     video.loop=true;
-//    video.pause=true;
     video.muted=true;
 }
 
