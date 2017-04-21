@@ -49,19 +49,62 @@ aside{right: 8.33333333vw;}
 .content{top: 18.3333333vh;}
 .content h1{font-size: 8vh;font-family: 'Noto Serif Italic', helvetica;font-style:italic;}
 .content p{line-height: 1.5;font-size: 3vh;margin-top: 6.11111111vh;}
-.content h1 span{display:block;cursor: pointer;
+.content h1 span{
+  display:block;cursor: pointer;
   position:absolute;
   text-indent:  100%;
   white-space:  nowrap;
   overflow:  hidden;
   width:22.8vw;
-  height:11vh;}
-.content h1 img{width:40.8vh;}
+  height:11vh;
+/*    border:1px solid red;*/
+}
+.content h1 img{width:40.8vh;position: relative;}
+
+.content i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-color:#fff;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+/*         width: 30.8vh;*/
+        
+/*    -webkit-animation: timeline 10s ease-in infinite;*/
+}
+.timeline{-webkit-animation: timeline 10s ease-in infinite;}
 aside a{display: block;width: 14.72222222vw;min-width: 150px; line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;}
 aside p{margin-bottom: 1.88888889vh;}
 aside, footer{bottom: 6.66666667vh;font-size: 2.22222222vh;}
 footer{line-height: 1.5;}
 footer a{text-decoration: underline}
+
+@-webkit-keyframes timeline {
+    from {
+        width: 0
+    }
+    to {
+        width: 30.8vh
+    }
+}
+
+@-moz-keyframes timeline {
+    from {
+        width: 0
+    }
+    to {
+        width: 30.8vh
+    }
+}
+
+@-o-keyframes timeline {
+    from {
+        width: 0
+    }
+    to {
+        width: 30.8vh
+    }
+}
 
 
 
