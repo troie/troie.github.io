@@ -1,10 +1,13 @@
-var video = document.getElementById('video');
+window.onload=scaleVideo;
+window.onresize=scaleVideo;
 
-video.poster="poster.jpg";
+var vid = document.getElementById('video');
+
+vid.poster="poster.jpg";
 $(".content img").mouseenter(function(){
     
-    var vidTime = video.duration;
-    var vidNow = video.currentTime;
+    var vidTime = vid.duration;
+    var vidNow = vid.currentTime;
     var minStep = vidTime/30.8 ; 
     var w = vidNow * minStep ;
     $(".content i").css("width",w+"vh");
@@ -14,17 +17,28 @@ $(".content img").mouseenter(function(){
     console.log("w:"+w)
     console.log("minStep:"+minStep)
 //    if(video.ended)console.log("ended:")
-    video.play();
+    vid.play();
     
+    vid.onended = function(e) {
+        vid.play();
+        initTime();
+    };
+    
+//    video.addEventListener("ended",  hello());
+
+     
 }).mouseleave(function(){
-    video.pause();
-    $(".timeline").css("width","0vh");
+    vid.pause();
+    initTime();
     $(".content i").removeClass("timeline")
 });
 
-window.onload=scaleVideo;
-window.onresize=scaleVideo;
-window.blur=scaleVideo;
+function initTime(){
+    $(".timeline").css("width",0);
+}
+
+
+
 
 function scaleVideo(){
     var video = document.getElementById('video');
@@ -54,7 +68,7 @@ function scaleVideo(){
     video.width=scarlVideoWidth;
     video.height=scarlVideoHeight;
     
-    video.loop=true;
+//    video.loop=true;
     video.muted=true;
 }
 
