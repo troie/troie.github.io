@@ -5,7 +5,7 @@ var vid = document.getElementById('video');
 
 vid.poster="poster.jpg";
 $(".content img").mouseenter(function(){
-    
+    $(".content p,footer").css("visibility","hidden");
     var vidTime = vid.duration;
     var vidNow = vid.currentTime;
     var minStep = vidTime/30.8 ; 
@@ -29,6 +29,7 @@ $(".content img").mouseenter(function(){
      
 }).mouseleave(function(){
     vid.pause();
+    $(".content p,footer").css("visibility","visible");
     initTime();
     $(".content i").removeClass("timeline")
 });
