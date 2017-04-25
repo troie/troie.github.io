@@ -68,7 +68,7 @@ aside{right: 8.33333333vw;}
     border-bottom: 2px;
     border-bottom-style: solid;
     width: 0vh;
-    width: 30.8vh
+    max-width: 30.8vh;
 /*         width: 30.8vh;*/
         
 /*    -webkit-animation: timeline 10s ease-in infinite;*/
