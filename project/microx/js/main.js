@@ -3,15 +3,16 @@ window.onresize=scaleVideo;
 
 var vid = document.getElementById('video');
 
-vid.poster="poster.jpg";
+//vid.poster="poster.jpg";
 $(".content img").mouseenter(function(){
-    $(".content p,footer").css("visibility","hidden");
+    
     var vidTime = vid.duration;
     var vidNow = vid.currentTime;
     var minStep = vidTime/30.8 ; 
     var w = vidNow * minStep ;
     $(".content i").css("width",w+"vh");
     $(".content i").addClass("timeline");
+    $("section").addClass("bg_fadeout");
 //    $(".timeline").css("width",w+"vh");
     console.log("duration:"+vidNow)
     console.log("w:"+w)
@@ -29,9 +30,10 @@ $(".content img").mouseenter(function(){
      
 }).mouseleave(function(){
     vid.pause();
-    $(".content p,footer").css("visibility","visible");
+//    $(".content p,footer").css("visibility","visible");
     initTime();
     $(".content i").removeClass("timeline")
+    $("section").removeClass("bg_fadeout")
 });
 
 function initTime(){

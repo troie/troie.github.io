@@ -39,9 +39,8 @@ video {
 html,body,section{font-family: DecimaMonoX-Bold;width: 100%;height: 100%;overflow: hidden;}
 body{background: #000;}
 /*video{width: 100vw;}*/
-section{position: absolute;background: rgba(0,0,0,0);left: 0;top: 0;z-index: 1;}
-section a{color: #fff;text-decoration: none}
-section{color: #fff;}
+section{color: rgba(255,255,255,1);position: absolute;background: rgba(0,0,0,1);left: 0;top: 0;z-index: 1;}
+section a{text-decoration: none;color: rgba(255,255,255,1);}
 
 .content, footer, aside{position: absolute;}
 .content, footer{left: 8.33333333vw}
@@ -61,24 +60,39 @@ aside{right: 8.33333333vw;}
 }
 .content h1 img{width:40.8vh;position: relative;}
 
-.content i{
+.bg_fadeout .content i{
     position: absolute;
     left: 0;
     top: 50%;
-    border-color:#fff;
+    border-color:rgba(255,255,255,1);;
     border-bottom: 2px;
     border-bottom-style: solid;
     width: 0vh;
+    width: 30.8vh
 /*         width: 30.8vh;*/
         
 /*    -webkit-animation: timeline 10s ease-in infinite;*/
 }
 .timeline{-webkit-animation: timeline 61s ease-in infinite;}
-aside a{display: block;width: 14.72222222vw;min-width: 150px; line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;}
-aside p{margin-bottom: 1.88888889vh;}
+.bg_fadeout{-webkit-animation: bgFadeOut 1s ease-in forwards;}
+.bg_fadeout footer a{color: rgba(255,255,255,0);}
+aside a{display: block;width: 14.72222222vw;min-width: 150px; line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;color: rgba(255,255,255,1);}
+aside p{margin-bottom: 1.88888889vh;color: rgba(255,255,255,1);}
 aside, footer{bottom: 6.66666667vh;font-size: 2.22222222vh;}
 footer{line-height: 1.5;}
 footer a{text-decoration: underline}
+
+@-webkit-keyframes bgFadeOut {
+    0% {
+        background: rgba(0,0,0,1);
+        color: rgba(255,255,255,1);
+    }
+
+    100% {
+        background: rgba(0,0,0,0);
+        color: rgba(0,0,0,0);
+    }
+}
 
 @-webkit-keyframes timeline {
     from {
@@ -89,9 +103,11 @@ footer a{text-decoration: underline}
     }
 }
 
+
+
 @-moz-keyframes timeline {
     from {
-        width: 0
+/*        width: 0*/
     }
     to {
         width: 30.8vh
@@ -100,13 +116,22 @@ footer a{text-decoration: underline}
 
 @-o-keyframes timeline {
     from {
-        width: 0
+/*        width: 0*/
     }
     to {
         width: 30.8vh
     }
 }
 
+
+@keyframes timeline {
+    from {
+/*        width: 0*/
+    }
+    to {
+        width: 30.8vh
+    }
+}
 
 
 
