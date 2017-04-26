@@ -13,8 +13,8 @@ $(".content img").mouseenter(function(){
     $(".content i").css("width",w+"vh");
     $(".content i").addClass("timeline");
     $("section").addClass("bg_fadeout");
-//    $(".timeline").css("width",w+"vh");
-    console.log("duration:"+vidNow)
+    $(".timeline").css("width",w+"vh");
+    console.log("duration:"+vidTime)
     console.log("w:"+w)
     console.log("minStep:"+minStep)
 //    if(video.ended)console.log("ended:")
