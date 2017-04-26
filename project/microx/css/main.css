@@ -67,7 +67,7 @@ aside{right: 8.33333333vw;}
     border-bottom: 2px;
     border-bottom-style: solid;
     width: 0vh;
-    
+    border-color:rgba(255,255,255,0);
 /*    width: 30.8vh;*/
         
 /*    -webkit-animation: timeline 10s ease-in infinite;*/
@@ -80,7 +80,7 @@ aside{right: 8.33333333vw;}
 .bg_fadeout .timeline{border-color:rgba(255,255,255,1);}
 .bg_fadeout{-webkit-animation: bgFadeOut 1s ease-in forwards;}
 .bg_fadeout footer a{color: rgba(255,255,255,0);}
-aside a{display: block;width: 14.72222222vw;min-width: 150px; line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;color: rgba(255,255,255,1);}
+aside a{display: block;width: 24vh; min-width: 17vh;line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;color: rgba(255,255,255,1);}
 aside p{margin-bottom: 1.88888889vh;color: rgba(255,255,255,1);}
 aside, footer{bottom: 6.66666667vh;font-size: 2.22222222vh;}
 footer{line-height: 1.5;}

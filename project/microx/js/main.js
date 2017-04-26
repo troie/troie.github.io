@@ -8,21 +8,19 @@ $(".content img").mouseenter(function(){
     
     var vidTime = vid.duration;
     var vidNow = vid.currentTime;
-    var minStep = vidTime/30.8 ; 
+    var minStep = 30.8 / vidTime ; 
     var w = vidNow * minStep ;
-    $(".content i").css("width",w+"vh");
     $(".content i").addClass("timeline");
-    $("section").addClass("bg_fadeout");
     $(".timeline").css("width",w+"vh");
-    console.log("duration:"+vidTime)
-    console.log("w:"+w)
-    console.log("minStep:"+minStep)
-//    if(video.ended)console.log("ended:")
+    $("section").addClass("bg_fadeout");
+//    console.log("duration:"+vidTime)
+//    console.log("w:"+w)
+//    console.log("minStep:"+minStep)
     vid.play();
     
     vid.onended = function(e) {
         vid.play();
-        initTime();
+        initTimeLine();
     };
     
 //    video.addEventListener("ended",  hello());
@@ -31,12 +29,12 @@ $(".content img").mouseenter(function(){
 }).mouseleave(function(){
     vid.pause();
 //    $(".content p,footer").css("visibility","visible");
-    initTime();
+//    initTime();
     $(".content i").removeClass("timeline")
     $("section").removeClass("bg_fadeout")
 });
 
-function initTime(){
+function initTimeLine(){
     $(".timeline").css("width",0);
 }
 
