@@ -56,7 +56,6 @@ aside{right: 8.33333333vw;}
   overflow:  hidden;
   width:22.8vw;
   height:11vh;
-/*    border:1px solid red;*/
 }
 .content h1 img{width:40.8vh;position: relative;}
 
@@ -68,9 +67,6 @@ aside{right: 8.33333333vw;}
     border-bottom-style: solid;
     width: 0vh;
     border-color:rgba(255,255,255,0);
-/*    width: 30.8vh;*/
-        
-/*    -webkit-animation: timeline 10s ease-in infinite;*/
 }
 .timeline{
     max-width: 30.8vh;
@@ -80,12 +76,24 @@ aside{right: 8.33333333vw;}
 .bg_fadeout .timeline{border-color:rgba(255,255,255,1);}
 .bg_fadeout{-webkit-animation: bgFadeOut 1s ease-in forwards;}
 .bg_fadeout footer a{-webkit-animation: bgFadeOut 1s ease-in forwards;}
-/*.bg_fadeout aside a{background: rgba(255,255,255,.3);}*/
 aside a{display: block;width: 24vh; min-width: 17vh;line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;color: rgba(255,255,255,1);}
+aside a:hover, aside a:active{-webkit-animation: bgFadeIn .2s ease-in forwards;}
 aside p{margin-bottom: 1.88888889vh;color: rgba(255,255,255,1);}
 aside, footer{bottom: 6.66666667vh;font-size: 2.22222222vh;}
 footer{line-height: 1.5;}
 footer a{text-decoration: underline}
+
+
+@-webkit-keyframes bgFadeIn {
+    0% {
+        color: rgba(255,255,255,1);
+    }
+    100% {
+        background: rgba(255,255,255,1);
+        color: rgba(0,0,0,1);
+    }
+}
+
 
 @-webkit-keyframes bgFadeOut {
     0% {
@@ -161,15 +169,21 @@ footer a{text-decoration: underline}
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 25.875em)  {
+    .content {
+    top: 10.333333vh;
+}
     .content h1 img{width:70vw;}
-    .content p{font-size: 2.3vh;margin-top: 4vh;}
+    .content p{font-size: 2.3vh;margin-top: 4vh;width: 47vh;}
     aside{bottom: 18vh;left: 8.33333333vw}
 }
 
-@media only screen and (min-width: 26em) and (max-width: 46em){
-    .content p{font-size: 3vh;margin-top: 4vh;}
-    aside, footer{font-size: 3vh;}
-    aside a{line-height: 10vh;font-size: 2.8vh;}
+@media only screen and (min-width: 26em) and (max-width: 48em){
+    .content {top: 7vh;}
+    .content p{font-size: 2.7vh;margin-top: 4vh;width: 64vh;}
+    aside, footer{font-size: 2.7vh;}
+    aside a{    line-height: 5vh;
+    font-size: 2.8vh;
+    width: 29vh;}
 }
 
 @media print,
