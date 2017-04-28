@@ -13,6 +13,7 @@ $(".content img").mouseenter(function(){
     $(".content i").addClass("timeline");
     $(".timeline").css("width",w+"vh");
     $("section").addClass("bg_fadeout");
+    $(".content img").attr("src","logo.png");
 //    console.log("duration:"+vidTime)
 //    console.log("w:"+w)
 //    console.log("minStep:"+minStep)
@@ -32,6 +33,7 @@ $(".content img").mouseenter(function(){
 //    initTime();
     $(".content i").removeClass("timeline")
     $("section").removeClass("bg_fadeout")
+    $(".content img").attr("src","logo.gif");
 });
 
 function initTimeLine(){
