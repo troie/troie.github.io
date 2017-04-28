@@ -47,7 +47,7 @@ section a{text-decoration: none;color: rgba(255,255,255,1);}
 aside{right: 8.33333333vw;}
 .content{top: 18.3333333vh;}
 .content h1{font-size: 8vh;font-family: 'Noto Serif Italic', helvetica;font-style:italic;}
-.content p{line-height: 1.5;font-size: 3vh;margin-top: 6.11111111vh;}
+.content p{line-height: 1.8;font-size: 2.666666667vh;margin-top: 4.7vh;width: 80vh;}
 .content h1 span{
   display:block;cursor: pointer;
   position:absolute;
@@ -63,7 +63,7 @@ aside{right: 8.33333333vw;}
 .content i{
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 25vh;
     border-bottom: 2px;
     border-bottom-style: solid;
     width: 0vh;
