@@ -24,8 +24,8 @@ svg,
 video {
     vertical-align: middle;
 }
-
-
+section{border:1px solid red;height: 300px;}
+section li{float: left;width: 10em;}
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
