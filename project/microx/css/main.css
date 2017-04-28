@@ -47,7 +47,7 @@ section a{text-decoration: none;color: rgba(255,255,255,1);}
 aside{right: 8.33333333vw;}
 .content{top: 18.3333333vh;}
 .content h1{font-size: 8vh;font-family: 'Noto Serif Italic', helvetica;font-style:italic;}
-.content p{line-height: 1.8;font-size: 2.666666667vh;margin-top: 4.7vh;width: 80vh;}
+.content p{line-height: 1.6;font-size: 2.666666667vh;margin-top: 4.7vh;width: 80vh;}
 .content h1 span{
   display:block;cursor: pointer;
   position:absolute;
@@ -79,7 +79,7 @@ aside{right: 8.33333333vw;}
 }
 .bg_fadeout .timeline{border-color:rgba(255,255,255,1);}
 .bg_fadeout{-webkit-animation: bgFadeOut 1s ease-in forwards;}
-.bg_fadeout footer a{color: rgba(255,255,255,0);}
+.bg_fadeout footer a{-webkit-animation: bgFadeOut 1s ease-in forwards;}
 /*.bg_fadeout aside a{background: rgba(255,255,255,.3);}*/
 aside a{display: block;width: 24vh; min-width: 17vh;line-height: 5.2vh;text-align: center;border:1px solid #fff;font-size: 2vh;color: rgba(255,255,255,1);}
 aside p{margin-bottom: 1.88888889vh;color: rgba(255,255,255,1);}
@@ -89,10 +89,26 @@ footer a{text-decoration: underline}
 
 @-webkit-keyframes bgFadeOut {
     0% {
-        background: rgba(0,0,0,1);
         color: rgba(255,255,255,1);
     }
-
+    100% {
+        background: rgba(0,0,0,0);
+        color: rgba(0,0,0,0);
+    }
+}
+@-moz-keyframes bgFadeOut {
+    0% {
+        color: rgba(255,255,255,1);
+    }
+    100% {
+        background: rgba(0,0,0,0);
+        color: rgba(0,0,0,0);
+    }
+}
+@keyframes bgFadeOut {
+    0% {
+        color: rgba(255,255,255,1);
+    }
     100% {
         background: rgba(0,0,0,0);
         color: rgba(0,0,0,0);
