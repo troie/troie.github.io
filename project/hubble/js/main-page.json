@@ -1,53 +1,53 @@
 [
         {
-          "title" : "Min",
-          "sub-title" : "纪旻廷",
-          "doc_id" : 1
+          "title_en" : "The salt of the earth",
+          "title_cn" : "地球之盐",
+          "doc_vol" : 1
         },
         {
-          "title" : "Julien",
-          "sub-title" : "刘立言",
-          "doc_id" : 2
+          "title_en" : "King Corn",
+          "title_cn" : "玉米大亨",
+          "doc_vol" : 2
         },
         {
-          "title" : "Shengmin",
-          "sub-title" : "钱晟旻",
-          "doc_id" : 3
+          "title_en" : "The salt of the earth",
+          "title_cn" : "地球之盐",
+          "doc_vol" : 3
         },
         {
-          "title" : "Sean",
-          "sub-title" : "许仕贤",
-          "doc_id" : 4
+          "title_en" : "FOOD . INC",
+          "title_cn" : "食物公司",
+          "doc_vol" : 4
         },
         {
-          "title" : "Sharon",
-          "sub-title" : "李佳霖",
-          "doc_id" : 5
+          "title_en" : "About Vending Machine",
+          "title_cn" : "自动贩卖机特辑",
+          "doc_vol" : 5
         },
         {
-          "title" : "Sharon",
-          "sub-title" : "李佳霖",
-          "doc_id" : 6
+          "title_en" : "The salt of the earth",
+          "title_cn" : "地球之盐",
+          "doc_vol" : 6
         },
         {
-          "title" : "Sharon",
-          "sub-title" : "李佳霖",
-          "doc_id" : 7
+          "title_en" : "About Vending Machine",
+          "title_cn" : "自动贩卖机特辑",
+          "doc_vol" : 7
         },
         {
-          "title" : "Sharon",
-          "sub-title" : "李佳霖",
-          "doc_id" : 8
+          "title_en" : "The salt of the earth",
+          "title_cn" : "地球之盐",
+          "doc_vol" : 8
         },
         {
-          "title" : "Sharon",
-          "sub-title" : "李佳霖",
-          "doc_id" : 9
+          "title_en" : "King Corn",
+          "title_cn" : "玉米大亨",
+          "doc_vol" : 9
         },
         {
-          "title" : "Sharon",
-          "sub-title" : "李佳霖",
-          "doc_id" : 10
+          "title_en" : "About Vending Machine",
+          "title_cn" : "自动贩卖机特辑",
+          "doc_vol" : 10
         }
 
 ]
