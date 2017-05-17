@@ -3,17 +3,17 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         arrows: false
     });
+
     getMenuData();
+
     var loadFile = $(this).data('doc')
-    $(".menu").on("click", "li", function() {
+    $(".menu").on("click", "li", function () {
         getPage();
     });
 
-    $(".page").on("click", "h2", function() {
+    $(".page").on("click", "h2", function () {
         $(".page").html("");
-//        $(".menu").css("height","100%");
         getMenuData();
-//        alert(1);
     });
 
 
@@ -49,8 +49,7 @@ jQuery(document).ready(function ($) {
 
     function getPage() {
         $(".menu").html("");
-//        $(".menu").css("height",0);
-        var page = "<h2>Postproduction:Practically Magic</h2>";
+        var page = "<img src='img/doc_1.jpg'>";
         $(page).appendTo(".page");
     }
 });
