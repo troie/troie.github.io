@@ -19,7 +19,6 @@ jQuery(document).ready(function ($) {
 
     $(".page").on("click", "li", function () {
         //        alert($(this).data('id'));
-
         getComment();
 
     });
@@ -33,7 +32,6 @@ jQuery(document).ready(function ($) {
     });
 
     function getData() {
-        localStorage["pageId"] = "";
         var url = "/js/main-page.json";
         $.getJSON(url, function (data) {
             var items = [];
@@ -50,8 +48,8 @@ jQuery(document).ready(function ($) {
 
     function getPage(pageId) {
         $(".menu").html("");
-        if(localStorage.getItem("pageId")) pageId = localStorage.getItem("pageId");
-        localStorage.setItem("pageId", pageId);
+        //        if(localStorage.getItem("pageId")) pageId = localStorage.getItem("pageId");
+        //        localStorage.setItem("pageId", pageId);
 
         var url = "/js/main-page.json";
         $.getJSON(url, function (data) {
@@ -63,7 +61,7 @@ jQuery(document).ready(function ($) {
             //            $("<ul/>", {
             //                html: items.join("")
             //            }).appendTo(".menu");
-//            alert(data[pageId].description)
+            //            alert(data[pageId].description)
 
             var page = "<div class=\"page_up\">" +
                 "<h1>" + data[pageId].title_en + "</h1>" +
@@ -78,61 +76,70 @@ jQuery(document).ready(function ($) {
                 "<img src='img/doc_" + data[pageId].doc_vol + ".jpg'>" +
                 "<p>" + data[pageId].description + "</p>" +
                 "</div>";
-//                getSliderData(pageId)
-            var slider=getSliderData(pageId);
-            console.log(slider)
-                page += "<div class=\"page_down\">" +slider+
-//                "<div class=\"slider\">" +
-//                "<ul>" +
-//                "<li data-id=\"1\">" +
-//                "<b>Harry</b>" +
-//                "<p>超爱 Peaseful Cusine 系列视频，原因是制作人从新的角度展示食物，我们常常从视觉嗅觉味觉来观察食物，唯独忘了听觉，不加配乐，只用切菜、开火、煮汤等做菜同期声，在极简影像风格中放大听觉，刺激观众的想象。</p>" +
-//                "</li>" +
-//                "<li data-id=\"2\">" +
-//                "<b>Tim</b>" +
-//                "<p>超爱 Peaseful Cusine 系列视频，原因是制作人从新的角度展示食物，我们常常从视觉嗅觉味觉来观察食物，唯独忘了听觉，不加配乐，只用切菜、开火、煮汤等做菜同期声，在极简影像风格中放大听觉，刺激观众的想象。</p>" +
-//                "</li>" +
-//                "<li data-id=\"3\">" +
-//                "<b>Troie</b>" +
-//                "<p>超爱 Peaseful Cusine 系列视频，原因是制作人从新的角度展示食物，我们常常从视觉嗅觉味觉来观察食物，唯独忘了听觉，不加配乐，只用切菜、开火、煮汤等做菜同期声，在极简影像风格中放大听觉，刺激观众的想象。</p>" +
-//                "</li>" +
-//                "</ul>" +
-//                "</div>" +
-                "</div>" +
-                "<img class=\"background\" src=\"img/doc_1.jpg\">";
             $(page).appendTo(".page");
-            $('.slider').unslider({
-                //            autoplay: true,
-                //            arrows: false
-                infinite: true
-            });
+            getSliderData(pageId);
+            //                console.log(slider)
+            //                page += "<div class=\"page_down\">" +slider+
+            //                "<div class=\"slider\">" +
+            //                "<ul>" +
+            //                "<li data-id=\"1\">" +
+            //                "<b>Harry</b>" +
+            //                "<p>超爱 Peaseful Cusine 系列视频，原因是制作人从新的角度展示食物，我们常常从视觉嗅觉味觉来观察食物，唯独忘了听觉，不加配乐，只用切菜、开火、煮汤等做菜同期声，在极简影像风格中放大听觉，刺激观众的想象。</p>" +
+            //                "</li>" +
+            //                "<li data-id=\"2\">" +
+            //                "<b>Tim</b>" +
+            //                "<p>超爱 Peaseful Cusine 系列视频，原因是制作人从新的角度展示食物，我们常常从视觉嗅觉味觉来观察食物，唯独忘了听觉，不加配乐，只用切菜、开火、煮汤等做菜同期声，在极简影像风格中放大听觉，刺激观众的想象。</p>" +
+            //                "</li>" +
+            //                "<li data-id=\"3\">" +
+            //                "<b>Troie</b>" +
+            //                "<p>超爱 Peaseful Cusine 系列视频，原因是制作人从新的角度展示食物，我们常常从视觉嗅觉味觉来观察食物，唯独忘了听觉，不加配乐，只用切菜、开火、煮汤等做菜同期声，在极简影像风格中放大听觉，刺激观众的想象。</p>" +
+            //                "</li>" +
+            //                "</ul>" +
+            //                "</div>" +
+            //                "</div>" +
+            //                "<img class=\"background\" src=\"img/doc_1.jpg\">";
+            $("<img class=\"background\" src=\"img/doc_1.jpg\">").appendTo(".page");
         });
 
 
 
 
     }
-    
+
     function getSliderData(pageId) {
-        var url = "/js/comment/comment_"+pageId+".json";
-//        alert(url)
-        var slider;
+        var url = "/js/comment/comment_" + pageId + ".json";
+        //        alert(url)
+        var sliderData;
         $.getJSON(url, function (data) {
-            var items = [];
-            $.each(data, function (key, val) {
-                items.push("<li data-index=\"" + key + "\"><b>"+val.commentator+"</b><p>"+val.comment+"</P</li>");
-            });
-            slider = "<div class=\"slider\"><ul>"+items.join("")+"</ul></div>";
-//            hello(slider);
+            //            var items = [];
+            //            $.each(data, function (key, val) {
+            //                items.push("<li data-index=\"" + key + "\"><b>"+val.commentator+"</b><p>"+val.comment+"</P</li>");
+            //            });
+            //            
+            //            slider = "<div class=\"slider\"><ul>"+items.join("")+"</ul></div>";
+            //            page = "<div class=\"page_down\">" +slider+"</div>";
+            sliderData = data;
+            makeSlider(data)
         });
-        return slider;
     }
-    
-    function hello(slider){
-//        alert(slider);
-        console.log(slider)
-        return slider
+
+    function makeSlider(sliderData) {
+        var slider, page;
+        var items = [];
+        $.each(sliderData, function (key, val) {
+            items.push("<li data-index=\"" + key + "\"><b>" + val.commentator + "</b><p>" + val.comment + "</P</li>");
+        });
+        slider = "<div class=\"slider\"><ul>" + items.join("") + "</ul></div>";
+        page = "<div class=\"page_down\">" + slider + "</div>";
+        $(page).insertAfter(".page_up");
+
+        $('.slider').unslider({
+            autoplay: true,
+            arrows: false
+            //                infinite: true
+        });
     }
+
     function getComment() {
         $(".page").html("");
         //        alert(1)
