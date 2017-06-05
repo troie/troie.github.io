@@ -3,36 +3,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* ==========================================================================
    Troei custom styles
    ========================================================================== */
-body{color: #ccc;}
-nav{background: #313132 ;}
-body, html, .row, .sidebar, .main{height: 100%;}
-.row {margin-bottom: 0;}
-.sidebar{background: rgb(77, 75, 92);}
+body{color: #222;font-size: 18px;}
 
-
-.main{background: rgba(210,225,227,1);color: #333;}
-.main ul li{width: 30%;}
-
-.preview{display: none;width: 100vw;height: 100vh;padding: 3vw; position: absolute;top: 0;left: 0;z-index: 2;background: rgba(255,255,255,.9);overflow: hidden;}
-.preview .comm_title{}
-.preview div{position: relative;
-    display: inline;
-    float: left;
-    zoom: 1;
-    width: 18vw;
-    height: 18vw;
-    padding: 1vw;
-    outline: 1px dotted rgba(0,0,0,.2);}
-.preview .comm_title h4{width: 90%;
-    font-size: .7cm;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-75%);}
-.preview div span{position: absolute;width: 16vw;margin: 0 auto; top: 14vw;display: block;}
-
-
-
+/*body, html, .row, .sidebar, .main{height: 100%;}*/
+.main{width: 960px;margin: 0 auto;}
+h1, h2, h3, h4, th{font-weight: 800;line-height: 1.8em;}
+h1, h2, h3, h4{padding-top: 1.8em;}
+h1{font-size: 24px;}
+h2{font-size: 20px;}
+th{}
+td{line-height: 1.618em;padding-left: .5em;}
+td:first-child{width: 560px;}
+ol{list-style: decimal;list-style-position: inside;}
+ul{list-style: disc;}
+ol, ul {margin-left: 80px;}
+li{line-height: 1.5em;padding-bottom: .5em;width: 560px;}
 
 
 
