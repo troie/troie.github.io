@@ -42,7 +42,8 @@ section li{float: left;width: 10em;}
 /*.sidebar a{font-size: 1.2em;}*/
 body{font-size: 16px;}
 dt{font-size: 1.2em;margin-bottom: 1em;}
-dd{}
+
+dd 
 dd>b{font-weight: 800;}
 li{line-height: 1.618em;;list-style: none}
 ul ul li{list-style: disc;}
@@ -50,7 +51,8 @@ em{font-style: normal}
 ul:hover li{-webkit-animation: fadeOut .3s ease-in forwards;}
 ul:hover em{-webkit-animation: fadeIn .3s ease-in forwards;}
 
-
+.chart{width: 350px;height: 350px;margin: 2em auto;}
+.q2{width: 600px;height: 400px;}
 @-webkit-keyframes fadeIn {
     0% {
         
