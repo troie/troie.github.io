@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Linkedin share javascript API - Company</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<style type="text/css">
+			.latest-linkedin{
+			  margin: 0;
+			  padding: 0;
+			  list-style: none;
+			}
+
+			.social-networks i{
+			  color: #FFF;
+			  background: #0077B5;
+			  padding: 2px 0;
+			  width: 15px;
+			  text-align: center;
+			}
+		</style>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+  	<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  		api_key: YOUR_API_KEY
+  		onLoad: onLinkedInLoad_company
+  		authorize: true
+		</script>
+		<script>
+			function onLinkedInLoad_company() {
+			  IN.API.Raw("/companies/{company_id}/updates")
+			     .params({"type": "SHAR", "count": 5}) // get the five most-recent Shares
+			     .result(function(updates) {
+					    var profileDiv = document.getElementById("company-networkupdates");
+     
+						  for (var i in updates.values) {
+						    var key = updates.values[i].updateKey; // each update has a unique key
+						    var share = updates.values[i].updateContent.person; // the person sharing content
+						    profileDiv.innerHTML += '<li><i class="fa fa-linkedin"></i> ' + share.currentShare.comment + '</li>';
+						  }
+					  });
+			}
+		</script>
+  </head>
+  <body>
+    <div class="col-lg-3 col-md-3">
+      <h3>Latest Company Linkedin</h3>
+      <ul class="latest-linkedin social-networks" id="company-networkupdates">
+      </ul>
+    </div>
+  </body>
+</html>
