@@ -1,0 +1,9 @@
+/*
+
+@import url("//hello.myfonts.net/count/3380d0");
+
+  
+*/
+@font-face {font-family: 'DecimaMonoX-Bold';src: url('webfonts/3380D0_1_0.eot');src: url('webfonts/3380D0_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3380D0_1_0.woff2') format('woff2'),url('webfonts/3380D0_1_0.woff') format('woff'),url('webfonts/3380D0_1_0.ttf') format('truetype');}
+@font-face{font-family:'Noto Serif Italic';font-style:italic;font-weight:400;src:local('Noto Serif Italic'),local('NotoSerif-Italic'),url('webfonts/noto-serif-italic.woff') format('woff'),url('webfonts/noto-serif-italic.ttf') format('truetype');}
+ 
