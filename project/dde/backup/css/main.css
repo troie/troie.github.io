@@ -1,0 +1,1113 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+    font-size: 16px;
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+.abc{width: 2em;}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(234, 234, 234);
+    position: relative;
+    font-size: 16px;
+    background-image: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+article {
+    width: 100%;
+    min-width: 960px;
+    height: 100%;
+    min-height: 620px;
+    max-width: 80em;
+    margin: 0 auto;
+    vertical-align: middle;
+    /*position: absolute;*/
+}
+
+h1 a {
+    display: block;
+    position: absolute;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 148px;
+    height: 53px;
+}
+
+h1 {
+    position: absolute;
+	left: 379px;
+	top: 160px;
+    z-index: 2;
+}
+
+blockquote,
+footer {
+    font-size: 1.125em;
+    position: absolute;
+    left: 780px;
+}
+
+blockquote {
+    top: 150px;
+    width: 22em;
+    line-height: 1.5;
+}
+
+blockquote a,
+footer a {
+    color: #222;
+}
+
+blockquote a {
+    border-bottom: 1px solid #00f;
+}
+
+footer span {
+    font-weight: 300;
+}
+
+footer {
+    top: 90%;
+    right: 24%;
+    width: 18em;
+}
+
+footer a+span {
+    margin-left: 2em;
+}
+
+li a {
+    font-weight: 500;
+    font-size: 1.875em;
+    color: #00f;
+}
+
+li {
+    position: absolute;
+    z-index: 1;
+}
+
+li:hover span {
+    display: block;
+}
+
+li:hover p {
+    display: inline;
+}
+
+li:hover .paint,
+blockquote a:hover i {
+    display: block;
+}
+
+.vcard {
+    margin-top: 1em;
+    font-size: 0.9375em;
+    width: 16em;
+}
+
+.vcard span {
+    display: block;
+}
+
+.vcard span,
+.vcard p {
+    display: none;
+}
+
+.vcard p {
+    margin-top: 1em;
+    background-color: #222;
+    color: #eaeaea;
+    font-style: italic;
+    width: 15em;
+    line-height: 1.5;
+}
+
+.vcard i,
+blockquote i {
+    background-image: url('../img/paint.png');
+    display: block;
+    position: fixed;
+}
+
+.vcard .paint {
+    left: 30%;
+    top: 20%;
+    display: none;
+    width: 300px;
+}
+
+blockquote .br {
+    display: none;
+    width: 300px;
+    height: 350px;
+    background-position: 0 -2300px;
+    top: 72px;
+    left: 483px;
+}
+
+.vcard .ac {
+    height: 180px;
+    background-position: 0 0;
+    top: 35px;
+    left: 480px;
+}
+
+.vcard .an {
+    height: 170px;
+    background-position: 0 -180px;
+    top: 195px;
+    left: 519px;
+}
+
+.vcard .bb {
+    height: 590px;
+    background-position: 0 -350px;
+    top: 115px;
+    left: 420px;
+}
+
+.vcard .ht {
+    height: 122px;
+    background-position: 0 -940px;
+    top: 80px;
+    left: 480px;
+}
+
+.vcard .jt {
+    height: 148px;
+    background-position: 0 -1062px;
+    top: 28px;
+    left: 499px;
+}
+
+.vcard .ka {
+    height: 180px;
+    background-position: 0 -1230px;
+    top: 85px;
+    left: 440px;
+}
+
+.vcard .ru {
+    height: 230px;
+    background-position: 0 -1430px;
+    top: 55px;
+    left: 457px;
+}
+
+.vcard .ry {
+    height: 126px;
+    background-position: 0 -1675px;
+    top: 160px;
+    left: 374px;
+}
+
+.vcard .te {
+    height: 312px;
+    background-position: 0 -1820px;
+    top: 25px;
+    left: 440px;
+}
+
+.vcard .ty {
+    height: 160px;
+    background-position: 0 -2140px;
+    top: 135px;
+    left: 330px;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.s1 li:nth-child(1) {
+    top: 4%;
+    left: 19%;
+}
+
+.s1 li:nth-child(2) {
+    top: 12%;
+    left: 75%;
+}
+
+.s1 li:nth-child(3) {
+    top: 30%;
+    left: 5%;
+}
+
+.s1 li:nth-child(4) {
+    top: 60%;
+    left: 30%;
+}
+
+.s1 li:nth-child(5) {
+    top: 50%;
+    left: 75%;
+}
+
+.s1 li:nth-child(6) {
+    top: 60%;
+    left: 40%;
+}
+
+.s1 li:nth-child(7) {
+    top: 80%;
+    left: 5%;
+}
+
+.s1 li:nth-child(8) {
+    top: 45%;
+    left: 60%;
+}
+
+.s1 li:nth-child(9) {
+    top: 50%;
+    left: 15%;
+}
+
+.s1 li:nth-child(10) {
+    top: 72%;
+    left: 65%;
+}
+
+.s2 li:nth-child(10) {
+    top: 2%;
+    left: 25%;
+}
+
+.s2 li:nth-child(9) {
+    top: 10%;
+    left: 75%;
+}
+
+.s2 li:nth-child(8) {
+    top: 30%;
+    left: 5%;
+}
+
+.s2 li:nth-child(7) {
+    top: 75%;
+    left: 20%;
+}
+
+.s2 li:nth-child(6) {
+    top: 50%;
+    left: 75%;
+}
+
+.s2 li:nth-child(5) {
+    top: 60%;
+    left: 40%;
+}
+
+.s2 li:nth-child(4) {
+    top: 80%;
+    left: 5%;
+}
+
+.s2 li:nth-child(3) {
+    top: 45%;
+    left: 60%;
+}
+
+.s2 li:nth-child(2) {
+    top: 50%;
+    left: 15%;
+}
+
+.s2 li:nth-child(1) {
+    top: 72%;
+    left: 65%;
+}
+
+.s3 li:nth-child(1) {
+    top: 74%;
+    left: 25%;
+}
+
+.s3 li:nth-child(2) {
+    top: 72%;
+    left: 75%;
+}
+
+.s3 li:nth-child(3) {
+    top: 2%;
+    left: 55%;
+}
+
+.s3 li:nth-child(4) {
+    top: 30%;
+    left: 10%;
+}
+
+.s3 li:nth-child(5) {
+    top: 40%;
+    left: 30%;
+}
+
+.s3 li:nth-child(6) {
+    top: 10%;
+    left: 80%;
+}
+
+.s3 li:nth-child(7) {
+    top: 0%;
+    left: 2%;
+}
+
+.s3 li:nth-child(8) {
+    top: 45%;
+    left: 75%;
+}
+
+.s3 li:nth-child(9) {
+    top: 70%;
+    left: 2%;
+}
+
+.s3 li:nth-child(10) {
+    top: 62%;
+    left: 45%;
+}
+
+.s4 li:nth-child(1) {
+    top: 5%;
+    left: 75%;
+}
+
+.s4 li:nth-child(2) {
+    top: 62%;
+    left: 5%;
+}
+
+.s4 li:nth-child(3) {
+    top: 38%;
+    left: 55%;
+}
+
+.s4 li:nth-child(4) {
+    top: 70%;
+    left: 80%;
+}
+
+.s4 li:nth-child(5) {
+    top: 8%;
+    left: 50%;
+}
+
+.s4 li:nth-child(6) {
+    top: 35%;
+    left: 25%;
+}
+
+.s4 li:nth-child(7) {
+    top: 60%;
+    left: 22%;
+}
+
+.s4 li:nth-child(8) {
+    top: 50%;
+    left: 70%;
+}
+
+.s4 li:nth-child(9) {
+    top: 30%;
+    left: 2%;
+}
+
+.s4 li:nth-child(10) {
+    top: 62%;
+    left: 45%;
+}
+
+.s5 li:nth-child(10) {
+    top: 5%;
+    left: 80%;
+}
+
+.s5 li:nth-child(9) {
+    top: 62%;
+    left: 5%;
+}
+
+.s5 li:nth-child(8) {
+    top: 32%;
+    left: 66%;
+}
+
+.s5 li:nth-child(7) {
+    top: 30%;
+    left: 15%;
+}
+
+.s5 li:nth-child(6) {
+    top: 8%;
+    left: 50%;
+}
+
+.s5 li:nth-child(5) {
+    top: 1%;
+    left: 12%;
+}
+
+.s5 li:nth-child(4) {
+    top: 60%;
+    left: 22%;
+}
+
+.s5 li:nth-child(3) {
+    top: 55%;
+    left: 65%;
+}
+
+.s5 li:nth-child(2) {
+    top: 35%;
+    left: 45%;
+}
+
+.s5 li:nth-child(1) {
+    top: 62%;
+    left: 45%;
+}
+
+.s6 li:nth-child(1) {
+    top: 74%;
+    left: 25%;
+}
+
+.s6 li:nth-child(2) {
+    top: 3%;
+    left: 4%;
+}
+
+.s6 li:nth-child(3) {
+    top: 62%;
+    left: 49%;
+}
+
+.s6 li:nth-child(4) {
+    top: 40%;
+    left: 20%;
+}
+
+.s6 li:nth-child(5) {
+    top: 70%;
+    left: 2%;
+}
+
+.s6 li:nth-child(6) {
+    top: 10%;
+    left: 75%;
+}
+
+.s6 li:nth-child(7) {
+    top: 72%;
+    left: 75%;
+}
+
+.s6 li:nth-child(8) {
+    top: 45%;
+    left: 75%;
+}
+
+.s6 li:nth-child(9) {
+    top: 40%;
+    left: 50%;
+}
+
+.s6 li:nth-child(10) {
+    top: 2%;
+    left: 55%;
+}
+
+.s7 li:nth-child(1) {
+    top: 74%;
+    left: 55%;
+}
+
+.s7 li:nth-child(2) {
+    top: 72%;
+    left: 15%;
+}
+
+.s7 li:nth-child(3) {
+    top: 10%;
+    left: 75%;
+}
+
+.s7 li:nth-child(4) {
+    top: 38%;
+    left: 60%;
+}
+
+.s7 li:nth-child(5) {
+    top: 50%;
+    left: 80%;
+}
+
+.s7 li:nth-child(6) {
+    top: 30%;
+    left: 5%;
+}
+
+.s7 li:nth-child(7) {
+    top: 40%;
+    left: 45%;
+}
+
+.s7 li:nth-child(8) {
+    top: 45%;
+    left: 30%;
+}
+
+.s7 li:nth-child(9) {
+    top: 65%;
+    left: 40%;
+}
+
+.s7 li:nth-child(10) {
+    top: 72%;
+    left: 65%;
+}
+
+.s8 li:nth-child(1) {
+    top: 74%;
+    left: 2%;
+}
+
+.s8 li:nth-child(2) {
+    top: 38%;
+    left: 32%;
+}
+
+.s8 li:nth-child(3) {
+    top: 42%;
+    left: 55%;
+}
+
+.s8 li:nth-child(4) {
+    top: 60%;
+    left: 60%;
+}
+
+.s8 li:nth-child(5) {
+    top: 35%;
+    left: 15%;
+}
+
+.s8 li:nth-child(6) {
+    top: 65%;
+    left: 15%;
+}
+
+.s8 li:nth-child(7) {
+    top: 0%;
+    left: 60%;
+}
+
+.s8 li:nth-child(8) {
+    top: 45%;
+    left: 65%;
+}
+
+.s8 li:nth-child(9) {
+    top: 70%;
+    left: 8%;
+}
+
+.s8 li:nth-child(10) {
+    top: 62%;
+    left: 45%;
+}
+
+.s9 li:nth-child(1) {
+    top: 44%;
+    left: 42%;
+}
+
+.s9 li:nth-child(2) {
+    top: 38%;
+    left: 30%;
+}
+
+.s9 li:nth-child(3) {
+    top: 58%;
+    left: 48%;
+}
+
+.s9 li:nth-child(4) {
+    top: 50%;
+    left: 10%;
+}
+
+.s9 li:nth-child(5) {
+    top: 60%;
+    left: 70%;
+}
+
+.s9 li:nth-child(6) {
+    top: 70%;
+    left: 20%;
+}
+
+.s9 li:nth-child(7) {
+    top: 42%;
+    left: 62%;
+}
+
+.s9 li:nth-child(8) {
+    top: 5%;
+    left: 62%;
+}
+
+.s9 li:nth-child(9) {
+    top: 70%;
+    left: 42%;
+}
+
+.s9 li:nth-child(10) {
+    top: 2%;
+    left: 25%;
+}
+
+.s10 li:nth-child(1) {
+    top: 18%;
+    left: 2%;
+}
+
+.s10 li:nth-child(2) {
+    top: 72%;
+    left: 75%;
+}
+
+.s10 li:nth-child(3) {
+    top: 60%;
+    left: 25%;
+}
+
+.s10 li:nth-child(4) {
+    top: 30%;
+    left: 75%;
+}
+
+.s10 li:nth-child(5) {
+    top: 35%;
+    left: 16%;
+}
+
+.s10 li:nth-child(6) {
+    top: 2%;
+    left: 45%;
+}
+
+.s10 li:nth-child(7) {
+    top: 0%;
+    left: 65%;
+}
+
+.s10 li:nth-child(8) {
+    top: 45%;
+    left: 55%;
+}
+
+.s10 li:nth-child(9) {
+    top: 50%;
+    left: 2%;
+}
+
+.s10 li:nth-child(10) {
+    top: 72%;
+    left: 45%;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*
+@media only screen and (min-width: 20em) and (max-width: 30em) {
+    html,
+    body,
+    article {
+        width: 20em;
+    }
+    h1 {
+        left: 27px;
+        top: 50px;
+    }
+    blockquote {
+        top: 130px;
+        left: 25px;
+        font-size: 1.5em;
+        width: 11em;
+        line-height: 1.5;
+    }
+    ul#member {
+        position: absolute;
+        top: 482px;
+        left: 20px;
+        display: none;
+    }
+    li {
+        position: static;
+    }
+    li span,
+    li p,
+    .vcard span,
+    .vcard p {
+        display: block;
+    }
+    .vcard .paint {
+        display: block;
+        position: static;
+    }
+    .vcard p {
+        width: 18em;
+        margin-bottom: 2em;
+    }
+    footer {
+        top: 430px;
+        left: 25px;
+    }
+    footer a+span {
+        margin-left: .6em;
+    }
+}
+*/
+
+@media only screen and (min-width: 35em) {}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fixbox {
+    outline: 1px dotted red;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 10
+}
+
+.fixbug {
+    float: left;
+    margin-left: 3em;
+    outline: 1px dotted red
+}
+
+.l_grid > li {
+    display: inline;
+    float: left;
+    zoom: 1
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

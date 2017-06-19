@@ -1,0 +1,46 @@
+html,
+    body,
+    article {
+        width: 20em;
+    }
+    h1 {
+        left: 27px;
+        top: 50px;
+    }
+    blockquote {
+        top: 130px;
+        left: 25px;
+        font-size: 1.5em;
+        width: 11em;
+        line-height: 1.5;
+    }
+    ul#member {
+        position: absolute;
+        top: 482px;
+        left: 20px;
+        display: none;
+    }
+    li {
+        position: static;
+    }
+    li span,
+    li p,
+    .vcard span,
+    .vcard p {
+        display: block;
+    }
+    .vcard .paint {
+        display: block;
+        position: static;
+    }
+    .vcard p {
+        width: 18em;
+        margin-bottom: 2em;
+    }
+    footer {
+        top: 430px;
+        left: 25px;
+    }
+    footer a+span {
+        margin-left: .6em;
+    }

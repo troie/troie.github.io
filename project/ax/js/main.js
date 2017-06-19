@@ -33,9 +33,10 @@ $(".content img").mouseenter(function(){
 
 function scaleVideo(){
     var video = document.getElementById('video');
+    var win = document.getElementById('content');
     //get window size
-    var windowWidth = document.documentElement.clientWidth;
-    var windowHeight = document.documentElement.clientHeight;
+    var windowWidth = win.clientWidth;
+    var windowHeight = win.clientHeight;
     console.log("win source:"+windowWidth +"......"+windowHeight)
 //    var ws = windowWidth / windowHeight
     
