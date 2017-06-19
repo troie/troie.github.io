@@ -1,3 +1,8 @@
+var userAgent = window.navigator.userAgent.toLowerCase();
+//var version = $.browser.version;
+
+alert(userAgent)
+
 window.onload = scaleVideo;
 window.onresize = scaleVideo;
 
