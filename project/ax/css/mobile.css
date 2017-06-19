@@ -1,9 +1,18 @@
-section {
-    color: rgba(255, 0, 0, 1);
-}
-aside a {
-    
-    font-size: 5vh !important;
-    color: #f00!important;
-}
-.content p{color: #f00 !important;}
+.content {
+        top: 5vh;
+    }
+    .content h1 {
+        font-size: 6vh;
+    }
+    .content h1 img {
+        width: 55vw;
+    }
+    .content p {
+        font-size: 2.3vh;
+        margin-top: 4vh;
+        width: 47vh;
+    }
+    aside {
+        bottom: 18vh;
+        left: 8.33333333vw
+    }
