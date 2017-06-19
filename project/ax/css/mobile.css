@@ -1,0 +1,9 @@
+section {
+    color: rgba(255, 0, 0, 1);
+}
+aside a {
+    
+    font-size: 5vh;
+    color: #f00;
+}
+.content p{color: #f00;}
