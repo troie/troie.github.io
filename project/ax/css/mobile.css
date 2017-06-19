@@ -1,23 +1,2 @@
-.content {
-    top: 5vh;
-}
 
-.content h1 {
-    font-size: 6vh;
-}
-
-.content h1 img {
-    width: 55vw;
-}
-
-.content p {
-    font-size: 2.3vh;
-    margin-top: 4vh;
-    width: 47vh;
-}
-
-aside {
-    bottom: 18vh;
-    left: 8.33333333vw
-}
 #logo img{width: 100px;}

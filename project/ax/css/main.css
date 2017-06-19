@@ -368,7 +368,6 @@ footer a {
    ========================================================================== */
 
 @media only screen and (max-width: 25.875em) {
-/*
     .content {
         top: 5vh;
     }
@@ -387,7 +386,6 @@ footer a {
         bottom: 18vh;
         left: 8.33333333vw
     }
-*/
 }
 
 @media only screen and (min-width: 26em) and (max-width: 48em) {
