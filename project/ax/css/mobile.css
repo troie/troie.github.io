@@ -3,7 +3,7 @@ section {
 }
 aside a {
     
-    font-size: 5vh;
-    color: #f00;
+    font-size: 5vh !important;
+    color: #f00!important;
 }
-.content p{color: #f00;}
+.content p{color: #f00 !important;}
