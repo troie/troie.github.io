@@ -2,7 +2,7 @@
 ////alert(userAgent + "/r/n"+ $.browser.version)
 //alert( $.browser.version );
 
-var sBrowser, sUsrAg = navigator.userAgent;
+var sBrowser, sUsrAg = navigator.userAgent, sUsrVer = navigator.appVersion;
 
 if(sUsrAg.indexOf("Chrome") > -1) {
     sBrowser = "Google Chrome";
@@ -16,7 +16,7 @@ if(sUsrAg.indexOf("Chrome") > -1) {
     sBrowser = "Microsoft Internet Explorer";
 }
 
-alert("You are using: " + sBrowser);
+alert("You are using: " + sBrowser +" version:"+sUsrVer);
 
 window.onload = scaleVideo;
 window.onresize = scaleVideo;
