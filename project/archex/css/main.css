@@ -244,7 +244,6 @@ section a {
 
 .content h1 img {
     width: 40.8vh;
-    
     position: relative;
     margin-top: 1.4vh;
 }
@@ -279,14 +278,14 @@ i {
 
 .aside a {
     display: block;
-/*    width: 24vh;*/
+    /*    width: 24vh;*/
     width: 100%;
-/*    min-width: 17vh;*/
-/*    min-width: 30.222222222%;*/
+    /*    min-width: 17vh;*/
+    /*    min-width: 30.222222222%;*/
     line-height: 2.9375em;
     text-align: center;
     border: 1px solid #fff;
-/*    font-size: 2vh;*/
+    /*    font-size: 2vh;*/
     font-size: 1.125em;
     color: rgba(255, 255, 255, 1);
 }
@@ -310,40 +309,47 @@ i {
     text-decoration: underline
 }
 
-::-moz-selection { background: rgba(255,55,90,.8); }
-::selection { background: rgba(255,55,90,.8);}
+::-moz-selection {
+    background: rgba(255, 55, 90, .8);
+}
+
+::selection {
+    background: rgba(255, 55, 90, .8);
+}
 
 .downBtn {
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 2px solid #fff    ;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
-}
-.downBtn:hover {
-	color: #FF375A !important;
-}
-.downBtn:hover:before {
-	left: 0%;
-	right: auto;
-	width: 100%;
-}
-.downBtn:before {
-	display: block;
-	position: absolute;
-	top: 0px;
-	right: auto ;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #fff;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #fff;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    0s;
 }
 
+.downBtn:hover {
+    color: #FF375A !important;
+}
+
+.downBtn:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+
+.downBtn:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: auto;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
 
 @keyframes bgFadeOut {
     0% {
@@ -354,8 +360,6 @@ i {
         color: rgba(0, 0, 0, 0);
     }
 }
-
-
 
 @keyframes timeline {
     from {
@@ -376,19 +380,25 @@ i {
         top: 5vh;
     }
     .content h1 {
-        font-size: 6vh;
+        font-size: 3.2em;
     }
     .content h1 img {
-        width: 55vw;
+        width: 4em;
     }
     .content p {
-        font-size: 2.3vh;
-        margin-top: 4vh;
+        font-size: 1em;
+        margin-top: 1em;
         width: 47vh;
     }
     .aside {
-        bottom: 18vh;
-        left: 8.33333333vw
+        bottom: 8em;
+        left: 2em;
+        width: 13em;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    .footer {
+        font-size: 1em;
     }
 }
 
