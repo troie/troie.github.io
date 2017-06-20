@@ -279,12 +279,15 @@ i {
 
 .aside a {
     display: block;
-    width: 24vh;
-    min-width: 17vh;
-    line-height: 5.2vh;
+/*    width: 24vh;*/
+    width: 100%;
+/*    min-width: 17vh;*/
+/*    min-width: 30.222222222%;*/
+    line-height: 2.5em;
     text-align: center;
     border: 1px solid #fff;
-    font-size: 2vh;
+/*    font-size: 2vh;*/
+    font-size: 1.125em;
     color: rgba(255, 255, 255, 1);
 }
 
