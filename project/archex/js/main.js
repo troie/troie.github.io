@@ -4,31 +4,33 @@ window.onresize=scaleVideo;
 var vid = document.getElementById('video');
 vid.onended = function() {console.log(1)};
 
-$(".content img").mouseenter(function(){
-    
-    //get video total time
-    var vidTime = vid.duration;
-    //get video now play time
-    var vidNow = vid.currentTime;
-    var minStep = 100 / vidTime ; 
-    var w = (vidNow * minStep)+"vw" ;
-    $("i").addClass("timeline");
-    $(".timeline").css("width",w);
-    $("section").addClass("bg_fadeout");
-    $(".content img").attr("src","logo.png");
-    vid.play();
-    vid.onended = function(e) {
-        vid.play();
-    };
-     
-}).mouseleave(function(){
-    $(".timeline").css("width",0);
-    vid.pause();
-    $("i").removeClass("timeline")
-    $("section").removeClass("bg_fadeout")
-    $(".content img").attr("src","logo.gif");
-});
+if ( $( window ).width() >= 768 ) {
+    $(".content img").mouseenter(function () {
 
+        //get video total time
+        var vidTime = vid.duration;
+        //get video now play time
+        var vidNow = vid.currentTime;
+        var minStep = 100 / vidTime;
+        var w = (vidNow * minStep) + "vw";
+        $("i").addClass("timeline");
+        $(".timeline").css("width", w);
+        $("section").addClass("bg_fadeout");
+        $(".content img").attr("src", "logo.png");
+        vid.play();
+        vid.onended = function (e) {
+            vid.play();
+        };
+
+    }).mouseleave(function () {
+        $(".timeline").css("width", 0);
+        vid.pause();
+        $("i").removeClass("timeline")
+        $("section").removeClass("bg_fadeout")
+        $(".content img").attr("src", "logo.gif");
+    });
+
+}
 
 
 function scaleVideo(){
