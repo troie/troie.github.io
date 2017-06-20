@@ -201,7 +201,7 @@ section a {
 
 .content,
 footer,
-aside {
+.aside {
     position: absolute;
 }
 
@@ -210,7 +210,7 @@ footer {
     left: 8.33333333vw
 }
 
-aside {
+.aside {
     right: 8.33333333vw;
 }
 
@@ -277,7 +277,7 @@ i {
     animation: bgFadeOut 1s ease-in forwards;
 }
 
-aside a {
+.aside a {
     display: block;
     width: 24vh;
     min-width: 17vh;
@@ -288,12 +288,12 @@ aside a {
     color: rgba(255, 255, 255, 1);
 }
 
-aside p {
+.aside p {
     margin-bottom: 1.88888889vh;
     color: rgba(255, 255, 255, 1);
 }
 
-aside,
+.aside,
 footer {
     bottom: 6.66666667vh;
     font-size: 2.22222222vh;
@@ -383,7 +383,7 @@ footer a {
         margin-top: 4vh;
         width: 47vh;
     }
-    aside {
+    .aside {
         bottom: 18vh;
         left: 8.33333333vw
     }
@@ -398,11 +398,11 @@ footer a {
         margin-top: 4vh;
         width: 64vh;
     }
-    aside,
+    .aside,
     footer {
         font-size: 2.7vh;
     }
-    aside a {
+    .aside a {
         line-height: 5vh;
         font-size: 2.8vh;
         width: 29vh;
