@@ -200,13 +200,13 @@ section a {
 }
 
 .content,
-footer,
+.footer,
 .aside {
     position: absolute;
 }
 
 .content,
-footer {
+.footer {
     left: 8.33333333vw
 }
 
@@ -273,7 +273,7 @@ i {
     animation: bgFadeOut 1s ease-in forwards;
 }
 
-.bg_fadeout footer a {
+.bg_fadeout .footer a {
     animation: bgFadeOut 1s ease-in forwards;
 }
 
@@ -292,21 +292,21 @@ i {
 }
 
 .aside p {
-    margin-bottom: 1.88888889vh;
+    margin-bottom: .8em;
     color: rgba(255, 255, 255, 1);
 }
 
 .aside,
-footer {
-    bottom: 6.66666667vh;
-    font-size: 2.22222222vh;
+.footer {
+    bottom: 6.8%;
+    font-size: 1.25em;
 }
 
-footer {
+.footer {
     line-height: 1.5;
 }
 
-footer a {
+.footer a {
     text-decoration: underline
 }
 
@@ -402,7 +402,7 @@ footer a {
         width: 64vh;
     }
     .aside,
-    footer {
+    .footer {
         font-size: 2.7vh;
     }
     .aside a {
