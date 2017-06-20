@@ -17,14 +17,11 @@
     <meta property="twitter:title" content="ArcheX is a Food, Digital and Business Innovation Firm.">
     <meta property="twitter:description" content="ArcheX is an innovation team dedicated to solving problems with passion, creativity and heart in between human and food.">
     <meta property="twitter:image:src" content="AX logo"> 
-    <!--    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">-->
-    <!--    <link href="http://allfont.net/allfont.css?fonts=noto-serif-italic" rel="stylesheet" type="text/css" />-->
     <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css" />
 
 
     <link rel="stylesheet" href="css/main.css">
     <!--        <link rel="stylesheet" href="css/main.min.css">-->
-
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
 </head>
@@ -69,6 +66,7 @@
     <script src="js/prefixfree.min.js"></script>
 
     <script>
+        if (Modernizr.borderradius) {        alert(1)   }   else{alert(0)}
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function() {
