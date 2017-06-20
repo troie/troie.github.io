@@ -377,10 +377,10 @@ i {
 
 @media only screen and (max-width: 25.875em) {
     .content {
-        top: 5vh;
+        top: 2em;
     }
     .content h1 {
-        font-size: 3.2em;
+        font-size: 2em;
     }
     .content h1 img {
         width: 4em;
@@ -388,14 +388,15 @@ i {
     .content p {
         font-size: 1em;
         margin-top: 1em;
-        width: 47vh;
+        line-height: 1.5;
+        width: 17em;
     }
     .aside {
-        bottom: 8em;
+        bottom: 7.55em;
         left: 2em;
         width: 13em;
-        font-size: 1em;
-        line-height: 1.5;
+        font-size: .8em;
+        line-height: .8;
     }
     .footer {
         font-size: 1em;
