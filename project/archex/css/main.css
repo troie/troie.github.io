@@ -235,7 +235,7 @@ section a {
     display: block;
     cursor: pointer;
     position: absolute;
-    text-indent: 100%;
+    text-indent: 150%;
     white-space: nowrap;
     overflow: hidden;
     width: 22.8vw;
