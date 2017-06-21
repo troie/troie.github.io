@@ -1,12 +1,9 @@
-window.onload=scaleVideo;
-window.onresize=scaleVideo;
+window.onload = scaleVideo;
+window.onresize = scaleVideo;
 
 var vid = document.getElementById('video');
-vid.onended = function() {console.log(1)};
-
-if ( $( window ).width() >= 768 ) {
+if ($(window).width() >= 768) {
     $(".content img").mouseenter(function () {
-
         //get video total time
         var vidTime = vid.duration;
         //get video now play time
@@ -21,7 +18,6 @@ if ( $( window ).width() >= 768 ) {
         vid.onended = function (e) {
             vid.play();
         };
-
     }).mouseleave(function () {
         $(".timeline").css("width", 0);
         vid.pause();
@@ -32,36 +28,35 @@ if ( $( window ).width() >= 768 ) {
 }
 
 
-function scaleVideo(){
+function scaleVideo() {
     var video = document.getElementById('video');
     var win = document.getElementById('content');
     //get window size
-    var windowWidth = win.clientWidth;
-    var windowHeight = win.clientHeight;
-    console.log("win source:"+windowWidth +"......"+windowHeight)
-//    var ws = windowWidth / windowHeight
-    
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+    //    console.log("window Width:" + windowWidth + " // window Height:" + windowHeight);
+
     //get movie size
-    var videoWidth = video.offsetWidth;
-    var videoHeight = video.offsetHeight;
-    
+    var videoWidth = video.videoWidth;
+    var videoHeight = video.videoHeight;
+    //    console.log("video Width:" + videoWidth + " // video Height:" + videoHeight);
     //Scale the ratio
     var windowScale = windowWidth / windowHeight;
     var videoScale = videoWidth / videoHeight;
+    //    console.log("window Scale:" + windowScale + " // video Scale:" + videoScale);
     var scaleW = windowWidth / videoWidth;
     var scaleH = windowHeight / videoHeight;
-    
+    //    console.log("scaleW:" + scaleW + " // scaleH:" + scaleH);
     //以影片高度為基準的縮放
-    if( windowScale > videoScale){
+    if (windowScale > videoScale) {
         video.width = windowWidth;
         video.height = scaleW * videoHeight;
-    }else{
+        //        video.width = windowWidth;
+        //        console.log("scale size:" + windowWidth + "......" + scaleW * videoHeight)
+    } else {
         video.width = scaleH * videoWidth;
         video.height = windowHeight;
     }
-
-    video.muted=true;
+    //    console.log("scale size:" + windowWidth + "......" + windowHeight)
+    video.muted = true;
 }
-
-
-
