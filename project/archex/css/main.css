@@ -398,6 +398,13 @@ i {
         font-size: .6em;
         line-height: .4;
     }
+    .aside p {font-size: 1em;}
+    
+    .content,
+.footer,
+    .aside{
+    left: 8.33333333%
+}
     .footer {
         font-size: 1em;
     }
