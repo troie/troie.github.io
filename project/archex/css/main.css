@@ -392,9 +392,9 @@ i {
         width: 17em;
     }
     .aside {
-        top: 33.5em;
+        bottom: 8em;
         left: 2em;
-        width: 13em;
+        width: 14em;
         font-size: .6em;
         line-height: .4;
     }
@@ -409,6 +409,7 @@ i {
     }
     .footer {
         font-size: 1em;
+        bottom: 2em;
     }
 }
 
