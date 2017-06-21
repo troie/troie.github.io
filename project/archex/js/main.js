@@ -29,7 +29,6 @@ if ( $( window ).width() >= 768 ) {
         $("section").removeClass("bg_fadeout")
         $(".content img").attr("src", "logo.gif");
     });
-
 }
 
 
@@ -60,18 +59,7 @@ function scaleVideo(){
         video.width = scaleH * videoWidth;
         video.height = windowHeight;
     }
-//    var scale = widthScale;
-    
-    //取得放大後的寬高
-//    var scarlVideoWidth = videoWidth * scale;
-//    var scarlVideoWidth = videoWidth * widthScale;
-//    var scarlVideoHeight = videoHeight * scale; 
-//    var scarlVideoHeight = videoHeight * heightScale; 
-//    console.log("win target:"+scarlVideoWidth +"......"+scarlVideoHeight)
-//    video.width=scarlVideoWidth;
-//    video.height=scarlVideoHeight;
-    
-//    video.loop=true;
+
     video.muted=true;
 }
 

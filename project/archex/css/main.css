@@ -278,14 +278,10 @@ i {
 
 .aside a {
     display: block;
-    /*    width: 24vh;*/
     width: 100%;
-    /*    min-width: 17vh;*/
-    /*    min-width: 30.222222222%;*/
-    line-height: 2.9375em;
+    line-height: 2.4em;
     text-align: center;
     border: 1px solid #fff;
-    /*    font-size: 2vh;*/
     font-size: 1.125em;
     color: rgba(255, 255, 255, 1);
 }
