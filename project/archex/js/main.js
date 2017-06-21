@@ -4,6 +4,7 @@ window.onresize = scaleVideo;
 var vid = document.getElementById('video');
 if ($(window).width() >= 768) {
     $(".content img").mouseenter(function () {
+        vid.play();
         //get video total time
         var vidTime = vid.duration;
         //get video now play time
@@ -14,7 +15,7 @@ if ($(window).width() >= 768) {
         $(".timeline").css("width", w);
         $("section").addClass("bg_fadeout");
         $(".content img").attr("src", "logo.png");
-        vid.play();
+        
         vid.onended = function (e) {
             vid.play();
         };
