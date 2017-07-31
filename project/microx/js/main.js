@@ -40,38 +40,34 @@ function initTimeLine(){
     $(".timeline").css("width",0);
 }
 
-
-
-
 function scaleVideo(){
     var video = document.getElementById('video');
+    var win = document.getElementById('content');
     //get window size
-    var windowWidth = document.documentElement.clientWidth;
-    var windowHeight = document.documentElement.clientHeight;
-//    console.log(windowWidth +"......"+windowHeight)
+    var windowWidth = win.clientWidth;
+    var windowHeight = win.clientHeight;
+    console.log("win source:"+windowWidth +"......"+windowHeight)
+//    var ws = windowWidth / windowHeight
+    
     //get movie size
     var videoWidth = video.offsetWidth;
     var videoHeight = video.offsetHeight;
     
     //Scale the ratio
-    var widthScale = windowWidth / videoWidth;
-    var heightScale = windowHeight / videoHeight;
+    var windowScale = windowWidth / windowHeight;
+    var videoScale = videoWidth / videoHeight;
+    var scaleW = windowWidth / videoWidth;
+    var scaleH = windowHeight / videoHeight;
     
-    //以影片高度為基準的縮放比
-    if( widthScale > heightScale){
-        var scale = widthScale;
+    //以影片高度為基準的縮放
+    if( windowScale > videoScale){
+        video.width = windowWidth;
+        video.height = scaleW * videoHeight;
     }else{
-        var scale = heightScale;
+        video.width = scaleH * videoWidth;
+        video.height = windowHeight;
     }
-    
-    //取得放大後的寬高
-    var scarlVideoWidth = videoWidth * scale;
-    var scarlVideoHeight = videoHeight * scale; 
-    
-    video.width=scarlVideoWidth;
-    video.height=scarlVideoHeight;
-    
-//    video.loop=true;
+
     video.muted=true;
 }
 
