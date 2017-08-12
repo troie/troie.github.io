@@ -29,7 +29,8 @@ jQuery(document).ready(function ($) {
     function addBackground(data) {
         var imageUrl = "";
         $.each(data, function (key, val) {
-            imageUrl = "../img/" + data[key].image;
+//            imageUrl = "../img/" + data[key].image;
+            imageUrl = "/img/" + data[key].image;
             $(".card_" + key).css('background-image', 'url(' + imageUrl + ')');
         });
     }
