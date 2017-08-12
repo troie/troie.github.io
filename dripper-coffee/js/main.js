@@ -30,7 +30,7 @@ jQuery(document).ready(function ($) {
         var imageUrl = "";
         $.each(data, function (key, val) {
             //            imageUrl = "../img/" + data[key].image;
-            imageUrl = "dripper-coffee/img/" + data[key].image;
+            imageUrl = "/dripper-coffee/img/" + data[key].image;
             $(".card_" + key).css('background-image', 'url(' + imageUrl + ')');
         });
     }
