@@ -193,15 +193,15 @@ body {
 }
 
 .header {
-    background: #99ffee;
     background: #222;
     color: #99ffee;
 }
 
 .title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    letter-spacing: .1em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    word-spacing: -.2em;
 }
 
 .card-square h2 {
@@ -229,9 +229,6 @@ body {
     background: url('../img/yirgacheffe.jpg') bottom right 15% no-repeat #46B6AC;
 }
 */
-
-
-/*.mdl-button--fab.mdl-button--colored {}*/
 
 .mdl-card--border strong {
     font-family: 'Roboto', sans-serif;
