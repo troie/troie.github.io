@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
     function getData() {
         //        localStorage.removeItem('pageId');
         //        localStorage.removeItem('title');
-        var url = "http://troie.github.io/project/dripper-coffee/js/bean.json";
+        var url = "/js/bean.json";
 
         $.getJSON(url, function (data) {
             var bean_data = [];
