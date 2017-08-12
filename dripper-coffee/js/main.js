@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
                     "</div>" +
                     "</div>";
             });
-//            console.log(page)
+            //            console.log(page)
             $(page).appendTo(".page-content");
             addBackground(data);
         });
@@ -29,8 +29,8 @@ jQuery(document).ready(function ($) {
     function addBackground(data) {
         var imageUrl = "";
         $.each(data, function (key, val) {
-//            imageUrl = "../img/" + data[key].image;
-            imageUrl = "/img/" + data[key].image;
+            //            imageUrl = "../img/" + data[key].image;
+            imageUrl = "dripper-coffee/img/" + data[key].image;
             $(".card_" + key).css('background-image', 'url(' + imageUrl + ')');
         });
     }
