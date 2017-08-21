@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-body{font-family: 'Shadows Into Light', cursive;}
+body{font-family: 'Montserrat', sans-serif;}
 html {
     color: #222;
     font-size: 1em;
@@ -24,8 +24,8 @@ svg,
 video {
     vertical-align: middle;
 }
-section{border:1px solid red;height: 300px;}
-section li{float: left;width: 10em;}
+/*section{border:1px solid red;height: 300px;}*/
+/*section li{float: left;width: 10em;}*/
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -37,8 +37,11 @@ section li{float: left;width: 10em;}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+section{width: 960px;margin: 0 auto;}
+section h1{color: #222;font-size: 2em;font-weight: 900;}
+section a{text-decoration: none;color: #999;}
+section a:hover{text-decoration: underline;color: #666;}
 
-.sidebar a{font-size: 2em;}
 
 
 
