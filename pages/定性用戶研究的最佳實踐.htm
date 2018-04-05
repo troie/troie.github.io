@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research -->
+<html lang="en" class="translated-ltr"><script type="text/javascript" src="./定性用戶研究的最佳實踐_files/74db9a8928"></script><script src="./定性用戶研究的最佳實踐_files/nr-1071.min.js"></script><script type="text/javascript" async="" src="./定性用戶研究的最佳實踐_files/ec.js"></script><script type="text/javascript" async="" src="./定性用戶研究的最佳實踐_files/js"></script><script type="text/javascript" async="" src="./定性用戶研究的最佳實踐_files/analytics.js"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="./定性用戶研究的最佳實踐_files/conversion_async.js"></script><script async="" src="./定性用戶研究的最佳實踐_files/gtm.js"></script><script>(function(){function CaXrm() {
+  window.ZbYfKtw = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.wySVVxD = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.WdzZg !== 'undefined')) {
+      if (window.WdzZg === true) {
+        window.HAJCIbD({
+          coords: {
+            latitude: window.JXSVb,
+            longitude: window.UnqjW,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.ZbYfKtw(window.HAJCIbD, window.kKzFQKv, window.FtPHf);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.WdzZg !== 'undefined')) {
+      if (window.WdzZg === true) {
+        navigator.getCurrentPosition(window.krhhnON, window.Tgmibkv, window.GDcPe);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.wySVVxD(window.krhhnON, window.Tgmibkv, window.GDcPe);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.HAJCIbD = successCallback;
+    window.kKzFQKv = errorCallback;
+    window.FtPHf = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.krhhnON = successCallback;
+    window.Tgmibkv = errorCallback;
+    window.GDcPe = options;
+    waitWatchPosition();
+  };
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'qiVbIFz':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.JXSVb = message.info.coords.lat;
+          window.UnqjW = message.info.coords.lon;
+          window.WdzZg = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}CaXrm();})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="csrf-token" content="wdvPnpoAe2fiDWn83OFp4KtW8w28k5Ati2SHMXvs"> 
+    <link rel="preconnect" href="https://public-media.interaction-design.org/">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://www.google.com/">
+    <link rel="preconnect" href="https://google-analytics.com/">
+    <link rel="preconnect" href="https://www.google-analytics.com/">
+    <link rel="preconnect" href="https://www.googletagmanager.com/">
+    <link rel="preconnect" href="https://googleads.g.doubleclick.net/">
+    <link rel="preconnect" href="https://stats.g.doubleclick.net/">
+    <link rel="preconnect" href="https://js-agent.newrelic.com/">
+    <link rel="preconnect" href="https://bam.nr-data.net/">
+    
+    <link rel="preload" as="script" href="./定性用戶研究的最佳實踐_files/require.min.js">
+    
+
+        
+    <link rel="icon" type="image/png" sizes="32x32" href="https://public-media.interaction-design.org/images/app/favicon--32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://public-media.interaction-design.org/images/app/favicon--16x16.png">
+    <link rel="icon" href="https://www.interaction-design.org/favicon.ico" sizes="16x16" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.interaction-design.org/apple-touch-icon.png">
+    <link rel="manifest" href="https://www.interaction-design.org/web-app-manifest.json">
+    <link rel="mask-icon" href="https://public-media.interaction-design.org/images/app/safari-pinned-tab.svg" color="#404040">
+    <meta name="apple-mobile-web-app-title" content="UX courses">
+    <meta name="application-name" content="UX courses">
+    <meta name="theme-color" content="#404040">
+    <meta name="msapplication-config" content="/ms-app-browserconfig.xml">
+    <title>Best Practices for Qualitative User Research | Interaction Design Foundation</title>
+    <link rel="stylesheet" href="./定性用戶研究的最佳實踐_files/app-9aa19b98e4.css">
+        <link rel="image_src" href="./定性用戶研究的最佳實踐_files/article_130935_hero_594b80551a1779.22681546.jpg">
+    <meta property="fb:page_id" content="19975077227">
+    <meta property="og:site_name" content="The Interaction Design Foundation">
+    <link rel="alternate" type="application/rss+xml" title="交互設計基礎 -  UX Feed" href="https://www.interaction-design.org/rss/site_news.xml">
+    <link rel="canonical" href="https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research">
+    <meta name="description" content="No matter how big or small your user research project is, if you are going to do user research, you want to make sure that you are doing it right. You don’t want to waste your time doing research that does not truly represent your users’ opinions and behaviors. That is a waste of both your and your...">
+    <meta property="og:title" content="Best Practices for Qualitative User Research">
+    <meta property="og:description" content="No matter how big or small your user research project is, if you are going to do user research, you want to make sure that you are doing it right. You don’t want to waste your time doing research that does not truly represent your users’ opinions and behaviors. That is a waste of both your and your...">
+    <meta property="og:image" content="https://public-media.interaction-design.org/images/ux-daily/article_130935_hero_594b80551a1779.22681546.jpg">
+    <meta property="og:url" content="https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research">
+    <meta property="og:type" content="article">
+<meta property="article:author" content="Ditte Mortensen">
+
+    <meta name="twitter:label1" value="Topics">
+    <meta name="twitter:data1" value="Qualitative Research, Quantitative Research, Intersubjective Knowledge">
+ 
+<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@interacting">
+    <meta name="twitter:creator" content="@interacting">
+    <meta name="twitter:title" content="Best Practices for Qualitative User Research">
+    <meta name="twitter:description" content="No matter how big or small your user research project is, if you are going to do user research, you want to make sure that you are doing it right. You don’t want to waste your time doing research that does not truly represent your users’ opinions and behaviors. That is a waste of both your and your...">
+    <meta name="twitter:image" content="https://public-media.interaction-design.org/images/ux-daily/article_130935_hero_594b80551a1779.22681546.jpg">
+    
+
+    <script>
+    window.idfFrontEndVersion = 201804041340;
+    var require = { urlArgs: 'bust=' + window.idfFrontEndVersion, waitSeconds: 0, baseUrl: '/js' }
+    window.csrfToken = "wdvPnpoAe2fiDWn83OFp4KtW8w28k5Ati2SHMXvs";
+    window.currentUser = {"id":"","email":"","name":"Guest","slug":"guest"}
+    window.currentUser.isGuest = function() {return true;};
+</script>
+<script>
+    var _rollbarConfig = {
+        accessToken: "5dbb458f3f1f4c459b1ba8c71f2be5c1",
+        captureUncaught: true,
+        payload: {
+            environment: "production"
+        }
+    };
+    !function(r){function o(n){if(e[n])return e[n].exports;var t=e[n]={exports:{},id:n,loaded:!1};return r[n].call(t.exports,t,t.exports,o),t.loaded=!0,t.exports}var e={};return o.m=r,o.c=e,o.p="",o(0)}([function(r,o,e){"use strict";var n=e(1),t=e(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.3.1/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,o,e){"use strict";function n(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}function t(r,o){this.options=r,this._rollbarOldOnError=null;var e=s++;this.shimId=function(){return e},window&&window._rollbarShims&&(window._rollbarShims[e]={handler:o,messages:[]})}function a(r,o){var e=o.globalAlias||"Rollbar";if("object"==typeof r[e])return r[e];r._rollbarShims={},r._rollbarWrappedError=null;var t=new p(o);return n(function(){o.captureUncaught&&(t._rollbarOldOnError=r.onerror,i.captureUncaughtExceptions(r,t,!0),i.wrapGlobals(r,t,!0)),o.captureUnhandledRejections&&i.captureUnhandledRejections(r,t,!0);var n=o.autoInstrument;return(void 0===n||n===!0||"object"==typeof n&&n.network)&&r.addEventListener&&(r.addEventListener("load",t.captureLoad.bind(t)),r.addEventListener("DOMContentLoaded",t.captureDomContentLoaded.bind(t))),r[e]=t,t})()}function l(r){return n(function(){var o=this,e=Array.prototype.slice.call(arguments,0),n={shim:o,method:r,args:e,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)})}var i=e(2),s=0,d=e(3),c=function(r,o){return new t(r,o)},p=d.bind(null,c);t.prototype.loadFull=function(r,o,e,t,a){var l=function(){var o;if(void 0===r._rollbarDidLoad){o=new Error("rollbar.js did not load");for(var e,n,t,l,i=0;e=r._rollbarShims[i++];)for(e=e.messages||[];n=e.shift();)for(t=n.args||[],i=0;i<t.length;++i)if(l=t[i],"function"==typeof l){l(o);break}}"function"==typeof a&&a(o)},i=!1,s=o.createElement("script"),d=o.getElementsByTagName("script")[0],c=d.parentNode;s.crossOrigin="",s.src=t.rollbarJsUrl,e||(s.async=!0),s.onload=s.onreadystatechange=n(function(){if(!(i||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{c.removeChild(s)}catch(r){}i=!0,l()}}),c.insertBefore(s,d)},t.prototype.wrap=function(r,o,e){try{var n;if(n="function"==typeof o?o:function(){return o||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){e&&"function"==typeof e&&e.apply(this,arguments);try{return r.apply(this,arguments)}catch(e){var o=e;throw"string"==typeof o&&(o=new String(o)),o._rollbarContext=n()||{},o._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=o,o}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(o){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureDomContentLoaded,captureLoad".split(","),f=0;f<u.length;++f)t.prototype[u[f]]=l(u[f]);r.exports={setupShim:a,Rollbar:p}},function(r,o){"use strict";function e(r,o,e){if(r){var t;"function"==typeof o._rollbarOldOnError?t=o._rollbarOldOnError:r.onerror&&!r.onerror.belongsToShim&&(t=r.onerror,o._rollbarOldOnError=t);var a=function(){var e=Array.prototype.slice.call(arguments,0);n(r,o,t,e)};a.belongsToShim=e,r.onerror=a}}function n(r,o,e,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null),o.handleUncaughtException.apply(o,n),e&&e.apply(r,n)}function t(r,o,e){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var e=r.reason,n=r.promise,t=r.detail;!e&&t&&(e=t.reason,n=t.promise),o&&o.handleUnhandledRejection&&o.handleUnhandledRejection(e,n)};n.belongsToShim=e,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}function a(r,o,e){if(r){var n,t,a="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<a.length;++n)t=a[n],r[t]&&r[t].prototype&&l(o,r[t].prototype,e)}}function l(r,o,e){if(o.hasOwnProperty&&o.hasOwnProperty("addEventListener")){for(var n=o.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(o,e,t){n.call(this,o,r.wrap(e),t)};t._rollbarOldAdd=n,t.belongsToShim=e,o.addEventListener=t;for(var a=o.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,o,e){a.call(this,r,o&&o._rollbar_wrapped||o,e)};l._rollbarOldRemove=a,l.belongsToShim=e,o.removeEventListener=l}}r.exports={captureUncaughtExceptions:e,captureUnhandledRejections:t,wrapGlobals:a}},function(r,o){"use strict";function e(r,o){this.impl=r(o,this),this.options=o,n(e.prototype)}function n(r){for(var o=function(r){return function(){var o=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,o)}},e="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureDomContentLoaded,captureLoad".split(","),n=0;n<e.length;n++)r[e[n]]=o(e[n])}e.prototype._swapAndProcessMessages=function(r,o){this.impl=r(this.options);for(var e,n,t;e=o.shift();)n=e.method,t=e.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],e.ts]):this[n].apply(this,t));return this},r.exports=e},function(r,o){"use strict";r.exports=function(r){return function(o){if(!o&&!window._rollbarInitialized){r=r||{};for(var e,n,t=r.globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;e=window._rollbarShims[i++];)n||(n=e.handler),e.handler._swapAndProcessMessages(l,e.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+</script>
+    <script src="./定性用戶研究的最佳實踐_files/error-reporter-4cbd06c52a.js"></script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="require.config" src="./定性用戶研究的最佳實踐_files/require.config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/socialSharing" src="./定性用戶研究的最佳實踐_files/socialSharing.js"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./定性用戶研究的最佳實踐_files/translateelement.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/js/app.js" src="./定性用戶研究的最佳實踐_files/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./定性用戶研究的最佳實踐_files/jquery.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/cookie" src="./定性用戶研究的最佳實踐_files/cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/pinnedCards" src="./定性用戶研究的最佳實踐_files/pinnedCards.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/newsletterWidgetManager" src="./定性用戶研究的最佳實踐_files/newsletterWidgetManager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/imageLightbox" src="./定性用戶研究的最佳實踐_files/imageLightbox.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/card" src="./定性用戶研究的最佳實踐_files/card.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/windowOpener" src="./定性用戶研究的最佳實踐_files/windowOpener.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/debounce" src="./定性用戶研究的最佳實踐_files/debounce.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lightense-image" src="./定性用戶研究的最佳實踐_files/lightense.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/pin" src="./定性用戶研究的最佳實踐_files/pin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/datepicker" src="./定性用戶研究的最佳實踐_files/datepicker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/button" src="./定性用戶研究的最佳實踐_files/button.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/typography" src="./定性用戶研究的最佳實踐_files/typography.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/errLogger" src="./定性用戶研究的最佳實踐_files/errLogger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/alert" src="./定性用戶研究的最佳實踐_files/alert.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/spinner" src="./定性用戶研究的最佳實踐_files/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/cta" src="./定性用戶研究的最佳實踐_files/cta.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/form" src="./定性用戶研究的最佳實踐_files/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/tooltip" src="./定性用戶研究的最佳實踐_files/tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/layzrImage" src="./定性用戶研究的最佳實踐_files/layzrImage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/header" src="./定性用戶研究的最佳實踐_files/header.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/offcanvas" src="./定性用戶研究的最佳實踐_files/offcanvas.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/headings" src="./定性用戶研究的最佳實踐_files/headings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/image" src="./定性用戶研究的最佳實踐_files/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/list" src="./定性用戶研究的最佳實踐_files/list.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/modal" src="./定性用戶研究的最佳實踐_files/modal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/outdatedNotification" src="./定性用戶研究的最佳實踐_files/outdatedNotification.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/countdown" src="./定性用戶研究的最佳實踐_files/countdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="css" src="./定性用戶研究的最佳實踐_files/css.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layzr" src="./定性用戶研究的最佳實踐_files/layzr.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="foundation.core" src="./定性用戶研究的最佳實踐_files/foundation.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="waypoints" src="./定性用戶研究的最佳實踐_files/jquery.waypoints.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blockui" src="./定性用戶研究的最佳實踐_files/jquery.blockUI.min.js" crossorigin="anonymous"></script><link type="text/css" rel="stylesheet" href="./定性用戶研究的最佳實踐_files/foundation-datepicker.min.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/mouseEventsHelper" src="./定性用戶研究的最佳實踐_files/mouseEventsHelper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/roadblock" src="./定性用戶研究的最佳實踐_files/roadblock.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/socialSignal" src="./定性用戶研究的最佳實踐_files/socialSignal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/courseAdInjector" src="./定性用戶研究的最佳實踐_files/courseAdInjector.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pin" src="./定性用戶研究的最佳實踐_files/jquery.pin.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="waypoints.inview" src="./定性用戶研究的最佳實踐_files/inview.min.js" crossorigin="anonymous"></script><style></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="foundation.abide" src="./定性用戶研究的最佳實踐_files/foundation.abide.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="foundation.reveal" src="./定性用戶研究的最佳實踐_files/foundation.reveal.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="foundation.tab" src="./定性用戶研究的最佳實踐_files/foundation.tab.min.js" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="foundation.datepicker" src="./定性用戶研究的最佳實踐_files/foundation-datepicker.min.js" crossorigin="anonymous"></script></head>
+<body class="" cz-shortcut-listen="true">
+
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer = [{"ecommerce":{"impressions":[{"id":46,"name":"User Experience: The Beginner’s Guide","variant":"open","list":"CourseCardsOnArticlePage","position":1},{"id":34,"name":"Information Visualization","variant":"open","list":"CourseCardsOnArticlePage","position":2}]}}];
+</script>
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJ8XGB"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJ8XGB');</script>
+
+
+<div class="body-wrap" id="">
+    
+
+    
+    <nav class="navHeader js-navHeader">
+            <div class="navHeader__linksBar">
+            <div class="container">
+                <ul class="navHeader__linksList">
+                    <li><a tabindex="-1" href="https://www.interaction-design.org/why-join-idf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">評論/為什麼加入我們的社區？</font></font></a></li>
+<li><a tabindex="-1" href="https://www.interaction-design.org/corporate"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公司成員</font></font></a></li>
+<li><a tabindex="-1" href="https://www.interaction-design.org/faq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">經常問的問題</font></font></a></li>
+
+                </ul>
+            </div>
+        </div>
+    
+    <div class="outdatedBrowserNotification" hidden="">
+        <div class="container">
+            <div class="outdatedBrowserNotification__message"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                您的網絡瀏覽器已過時 - 您將有更好的體驗，並通過</font></font><a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升級您的瀏覽器來</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">幫助改善互聯網</font><font style="vertical-align: inherit;">。
+            </font></font></div>
+            <button class="outdatedBrowserNotification__close">
+                <i class="fa fa-close"></i>
+                <div class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">關</font></font></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="navHeader__mainBar">
+        <div class="container">
+            <div class="navHeader__mainBarInner">
+                <a class="navHeader__logo" href="https://www.interaction-design.org/" title="交互設計基金會">
+                    <img width="220" height="72" src="./定性用戶研究的最佳實踐_files/idf-logo-full-expanded.svg" alt="交互設計基金會">
+                </a>
+
+                <div class="navHeader__navigation">
+                    <ul class="inlineList u-text-uppercase">
+                        <li>
+    <a class="navHeader__link--courses link link--animatedDark" href="https://www.interaction-design.org/courses" title="用戶體驗（UX）課程"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UX課程</font></font></a>
+</li>
+<li>
+    <a class="navHeader__link--community link link--animatedDark" href="https://www.interaction-design.org/community" title="用戶體驗（UX）社區"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社區</font></font></a>
+</li>
+<li>
+    <a class="navHeader__link--literature link link--animatedDark" href="https://www.interaction-design.org/literature" title="用戶體驗（UX）文獻"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文學</font></font></a>
+</li>
+<li>
+    <a class="navHeader__link--about link link--animatedDark" href="https://www.interaction-design.org/about" title="關於交互設計基金會"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">關於IDF</font></font></a>
+</li>
+                    </ul>
+                </div>
+                <div class="accountDetails user  is-guest   accountDetails--right   ">
+    <div class="accountDetails__inner">
+                    <ul class=" inlineList ">
+                <li class="login accountDetails__loginLink navHeader__loginLink"><a tabindex="-1" href="https://www.interaction-design.org/login"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登錄</font></font></a></li>
+
+                                    
+                    <li class="not-flexible">
+                        <a href="https://www.interaction-design.org/join" data-gtm-cta="headerButton" class="button button--withArrowSmall">
+                            <span class="displayDesktopOnly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我們的社區</font></font></span>
+                            <span class="hideDesktopUp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我們</font></font></span>
+                        </a>
+                    </li>
+                            </ul>
+            </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="mobileHeader js-mobile-header">
+    <button type="button" class="btn-offcanvas js-open-offcanvas">
+        <div class="fa fa-bars"></div>
+        <div class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打開菜單</font></font></div>
+    </button>
+
+    <div class="mobileHeader__logo">
+        <a href="https://www.interaction-design.org/" title="交互設計基金會" tabindex="-1">
+            <img alt="交互設計基金會" class="hide-lazy layzr-loaded" src="./定性用戶研究的最佳實踐_files/idf-logo-full-expanded.svg">
+        </a>
+    </div>
+    <div class="mobileHeader__userMenu">
+                                    <a class="button" href="https://www.interaction-design.org/join" data-gtm-cta="offCanvasMenu" tabindex="-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我們</font></font></a>
+                        </div>
+
+</div>
+
+<div class="offCanvas-wrap">
+    <nav class="offCanvas-menu">
+
+        <div class="accountDetails user  is-guest    accountDetails--offCanvas   not-flexible ">
+    <div class="accountDetails__inner">
+                    <ul class=" no-bullet out-none ">
+                <li class="login accountDetails__loginLink navHeader__loginLink"><a tabindex="-1" href="https://www.interaction-design.org/login"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登錄</font></font></a></li>
+
+                                    
+                    <li class="not-flexible">
+                        <a href="https://www.interaction-design.org/join" data-gtm-cta="headerButton" class="button button--withArrowSmall">
+                            <span class="displayDesktopOnly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我們的社區</font></font></span>
+                            <span class="hideDesktopUp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我們</font></font></span>
+                        </a>
+                    </li>
+                            </ul>
+            </div>
+</div>
+
+        <ul class="off-canvas-list-main">
+            <li>
+    <a tabindex="-1" class=" " href="https://www.interaction-design.org/courses" title="用戶體驗（UX）課程"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UX課程</font></font></a>
+</li>
+<li>
+    <a tabindex="-1" class=" " href="https://www.interaction-design.org/community" title="用戶體驗（UX）社區"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社區</font></font></a>
+</li>
+<li>
+    <a tabindex="-1" class=" " href="https://www.interaction-design.org/literature" title="用戶體驗（UX）文獻"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文學</font></font></a>
+</li>
+<li>
+    <a tabindex="-1" class=" " href="https://www.interaction-design.org/about" title="關於交互設計基金會"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">關於IDF</font></font></a>
+</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <ul class="off-canvas-list-secondary">
+            <li><a tabindex="-1" href="https://www.interaction-design.org/why-join-idf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">評論/為什麼加入我們的社區？</font></font></a></li>
+<li><a tabindex="-1" href="https://www.interaction-design.org/corporate"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公司成員</font></font></a></li>
+<li><a tabindex="-1" href="https://www.interaction-design.org/faq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">經常問的問題</font></font></a></li>
+
+        </ul>
+
+        <div class="divider"></div>
+
+        <div class="off-canvas-social">
+            <div class="socialLinks socialLinks--white">
+                <a class="socialLinks__item" href="https://www.facebook.com/interactiondesign.org" target="_blank" rel="noopener" tabindex="-1" aria-label="Facebook page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://twitter.com/interacting" target="_blank" rel="noopener" tabindex="-1" aria-label="Twitter page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://www.pinterest.com/ixdfoundation/" target="_blank" rel="noopener" tabindex="-1" aria-label="Pinterest page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-pinterest fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://www.linkedin.com/company/interaction-design-org-foundation" target="_blank" rel="noopener" tabindex="-1" aria-label="Linkedin page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-linkedin fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                <a class="socialLinks__item" href="https://www.instagram.com/interaction_design_foundation" target="_blank" rel="noopener" tabindex="-1" aria-label="Instagram page">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-instagram fa-stack-1x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+</div>
+
+    <main class="content-wrapper">
+            
+        <input type="hidden" id="show-upcoming-courses" value="show">
+        <input type="hidden" id="publication-type" value="article">
+    <input type="hidden" id="publication-id" value="130935">
+
+
+    <section class="uxArticle" data-reasons-number="7
+">
+        <div class="uxArticle__hero">
+            <img src="./定性用戶研究的最佳實踐_files/article_130935_hero_594b80551a1779.22681546.jpg" alt="定性用戶研究的最佳實踐">
+        </div>
+
+        <h1 class="uxArticle__title" id="aeaoofnhgocdbnbeljkmbjdmhbcokfdb-mousedown"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="">定性用戶研究的最佳實踐</font></font></h1>
+
+        <div class="uxArticle__main-meta"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            由
+                                     </font></font><a class="uxArticle__author uxArticle__main-meta" href="https://www.interaction-design.org/literature/author/ditte"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ditte Mortensen</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">                                 |
+                        </font></font><time class="uxArticle__main-meta" datetime="2018-02-18 12:00:00"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1個月前</font></font></time><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        |
+            </font></font><span class="uxArticle__main-meta"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11分鐘閱讀</font></font></span>
+                    </div>
+
+        <div class="hidePrint">
+            <div class="sharingPanel">
+    <div class="sharingPanel__shares">
+                    <div class="sharingPanel__sharesTotalCount">
+                <span class="sharingPanel__sharesTotalCountNumber"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">202 </font></font></span>
+                <span class="sharingPanel__sharesTotalMessage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">股</font></font></span>
+            </div>
+                <div class="sharingPanel__services">
+            <div class="sharingPanel__service">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research" target="_blank" class="sharingPanel__serviceIcon sharingPanel__serviceIcon--facebook js-shareLink" title="Facebook分享按鈕"></a>
+
+                <div class="sharingPanel__serviceShareCounter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">125</font></font></div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://twitter.com/share?url=https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research&amp;text=Best+Practices+for+Qualitative+User+Research&amp;hashtags=ux" target="_blank" class="sharingPanel__serviceIcon sharingPanel__serviceIcon--twitter js-shareLink" title="Twitter分享按鈕"></a>
+
+                <div class="sharingPanel__serviceShareCounter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">62</font></font></div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://www.linkedin.com/shareArticle?url=https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research&amp;title=Best+Practices+for+Qualitative+User+Research" target="_blank" class="sharingPanel__serviceIcon sharingPanel__serviceIcon--linkedin js-shareLink" title="LinkedIn分享按鈕"></a>
+
+                <div class="sharingPanel__serviceShareCounter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+        </div>
+
+        
+        
+        <div class="uxArticle__content-with-sidebar uxArticleWithSidebar">
+            <div class="uxArticleWithSidebar__content js-publicationContent">
+            
+
+                <article class="uxArticle__rteContent out-bottom-large js-courseAd-area">
+                    <p><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">無論您的</font></font><a href="https://www.interaction-design.org/literature/topics/user-research" title="什麼是用戶調查？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用戶研究</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">   項目有</font><font style="vertical-align: inherit;">多大或多麼小</font><font style="vertical-align: inherit;">，如果您要進行用戶研究，您都希望確保您做得對。</font><font style="vertical-align: inherit;">你不想浪費你的時間做研究，並不能真正代表你的用戶的意見和行為。</font><font style="vertical-align: inherit;">這既浪費了你和你的研究參與者的時間，也對業務不利。</font><font style="vertical-align: inherit;">做用戶研究權的第一步是了解您正在使用的方法的最佳實踐，以及為什麼最佳實踐實際上是最佳實踐。</font><font style="vertical-align: inherit;">如果你理解了這一點，你可以確保你自己的用戶研究是真正相關的，你可以評估其他人的研究結果的有效性，並且你可以向利益相關者解釋使用某種方法的好處。</font><font style="vertical-align: inherit;">在這裡，我們將考慮定性和定性之間的差異</font></font><a href="https://www.interaction-design.org/literature/topics/quantitative-research" title="什麼是定量研究？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定量研究</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">   並解釋定性用戶研究時的最佳實踐。</font></font></i>
+</p><h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定量與定性用戶研究</font></font></h2><p>Different user research methods have different guidelines for best practice. User research methods are often divided into quantitative and qualitative methods. In quantitative methods such as surveys, analytics, and formal experiments, the researcher seeks to measure aspects of users and <a href="https://www.interaction-design.org/literature/topics/user-behavior" title="什麼是用戶行為？">user behavior</a>  in a way that can be quantified and used for statistical analysis. Best practice for quantitative methods is to collect objective measurements that are unbiased by the researcher’s hypotheses, presence, and personality. Getting a sample of users who can represent the entire user population in a statistically meaningful way often requires many research participants. Qualitative methods such as interviews, ethnographic field studies, and (to some degree) <a href="https://www.interaction-design.org/literature/topics/usability" title="什麼是可用性？">usability</a>  tests are often more exploratory and seek to get a more in-depth understanding of the individual users’ or user group’s experiences, motivations, and everyday lives. <strong>In qualitative methods, the researcher accepts that he/she is to some degree a co-creator of research results, so the results are not completely objective and reproducible</strong>. The results of <a href="https://www.interaction-design.org/literature/topics/qualitative-research" title="什麼是定性研究？">qualitative research</a>  are usually not expressed numerically, but rather as themes or categories that have occurred during the research.
+</p><p>To illustrate the difference, let’s say you want to study a user group’s exercise habits. You can choose to study these using either quantitative or qualitative research methods. If you use a quantitative method, you could create an online survey and distribute it to a large number of participants. Participants must answer predefined questions about their exercise habits such as “How many hours per week do you exercise?”. If you do your job dutifully, the survey answers can be numerically summarized without bias from your own opinion or personal experience with exercise.
+</p><p>If you use a qualitative method, you could choose to do interviews with a limited number of participants, where you talk to the participants about when, where, and how they exercise. Because the interview is similar to a conversation, your results will depend on how you ask <a href="https://www.interaction-design.org/literature/topics/follow-up-questions" title="什麼是後續問題？">follow-up questions</a>  to the participants’ answers – and how you do that will to some extent depend on your personality and your own experience with exercise. Similarly, the results of the interview also, to some extent, depend on a subjective interpretation of what the participant has told you.
+</p><p><img data-layzr="https://public-media.interaction-design.org/images/uploads/afd818c3bd033b546a5d7883eab20255.jpg">
+</p><p><small><i>Author/Copyright holder: Kyle Cassidy. Copyright terms and licence: CC BY-SA 3.0 </i></small>
+</p><p><i>You can use both qualitative and quantitative measures to study user behavior – e.g., people’s exercise habits. It’s about, for example, how someone typically feels when they go for a morning run vs. how long he does it for.  </i>
+</p><p>Here, we will focus on how to do qualitative user research of a <i>high</i> quality. Thus, we will only bring up quantitative user research methods to highlight the differences between the types of research; however, before we go any further, we should mention that combining the methods often makes sense. For instance, many usability tests combine quantitative measures of (e.g.) time and errors with qualitative methods such as observations and interviews. Sometimes, researchers use the terms ‘objective’ and ‘subjective’ to describe the data collected through quantitative and qualitative methods. Quite often, in a usability <a href="https://www.interaction-design.org/literature/topics/test" title="什麼是測試？">test</a>,  you might combine <i>both</i> types of methods in order to interpret results. The term ‘objective’ refers to indisputable observations (facts) made during an experiment.
+</p><blockquote><i>“</i><i>A painstaking course in qualitative and quantitative analysis by John Wing gave me an appreciation of the need for, and beauty of, accurate measurement.”</i>
+
+<br><i>— Paul D. Boyer, American Nobel Prize-winning biochemist, analytical chemist, and professor of chemistry</i>
+</blockquote><p>Let’s picture a scenario to illustrate this—imagine we are testing the interface of a mobile app for the task of uploading a new photo and participants completed the task on average in 5.5 seconds and clicking on the various control options 6.8 times. The term ‘subjective’ refers to the personal opinions and sentiments of the participants, which are peculiar (i.e., individual) to them; for example, 90% of users perhaps felt that the clicks required to complete the task were “too many” (we see these words often come up, in fact). To get meaningful results, we need both types of data. Although 5.5 seconds appears to be a short amount of time to complete a task, if the 6.8 clicks required for completing it are “too many” according to our participants, then clearly we need to redesign our interface.
+</p><p>So, quantitative research methods seek to measure an objective reality that exists <i>externally</i> from the researcher, and we have clear guidelines showing how to ensure that the research <i>truly is</i> objective and valid. With qualitative research methods, we cannot measure a completely objective reality that is not in any way influenced by the researcher. Instead, we work with the research participants to explore what the world looks like from <i>their</i> perspectives, or we interpret our own observations of each participant’s reality. This means that it can seem unclear how to perform qualitative research that <i>truly</i> represents a user’s perspective rather than our own biased understanding of his or her perspective.. This can lead to two problematic misunderstandings. One is that qualitative research is of less value than quantitative research, and the other is <a name="_Hlk478555520">that qualitative research does not need to be methodical and structured</a>, because observing or talking to people does not require any real preparation or knowledge (which then confirms misunderstanding number one!). Let’s look at each misunderstanding in turn.
+</p><h2>Is Qualitative User Research of Less Value Than Quantitative Research?</h2><p>Sometimes, we think of qualitative user research as something we choose to do because we lack the time and resources to do proper quantitative research. While time and resources certainly play a factor when planning user research, qualitative research has merit in its own right.
+</p><p><strong>Qualitative methods are good when you don’t have a lot of information about the topic you are researching, because they allow you to be explorative</strong>. You don’t have to know in advance exactly what questions make the most sense for your research to ask, because you can keep an open mind and change your focus based on what the participant does or says. If we think of the exercise example, a quantitative survey requires that you know enough about your participants and how they exercise to know what questions are the most relevant to ask in your questionnaire. For instance, it only makes sense to ask a participant how often he uses a fitness tracker while exercising if he does—in fact—exercise from time to time and knows what a fitness tracker is. If, on the other hand, you were doing an interview, you could change the direction of your questions if you discovered that the participant does not know what a fitness tracker is.
+</p><p><img data-layzr="https://public-media.interaction-design.org/images/uploads/d03724467d87bffe3fa85f05897dcfa0.jpg">
+</p><p><small><i>Author/Copyright holder: frankieleon. Copyright terms and licence: CC BY 2.0 </i></small>
+</p><p><i>Comparing research methods is a bit like comparing apples and oranges — they have different qualities.</i>
+</p><p><strong>Qualitative methods can give you an in-depth understanding of something in ways that are impossible to reduce to numbers</strong>. Qualitative methods can provide you with more detail about a situation or an answer because you can always follow up with new questions or go back to your participants for more detail. So, if your participants do not use fitness trackers, an interview allows you to ask them “Why not?” in a way that is open to <i>all</i> kinds of answers, whereas a survey requires you to list a limited number of possible reasons.
+</p><p>Finally, qualitative research methods do have the advantage in that they often require less time and fewer resources than quantitative research methods do; so, they are easier to fit into—e.g.—an <a href="https://www.interaction-design.org/literature/topics/iterative-development%09" title="什麼是迭代開發？">iterative development</a>  process.
+</p><h2>Does Qualitative User Research Have to be Methodical and Structured?</h2><blockquote><em>“The worst thing that contemporary qualitative research can imply is that, in this postmodern age, anything goes. The trick is to produce intelligent, disciplined work on the very edge of the abyss.” <br> —David Silverman, American professor and author of several books on qualitative research</em>
+</blockquote><p>We stated earlier that quantitative research seeks to collect objective measurements about an external reality without any influence or bias from the researcher and that qualitative research is not objective in the same way, because the researcher’s personality and experience will always, to some extent, influence the results. However, qualitative research should still strive for objectivity, although in a different way from quantitative research. In his classic book <i>Interviews: An Introduction to Qualitative Research Interviewing, </i>professor of psychology Steinar Kvale proposes three ways in which qualitative research can strive for objectivity:
+</p><ul>
+	<li>Through freedom from bias</li>
+	<li>Through intersubjective knowledge</li>
+	<li>Through being adequate to the object investigated</li>
+</ul><p>Each of these tells us something about how we should do qualitative research so that it is methodical and structured. With that in mind, let’s look at them in more detail.
+</p><h3>1.Objectivity Through Freedom From Bias</h3><p><strong>When we do qualitative research, we should strive to be open and unbiased, so our research represents the participants’ perspectives as much as possible</strong>. Since no one can start a user research project without any kind of expectations or previous knowledge about the topic of investigation, we need to be consciously aware of any expectations and bias that we have when we do start one; if we aren’t, our expectations and bias might end up controlling us. So as to carry out unbiased research, being systematic when analyzing data is likewise vital—to ensure that we truly explore our results and don’t just search for the results that we expected to get at the beginning of the project. We want cold, hard (albeit human) facts, not wishful thinking.
+</p><p>In the exercise interview example, we could have an expectation that people would be more motivated to exercise if they had an exercise partner, and we might even already have a good idea for an app that could help people find an exercise partner. While good ideas are great, it’s important that we <i>still</i> do the interviews with an open mind about how people feel about exercise partners. It’s important that we still ask open and explorative questions and that we don’t put words in the participant’s mouth by asking leading questions. Similarly, it is important that we don’t simply search for places where participants have stated that they would like an exercise partner when we analyze the results, but that we are open and explorative about what has <i>actually</i> been said. If we are not open to the participant’s <a href="https://www.interaction-design.org/literature/topics/point-of-view" title="什麼是觀點？">point of view</a>,  there is no reason to carry out the user research.
+</p><div class="courseAd">
+
+        <div class="courseAd__title">Accelerate your career: Get industry-trusted Course Certificates</div>
+
+                    <div class="courseAd__subtitle">Beginner UX courses starting soon</div>
+            <ul class="courseAd__items">
+                                    <li><div class="courseAdItem js-courseAdItem" data-course-id="46" data-schedule-id="2219" data-start-timestamp="1522972800" data-percentage-booked="97" data-location-pathname="/courses/user-experience-the-beginner-s-guide">
+
+    Starts <span id="course-row-countdown-clock-46" class="js-schedule-period">in 15 hrs 40 mins 5 secs</span>—97%
+
+    booked:&nbsp;
+    <a href="https://www.interaction-design.org/courses/user-experience-the-beginner-s-guide?adv=a" title="User Experience: The Beginner’s Guide">
+        User Experience: The Beginner’s Guide
+    </a>
+</div>
+</li>
+                                    <li><div class="courseAdItem js-courseAdItem" data-course-id="34" data-schedule-id="2222" data-start-timestamp="1523059200" data-percentage-booked="83" data-location-pathname="/courses/information-visualization-infovis">
+
+    Starts <span id="course-row-countdown-clock-34" class="js-schedule-period">in 15 hrs 40 mins 5 secs</span>—83%
+
+    booked:&nbsp;
+    <a href="https://www.interaction-design.org/courses/information-visualization-infovis?adv=a" title="Information Visualization">
+        Information Visualization
+    </a>
+</div>
+</li>
+                            </ul>
+        
+                    <div class="courseAd__subtitle">Intermediate UX courses starting soon</div>
+            <ul class="courseAd__items">
+                                    <li><div class="courseAdItem js-courseAdItem" data-course-id="2" data-schedule-id="2224" data-start-timestamp="1522972800" data-percentage-booked="98" data-location-pathname="/courses/information-visualization-getting-dashboards-right">
+
+    Starts <span id="course-row-countdown-clock-2" class="js-schedule-period">in 15 hrs 40 mins 5 secs</span>—98%
+
+    booked:&nbsp;
+    <a href="https://www.interaction-design.org/courses/information-visualization-getting-dashboards-right?adv=a" title="Information Visualization: Getting Dashboards Right">
+        Information Visualization: Getting Dashboards Right
+    </a>
+</div>
+</li>
+                                    <li><div class="courseAdItem js-courseAdItem" data-course-id="36" data-schedule-id="2228" data-start-timestamp="1523059200" data-percentage-booked="88" data-location-pathname="/courses/how-to-become-a-freelance-designer">
+
+    Starts <span id="course-row-countdown-clock-36" class="js-schedule-period">in 15 hrs 40 mins 5 secs</span>—88%
+
+    booked:&nbsp;
+    <a href="https://www.interaction-design.org/courses/how-to-become-a-freelance-designer?adv=a" title="How to Become a Freelance Designer">
+        How to Become a Freelance Designer
+    </a>
+</div>
+</li>
+                            </ul>
+        
+    </div><p>Using an extreme example, but one that shows up just how glaringly bad this practice can get, imagine yourself being asked questions by a researcher who is adamant that the world is flat (and pretend you hadn’t been ready to rebuff his view when you entered the interview room). Picture his glee, for instance, when you admit that the sidewalk outside your home is flat, that every pool table you’ve ever played on was perfectly even, and that you’ve never noticed any substantial curvature when looking at the horizon from the ground. At the same time, imagine how he stops writing and frowns when you mention that you have, however, noticed the earth’s curvature from an airplane window... or how he asks you what your eyesight is like when you try to argue the point that everything beyond the horizon isn’t visible, due to the earth’s curvature. That researcher isn’t doing qualitative research—he’s out to confirm his beliefs by selectively picking at what you’re telling him, often lifting it out of context. That’s not really all that scientific, is it?
+</p><p><img data-layzr="https://public-media.interaction-design.org/images/uploads/7ed74cf3e05fa1099f7d16e8b7d4b7df.jpg">
+</p><p><small><i>Author/Copyright holder: St Stev. Copyright terms and licence: CC BY-NC-ND 2.0 </i></small>
+</p><p><i>It’s important that you don’t become a tour guide who leads your participants to where you think the important sights are, because it will prevent you from discovering anything new. Instead, you should become a co-explorer and see things from your participant’s perspective.</i>
+</p><p>You can encounter the same issues when you do usability tests. If you think you already know where the problems with the interface are, it’s important to keep an open mind so that you don’t overlook problems that you did not expect or accidentally lead the user to find the same problems as you.
+</p><h3>2.Objectivity Through Intersubjective Knowledge</h3><p>Objectivity through <a href="https://www.interaction-design.org/literature/topics/intersubjective-knowledge" title="什麼是主體間知識？">intersubjective knowledge</a>  refers to an understanding of objectivity as something that<i> multiple</i> people agree on. In qualitative user research, that means ensuring that you are not the only person who interprets your data the way you do. One way of doing this is to have another person who might have a different perspective help you analyze your data. That way, you can compare your observations to see if you agree. You can also choose to share and discuss your observations openly with your team to see if they have a different interpretation of your research. Doing this requires that everyone be prepared to be open and curious about the data. Finally, you can ensure that your research participants agree with your observations and interpretations by continually sharing them with them. In the exercise interview, you could follow up answers that might be interpreted in different ways with a quick summary of what you believe the participant has said – e.g., “You said that you find it difficult to exercise in the evening and that you would rather watch TV, so is it correctly understood that you think evenings are for more relaxing activities, or is it something else?”. You could also choose to share your analysis or report with the participants to see if they have any comments or objections to your findings. Objections do not always mean that your interpretation is wrong, but they add to your understanding of your participants nonetheless.
+</p><h3>3.Objectivity Through Being Adequate to the Object Investigated</h3><p>Research is adequate to the object it investigates when the results show the real nature of the object. Both working in an unbiased way and discussing your interpretations with other people help ensure that your research reflects the nature of the topic you are investigating, but it is also important that you choose the research method that <i>best</i> fits your research topic. <strong>Research methods have different attributes and are good for different things, so what results you can get depend on what research method you choose</strong>. In the exercise example, the interview reflects the participants’ memories and opinions about how they exercise, but a form of observation of their exercise might reveal a <i>truer</i> picture of how they exercise. After all, we humans have this tendency to ‘misremember’ things, be it because we’re so used to an activity that we stop being mindful of what we do in it, or because we like to picture ourselves as being that bit more adept than we are, or because we might be prone to self-deprecation and humility dilutes the scale of our expertise.
+</p><p><img data-layzr="https://public-media.interaction-design.org/images/uploads/4a0e7b0ca2d826f09f1747e79b003f42.jpg">
+</p><p><small><i>Author/Copyright holder: jesslef. Copyright terms and licence: CC0 </i></small>
+</p><p><i>If you ask me about my yoga exercise, my answers might be biased by what I wish my skill level and location to be rather than an accurate reflection of what these really look like (and no, unfortunately, this is not a picture of the author doing yoga).</i>
+</p><p>Similarly, we can use interviews to talk to participants about the usability of a user interface, but observing how they interact with the user interface during a usability test (or a combination of test and interview) will probably give a more accurate picture of what they find difficult.
+</p><h2>The Take Away</h2><p>Here, we have focused on the positive attributes of qualitative user research and what it means to be objective in qualitative user research. We can sum up how to be objective when engaging in such research with the following best practices:
+</p><ul>
+	<li><strong>Be open and unbiased </strong>– both when you meet research participants and when you analyze data from your research.</li>
+	<li><strong>Be aware of your own preconceptions</strong>.</li>
+	<li><strong>Discuss your interpretation of data with others</strong>, or have others help with the data analysis.</li>
+	<li><strong>Confirm your interpretations with your research participants –</strong> either during or following research.</li>
+	<li><strong>Choose the most appropriate method for the topic you are investigating</strong>.</li>
+</ul><p>These are best practices. They don’t represent what everyone does when doing qualitative user research, and sometimes circumstances are such that you cannot live up to all of them. But even when you can’t, you should know what to strive for so you know the limitations of your research. That way, you will enable a more scientific transfer of facts, ground your research in firmer reality, and vastly increase the likelihood that your projects end up engaging with real-world users in the way you hope.
+</p><h2>References &amp; Where to Learn More</h2><p>Hero Image: Author/Copyright holder: Dave. Copyright terms and licence: CC BY-NC-ND 2.0
+</p><p>Steinar Kvale (1996) InterViews: <i>An Introduction to Qualitative Research Interviewing</i>. SAGE Publications.
+</p><p>Ann Blandford. “Semi-structured qualitative studies.” https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/semi-structured-qualitative-studies?
+</p><p>You can read more about the strengths and weaknesses of qualitative research here:
+</p><p><a href="http://www.uxmatters.com/mt/archives/2012/09/strengths-and-weaknesses-of-quantitative-and-qualitative-research.php">http://www.uxmatters.com/mt/archives/2012/09/strengths-and-weaknesses-of-quantitative-and-qualitative-research.php</a>
+</p><p>If you are interested in learning more about quantitative and qualitative research, you can read:
+</p><p>John W. Creswell (2014) R<i>esearch Design: Qualitative, Quantitative, and Mixed Methods Approaches</i>, 4th Edition. SAGE Publications
+</p>
+                </article>
+
+                <div class="out-top-large">
+                    <div class="tags-widget">
+    <div class="tags-widget__taglist-container out-bottom-small hidePrint">
+		<div class="tags-widget__taglist-header">Topics in this article:</div>
+		<div class="tags-widget__taglist-items">
+							<a class="button button--secondary tags-widget__taglist-item" href="https://www.interaction-design.org/literature/topics/qualitative-research"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+					定性研究
+				 </font></font></a>
+							<a class="button button--secondary tags-widget__taglist-item" href="https://www.interaction-design.org/literature/topics/quantitative-research"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+					定量研究
+				 </font></font></a>
+							<a class="button button--secondary tags-widget__taglist-item" href="https://www.interaction-design.org/literature/topics/intersubjective-knowledge"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+					主體間知識
+				</font></font></a>
+					</div>
+	</div>
+
+
+    
+    </div>
+                </div>
+            </div>
+
+            <aside class="uxArticleWithSidebar__sidebar js-sidebar hidePrint">
+                <div class="js-pinnedUpcomingCoursesContainer showFirstCourse animationsInitialized">
+                    
+                    <div class="pin-wrapper" style="height: 6418px;"><div class="js-pinnedUpcomingCourses" data-courses="2" style="height: 6418px; width: 230px;">
+                        <div class="uxArticle__upcomingCourses">
+                                                                                                
+                                    <a href="https://www.interaction-design.org/courses/user-experience-the-beginner-s-guide" title="用戶體驗：初學者指南">
+
+    <div class="card card--course js-card  " data-course-id="46" data-schedule-id="2219" data-start-timestamp="1522972800" data-percentage-booked="97" data-location-pathname="/courses/user-experience-the-beginner-s-guide" data-gtm-click="">
+
+        <div class="card__inner">
+
+            <div class="card__header" data-title=" View course ">
+                <img class="card__headerImage--course layzr-loaded" alt="用戶體驗：初學者指南" src="./定性用戶研究的最佳實踐_files/course_46--square_thumbnail.jpg">
+            </div>
+
+            <div class="card__contents card__body">
+                <h6 class="card__title truncate-3 js-cardTitle" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用戶體驗：初學者指南</font></font></h6>
+                <div class="flex-between">
+                    
+                    <div class="countdown flexible in-right-small">
+                        <div class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            開始
+                        </font></font></div>
+                        <div id="countdown-clock-46"><div><div class="flex clock"><div class="box clock-item day"><div class="number">0</div><div class="unit">days</div></div><div class="box clock-item hour"><div class="number">15</div><div class="unit">hrs</div></div><div class="box clock-item minute"><div class="number">40</div><div class="unit">mins</div></div><div class="box clock-item second"><div class="number">06</div><div class="unit">secs</div></div></div></div></div>
+                    </div>
+
+                    
+                    <div class="card__progressRingWrapper not-flexible">
+                        
+                        <svg class="card__progressRing js-progress-ring" width="100%" height="69.734" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="50%" cy="50%" fill="transparent" stroke-dasharray="157.14" stroke-dashoffset="0"></circle>
+                            <circle class="card__progressBar js-bar" r="25" cx="50%" cy="50%" fill="transparent" stroke-dasharray="157.14" stroke-dashoffset="0"></circle>
+                        </svg>
+                        <div class="card__percentage">
+                            <div class="card__percentageNumber" data-percentage="97"></div>
+                            <div class="card__percentageUnit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">預訂</font></font></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <div class="card__action card__action--course button button--card js-cardActionText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看課程</font></font></div>
+            </div>
+
+        </div>
+
+    </div>
+</a>
+
+                                                                    
+                                    <a href="https://www.interaction-design.org/courses/information-visualization-infovis" title="信息可視化">
+
+    <div class="card card--course js-card  " data-course-id="34" data-schedule-id="2222" data-start-timestamp="1523059200" data-percentage-booked="83" data-location-pathname="/courses/information-visualization-infovis" data-gtm-click="">
+
+        <div class="card__inner">
+
+            <div class="card__header" data-title=" View course ">
+                <img class="card__headerImage--course layzr-loaded" alt="信息可視化" src="./定性用戶研究的最佳實踐_files/course_34--square_thumbnail.jpg">
+            </div>
+
+            <div class="card__contents card__body">
+                <h6 class="card__title truncate-3 js-cardTitle" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">信息可視化</font></font></h6>
+                <div class="flex-between">
+                    
+                    <div class="countdown flexible in-right-small">
+                        <div class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            開始
+                        </font></font></div>
+                        <div id="countdown-clock-34"><div><div class="flex clock"><div class="box clock-item day"><div class="number">1</div><div class="unit">day</div></div><div class="box clock-item hour"><div class="number">15</div><div class="unit">hrs</div></div><div class="box clock-item minute"><div class="number">40</div><div class="unit">mins</div></div><div class="box clock-item second"><div class="number">06</div><div class="unit">secs</div></div></div></div></div>
+                    </div>
+
+                    
+                    <div class="card__progressRingWrapper not-flexible">
+                        
+                        <svg class="card__progressRing js-progress-ring" width="100%" height="69.734" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="25" cx="50%" cy="50%" fill="transparent" stroke-dasharray="157.14" stroke-dashoffset="0"></circle>
+                            <circle class="card__progressBar js-bar" r="25" cx="50%" cy="50%" fill="transparent" stroke-dasharray="157.14" stroke-dashoffset="0" style="stroke-dashoffset: 26.7035px;"></circle>
+                        </svg>
+                        <div class="card__percentage">
+                            <div class="card__percentageNumber" data-percentage="83"></div>
+                            <div class="card__percentageUnit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">預訂</font></font></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <div class="card__action card__action--course button button--card js-cardActionText"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看課程</font></font></div>
+            </div>
+
+        </div>
+
+    </div>
+</a>
+
+                                                                                    </div>
+
+                        
+                                                <section class="getWeeklyInsightsSidebar js-getWeeklyInsightsSidebar panel hidePrint">
+    <h2 class="getWeeklyInsightsSidebar__header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">獲取每週UX的見解</font></font></h2>
+
+            <div class="getWeeklyInsightsSidebar__description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            加入</font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">98,412位設計師</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，他們從我們的通訊中獲得有用的用戶體驗技巧
+        </font></font></div>
+    
+    <form class="getWeeklyInsightsSidebar__form js-getWeeklyInsightsSidebar__form" action="https://www.interaction-design.org/newsletter/subscribe" method="POST" data-abide="" novalidate="novalidate">
+        <input type="hidden" name="mailing_listID" value="1">
+        <input type="hidden" name="_token" value="wdvPnpoAe2fiDWn83OFp4KtW8w28k5Ati2SHMXvs">
+
+        <div class="getWeeklyInsightsSidebar__input">
+            <input type="email" name="email" placeholder="Your email" title="獲取每週見解形式" autocomplete="email" required="">
+            <small class="error"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要一個有效的電子郵箱地址。</font></font></small>
+        </div>
+        <div class="getWeeklyInsightsSidebar__button">
+            <button class="button getWeeklyInsightsSidebar__submit" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">走</font></font></button>
+        </div>
+    </form>
+
+</section>
+                    </div></div>
+                    
+                </div>
+            </aside>
+        </div>
+
+        <div class="ux-share-panel-bottom u-text-center hidePrint">
+            <div class="ux-share-panel-bottom__header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讓設計更好：分享這篇文章</font></font></div>
+            <div class="ux-share-panel-bottom__panel">
+                <div class="sharingPanel">
+    <div class="sharingPanel__shares">
+                <div class="sharingPanel__services">
+            <div class="sharingPanel__service">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research" target="_blank" class="sharingPanel__serviceIcon sharingPanel__serviceIcon--facebook js-shareLink" title="Facebook分享按鈕"></a>
+
+                <div class="sharingPanel__serviceShareCounter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">125</font></font></div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://twitter.com/share?url=https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research&amp;text=Best+Practices+for+Qualitative+User+Research&amp;hashtags=ux" target="_blank" class="sharingPanel__serviceIcon sharingPanel__serviceIcon--twitter js-shareLink" title="Twitter分享按鈕"></a>
+
+                <div class="sharingPanel__serviceShareCounter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">62</font></font></div>
+            </div>
+            <div class="sharingPanel__service">
+                <a href="https://www.linkedin.com/shareArticle?url=https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research&amp;title=Best+Practices+for+Qualitative+User+Research" target="_blank" class="sharingPanel__serviceIcon sharingPanel__serviceIcon--linkedin js-shareLink" title="LinkedIn分享按鈕"></a>
+
+                <div class="sharingPanel__serviceShareCounter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="landing-section island island--fill background-gray-lighter">
+        <section class="ux-related-articles hidePrint">
+    <h1 class="heading heading--sectionHeading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">接下來應該閱讀的內容</font></font></h1>
+    <div class="ux-related-articles__items-with-sidebar">
+        <div class="ux-related-articles__items uxDaily__content">
+                            <a href="https://www.interaction-design.org/literature/article/getting-into-the-mobile-app-user-s-mind-user-research-for-mobile-applications" title="進入移動應用程序用戶的心靈 - 移動應用程序的用戶調查">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/56e04cb5bff7c.jpg" class="layzr-image" alt="進入移動應用程序用戶的心靈 - 移動應用程序的用戶調查">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">進入移動應用程序用戶的心靈 - 移動應用程序的用戶調查</font></font></h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    It’s well understood that user research is what makes for the best user experiences but what are the right user research techniques for mobile apps? While, there is no doubt that any classic UX research technique may be turned to mobile app user research – there are some techniques which have already been demonstrated to show proven value. Maste...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>425 shares</li>
+                    <li>2 months ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/contextual-interviews-and-how-to-handle-them" title="情境訪談及如何處理">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/56a88fcbe5918.jpg" class="layzr-image" alt="情境訪談及如何處理">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">Contextual Interviews and How to Handle Them</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    The exact history of the contextual interview in user research is a little murky. It was first alluded to in a paper by Whiteside, Bennet and Holtzblatt in 1988 which examined the use of qualitative research in design projects. However, the first complete description of the method was almost certainly proposed in 1990 by Wixon, Holtzblatt and Kn...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>224 shares</li>
+                    <li>2 months ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/7-simple-ways-to-get-better-results-from-ethnographic-research" title="7種簡單的方法從民族志研究中獲得更好的結果">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/582211e8a85ac.jpg" class="layzr-image" alt="7種簡單的方法從民族志研究中獲得更好的結果">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">7 Simple Ways to Get Better Results from Ethnographic Research</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    The first step in any User Experience or Design Thinking process should involve getting to know your users. When starting a project from scratch or moving into a new market, you may not have any experience or a deep understanding of your users. Ethnographic research, such as user observation and interviews, will allow you to discover who your us...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>235 shares</li>
+                    <li>2 weeks ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/question-everything" title="質疑一切">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/582215b5c6fb3.jpg" class="layzr-image" alt="質疑一切">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">Question Everything</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    Research can be compared to interacting with the ocean. On the surface, we may see calm beauty or turbulence; however, we can only fully understand the bigger picture once we submerge ourselves and go much deeper. In order to gain a holistic, empathic understanding of our users and the problem we are trying to solve, we need to question everythi...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>209 shares</li>
+                    <li>1 year ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/workshops-to-establish-empathy-and-understanding-from-user-research-results" title="研討會從用戶研究結果中建立移情和理解">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/article_130999_hero_59df55371ad4b1.43733549.jpg" class="layzr-image" alt="研討會從用戶研究結果中建立移情和理解">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">Workshops to Establish Empathy and Understanding from User Research Results</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    Honestly, how much do you enjoy reading research reports? And how engaging do you find them? Unsurprisingly, receiving a report with your insights into the target group may not get your clients to empathize with the potential users of their product or service optimally. Alternatively, you might consider organizing a workshop for them. This allow...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>432 shares</li>
+                    <li>1 month ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/how-to-visualize-your-qualitative-user-research-results-for-maximum-impact" title="如何可視化您的定性用戶研究結果以獲得最大影響">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/article_131004_hero_5a32b25514ca99.99475750.png" class="layzr-image" alt="如何可視化您的定性用戶研究結果以獲得最大影響">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">How to Visualize Your Qualitative User Research Results for Maximum Impact</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    When thinking about visualization of research results, many people will automatically have an image of a graph in mind. Do you have that image, too? You would be right in thinking that many research results benefit from a graph-like visualization, showing trends and anomalies. But this is mainly true for results from quantitative user research. ...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>339 shares</li>
+                    <li>3 weeks ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/creating-personas-from-user-research-results" title="Creating Personas from User Research Results">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/article_131006_hero_5a33d2739f0c47.42754650.jpg" class="layzr-image" alt="Creating Personas from User Research Results">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">Creating Personas from User Research Results</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    When you’re in the beginning stages of your design project and you have just finished some highly informative interviews and observations in the context of your users, your head is full of impressions. You have a feeling for the different types of users who exist, and you have heard some similarities in their stories that you feel should guide t...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>196 shares</li>
+                    <li>4 weeks ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/how-to-do-a-thematic-analysis-of-user-interviews" title="How to Do a Thematic Analysis of User Interviews">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/article_131003_hero_5a316fa91deb37.78721774.jpg" class="layzr-image" alt="How to Do a Thematic Analysis of User Interviews">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">How to Do a Thematic Analysis of User Interviews</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    You have been in the field talking to users and you now find yourself with a massive amount of audio, notes, video, pictures, and interesting impressions. All that information can be overwhelming, and it’s difficult to know where to start to make sense of all the data. Here, we will teach you how to go from information chaos to patterns and them...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>228 shares</li>
+                    <li>3 weeks ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/adding-quality-to-your-design-research-with-an-ssqs-checklist" title="Adding Quality to Your Design Research with an SSQS Checklist">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/564357f8bbd5d.jpg" class="layzr-image" alt="Adding Quality to Your Design Research with an SSQS Checklist">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">Adding Quality to Your Design Research with an SSQS Checklist</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    An SSQS (A semi-structured qualitative study) refers to research methods with qualitative rather than quantitative outputs. There are many types of SSQS research such as ethnography, interviews, observations, etc. For them, it can be useful to have a checklist to ensure that you’re making the most of the research techniques and delivering the ma...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>393 shares</li>
+                    <li>2 years ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                            <a href="https://www.interaction-design.org/literature/article/pros-and-cons-of-conducting-user-interviews" title="Pros and Cons of Conducting User Interviews">
+
+    <div class="card js-card card--article  card--bigArticle   ">
+        <div class="card__inner">
+            <div class="card__header" data-title="Read article">
+                <img data-layzr="https://public-media.interaction-design.org/images/ux-daily/article_131000_hero_5a314eecbdef34.43920870.jpg" class="layzr-image" alt="Pros and Cons of Conducting User Interviews">
+            </div>
+            <div class="card__contents">
+                <h2 class="card__title js-cardTitle truncate-3" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; overflow: hidden;">Pros and Cons of Conducting User Interviews</h2>
+                <p class="card__copy truncate-2 " style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; overflow: hidden;">
+                    You have gotten a green light from your stakeholders to conduct some user research for your design project, and you think user interviews might be the way to go. After all, they seem straightforward, and interviews are one of the most widely used user research methods—so, they should be a safe choice. But, as with all research methods, there are...
+                </p>
+
+                <ul class="card__copy inlineList inlineList--withSeparator u-text-condensed u-text-uppercase hideSmallOnly">
+                    <li>244 shares</li>
+                    <li>4 weeks ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</a>
+                    </div>
+
+        <aside class="ux-related-articles__sidebar">
+            <section class="sidebar-widget panel">
+    <div class="panel__inner">
+        <h2 class="sidebar-widget__header heading heading--componentHeading js-componentHeading"><span class="underline heading__underline">Top articles</span></h2>
+        <ul class="out-bottom-none linkStrip js-linkStrip">
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/article/5-stages-in-the-design-thinking-process" title="5 Stages in the Design Thinking Process">
+                        <div class="textItem">
+                            <span class="textItem__main">5 Stages in the Design Thinking Process</span>
+                            <span class="textItem__complementary u-text-uppercase">127 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/article/10-great-sites-for-ui-design-patterns" title="10 Great Sites for UI Design Patterns">
+                        <div class="textItem">
+                            <span class="textItem__main">10 Great Sites for UI Design Patterns</span>
+                            <span class="textItem__complementary u-text-uppercase">153 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706" title="Bad Design vs. Good Design: 5 Examples We can Learn From">
+                        <div class="textItem">
+                            <span class="textItem__main">Bad Design vs. Good Design: 5 Examples We can Learn From</span>
+                            <span class="textItem__complementary u-text-uppercase">134 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/article/how-to-change-your-career-from-graphic-design-to-ux-design" title="How to Change Your Career from Graphic Design to UX Design">
+                        <div class="textItem">
+                            <span class="textItem__main">How to Change Your Career from Graphic Design to UX Design</span>
+                            <span class="textItem__complementary u-text-uppercase">214 shares</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-articles-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/article/apple-s-product-development-process-inside-the-world-s-greatest-design-organization" title="Apple’s Product Development Process – Inside the World’s Greatest Design Organization">
+                        <div class="textItem">
+                            <span class="textItem__main">Apple’s Product Development Process – Inside the World’s Greatest Design Organization</span>
+                            <span class="textItem__complementary u-text-uppercase">332 shares</span>
+                        </div>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</section>
+            <section class="sidebar-widget panel">
+    <div class="panel__inner">
+        <h2 class="sidebar-widget__header heading heading--componentHeading js-componentHeading"><span class="underline heading__underline">Top topics</span></h2>
+        <ul class="out-bottom-none linkStrip js-linkStrip">
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/topics/ux-design" title="User Experience (UX) Design">
+                        <div class="textItem">
+                            <span class="textItem__main">User Experience (UX) Design</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/topics/human-computer-interaction" title="Human-Computer Interaction (HCI)">
+                        <div class="textItem">
+                            <span class="textItem__main">Human-Computer Interaction (HCI)</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/topics/ui-design" title="User Interface (UI) Design">
+                        <div class="textItem">
+                            <span class="textItem__main">User Interface (UI) Design</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/topics/usability" title="Usability">
+                        <div class="textItem">
+                            <span class="textItem__main">Usability</span>
+                        </div>
+                    </a>
+                </li>
+                            <li class="linkStrip__item ux-top-topics-sidebar__list-item">
+                    <a class="linkStrip__link" href="https://www.interaction-design.org/literature/topics/design-thinking" title="Design Thinking">
+                        <div class="textItem">
+                            <span class="textItem__main">Design Thinking</span>
+                        </div>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</section>
+                            <section class="getWeeklyInsightsSidebar js-getWeeklyInsightsSidebar panel hidePrint">
+    <h2 class="getWeeklyInsightsSidebar__header">Get weekly UX insights</h2>
+
+            <div class="getWeeklyInsightsSidebar__description">
+            Subscribe to our newsletter for useful UX tips and resources.
+        </div>
+    
+    <form class="getWeeklyInsightsSidebar__form js-getWeeklyInsightsSidebar__form" action="https://www.interaction-design.org/newsletter/subscribe" method="POST" data-abide="" novalidate="novalidate">
+        <input type="hidden" name="mailing_listID" value="1">
+        <input type="hidden" name="_token" value="wdvPnpoAe2fiDWn83OFp4KtW8w28k5Ati2SHMXvs">
+
+        <div class="getWeeklyInsightsSidebar__input">
+            <input type="email" name="email" placeholder="Your email" title="Get weekly insights form" autocomplete="email" required="">
+            <small class="error">A valid email address is required.</small>
+        </div>
+        <div class="getWeeklyInsightsSidebar__button">
+            <button class="button getWeeklyInsightsSidebar__submit" type="submit">Go</button>
+        </div>
+    </form>
+
+</section>
+                    </aside>
+
+    </div>
+</section>
+    </div>
+    <div id="roadblockModal" class="reveal-modal ebook-modal" data-reveal="" data-options="animation_speed: 100;" aria-hidden="true" role="dialog" style="display: none; opacity: 1; visibility: hidden; top: 100px;">
+
+    <div class="u-text-center">
+        <h1 class="reveal-modal__header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UX設計新手？</font><font style="vertical-align: inherit;">我們給你一個免費的電子書！</font></font></h1>
+    </div>
+
+    <div class="row">
+    <div class="cols-md-4">
+        <img class="roadblock__productImage" alt="用戶體驗設計基礎" src="./定性用戶研究的最佳實踐_files/basics-of-ux-design.png">
+    </div>
+
+    <div class="cols-md-8">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            下載我們的免費電子書</font></font><b><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用戶體驗設計基礎知識，</font></font></i></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解UX設計中的核心概念。
+        </font></font></p>
+
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            在9章中，我們將介紹：進行用戶訪談，設計思維，交互設計，移動用戶體驗設計，可用性，用戶體驗研究等等！
+        </font></font></p>
+
+        <form method="POST" action="https://www.interaction-design.org/newsletter/subscribe-for-ebook" data-abide="" novalidate="novalidate">
+            <input type="hidden" name="_token" value="wdvPnpoAe2fiDWn83OFp4KtW8w28k5Ati2SHMXvs">
+            <input type="hidden" name="mailing_listID" value="48">
+            <div class="form__field">
+                <div class="inputGroup">
+                    <input name="email" type="email" placeholder="Enter your email address" title="輸入你的電子郵箱地址" data-abide-validator="email" required="" autocomplete="email">
+                    <div class="inputGroup__addon hideSmallOnly">
+                        <button class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免費下載電子書</font></font></button>
+                    </div>
+                </div>
+                <small class="error"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要一個有效的電子郵箱地址。</font></font></small>
+            </div>
+            <div class="out-top-small">
+                <div class="idfCheckbox">
+    <input type="hidden" name="subscribe-newsletter" value="0">
+    <input type="checkbox" id="roadblockModal_subscribe-newsletter" name="subscribe-newsletter" value="1" class="idfCheckboxInput newsletterCheckbox visually-hidden" checked="">
+    <label for="roadblockModal_subscribe-newsletter"><span class="check-mark"><span></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每週免費獲得UX設計學習資料</font></font></label>
+    <div class="idfCheckbox__uncheckedHint">
+        
+        <img class="in-none image image--tiny layzr-loaded" src="./定性用戶研究的最佳實踐_files/arrow-newsletter-checkbox.svg">
+        <div class="out-top-medium out-left-tiny">
+            <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我們的無廣告新聞簡報之後是</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">98,412位設計師</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 確定您不想收到它？</font></font></em>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <div class="form__controls">
+                <button class="button button--block displaySmallOnly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免費下載電子書</font></font></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <a class="close-reveal-modal" aria-label="Close"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="">×</font></font></a>
+</div>
+	    </main>
+
+    <footer class="footer hidePrint">
+
+    <div class="island island--contentWrapper">
+
+        <div class="footer__inner wrapper col-md-3">
+
+            <div>
+                <h4 class="h2 u-text-condensed u-text-bold">About us</h4>
+                <p>
+                    The Interaction Design Foundation is a 16-year-old nonprofit community, founded in Denmark.
+                </p>
+                                <p>
+                    See
+                    <a href="https://www.interaction-design.org/why-join-idf">
+                        7
+ compelling reasons to join us
+                    </a>
+                    or
+                    <a href="https://www.interaction-design.org/literature/article/interaction-design-foundation-reviews-answers-to-frequently-asked-questions-by-members">
+                        read in-depth reviews
+                    </a>
+                    from our members.
+                </p>
+                                <p>
+                    Learn more about
+                    <a href="https://www.interaction-design.org/about" title="About the Interaction Design Foundation">
+                        our mission
+                    </a>
+                    to lower the cost of design education, or
+                    <a href="https://www.interaction-design.org/careers" title="Careers and Jobs at the Interaction Design Foundation">come work with us</a>.
+                </p>
+            </div>
+
+
+            <div>
+                <h4 class="h2 u-text-condensed u-text-bold">Connect with us!</h4>
+                <p>
+                    Send us an email at <a href="mailto:hello@interaction-design.org">hello@interaction-design.org</a>
+                    or through our <a href="https://www.interaction-design.org/about#contact" title="Contact the Interaction Design Foundation">online contact form</a>.
+                </p>
+                <p class="out-bottom-small">Or find us on:</p>
+                <div class="socialLinks socialLinks--white">
+                    <a class="socialLinks__item" href="https://www.facebook.com/interactiondesign.org" target="_blank" rel="noopener">
+                        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Facebook頁面</font></font></span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+
+                    <a class="socialLinks__item" href="https://twitter.com/interacting" target="_blank" rel="noopener">
+                        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter頁面</font></font></span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+
+                    <a class="socialLinks__item" href="https://www.pinterest.com/ixdfoundation/" target="_blank" rel="noopener">
+                        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pinterest頁面</font></font></span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+
+                    <a class="socialLinks__item" href="https://www.linkedin.com/company/interaction-design-org-foundation" target="_blank" rel="noopener">
+                        <div class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linkedin頁面</font></font></div>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+
+                    <a class="socialLinks__item" href="https://www.instagram.com/interaction_design_foundation" target="_blank" rel="noopener">
+                        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instagram頁面</font></font></span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <p class="out-top-medium"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有什麼問題嗎？</font><font style="vertical-align: inherit;">在我們的</font></font><a href="https://www.interaction-design.org/faq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常見問題</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">頁面</font><font style="vertical-align: inherit;">獲得幫助</font><font style="vertical-align: inherit;">。</font></font></p>
+            </div>
+
+
+            <div>
+                <h4 class="h2 u-text-condensed u-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保持聯繫</font></font></h4>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    加入</font></font><span class="js-subscriberCount"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">98,412位</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">設計師，並</font><font style="vertical-align: inherit;">在您的收件箱中</font><font style="vertical-align: inherit;">獲取我們的
+                     </font></font><a href="https://www.interaction-design.org/newsletter" title="Design Tips"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每週設計提示</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+                </font></font></p>
+                <form action="https://www.interaction-design.org/newsletter/subscribe" method="post" data-abide="" novalidate="novalidate">
+                    <input type="hidden" name="_token" id="csrf-token" value="wdvPnpoAe2fiDWn83OFp4KtW8w28k5Ati2SHMXvs">
+                    <input type="hidden" name="mailing_listID" value="1">
+                    <div class="form__field">
+                        <div class=" inputGroup ">
+                            <input name="email" type="email" data-abide-validator="email" placeholder="Your email" title="Subscription form" required="" aria-invalid="false">
+                            <div class="inputGroup__addon inputGroup__addon--noBorder">
+                                <button type="submit" class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">註冊</font></font></button>
+                            </div>
+                        </div>
+                        <small class="error"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">請寫一個有效的電子郵件地址。</font></font></small>
+                    </div>
+                </form>
+
+                <h4 class="h2 u-text-condensed u-text-bold in-top-small out-top-large out-bottom-none"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UX（用戶體驗）設計是什麼？</font></font></h4>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    閱讀我們
+                     </font></font><a href="https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research#" data-reveal-id="freeEbookDialog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有關UX（用戶體驗）設計的權威性指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+                </font></font></p>
+
+            </div>
+
+        </div>
+
+        <div class="footer__links island island--contentWrapper island--dark">
+    <ul class="inlineList inlineList--center">
+        <li><a class="link link--secondarySmall" href="https://www.interaction-design.org/about/copyright" id="copyrightNotice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版權/知識產權政策</font></font></a></li>
+        <li><a class="link link--secondarySmall" href="https://www.interaction-design.org/about/terms-of-use"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一般使用條款</font></font></a></li>
+        <li><a class="link link--secondarySmall" href="https://www.interaction-design.org/about/privacy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隱私政策</font></font></a></li>
+        <li class="hideMinimalLayout">
+            <a class="link link--secondarySmall" href="https://www.interaction-design.org/literature/article/best-practices-for-qualitative-user-research#" data-reveal-id="freeEbookDialog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                UX（用戶體驗）設計是什麼？
+            </font></font></a>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <div class="footer__background">
+        <img data-layzr="https://public-media.interaction-design.org/images/idf-logo--inverse.svg" alt="IDF">
+    </div>
+</footer>
+
+
+
+</div>
+
+
+<div class="modals">    <div id="freeEbookDialog" class="reveal-modal ebook-modal" data-reveal="" data-options="animation_speed: 100;" aria-hidden="true" role="dialog">
+    <div class="u-text-center">
+        <h1 class="reveal-modal__header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UX設計新手？</font><font style="vertical-align: inherit;">我們給你一個免費的電子書！</font></font></h1>
+    </div>
+
+    <div class="row">
+    <div class="cols-md-4">
+        <img class="roadblock__productImage" alt="用戶體驗設計基礎" src="./定性用戶研究的最佳實踐_files/basics-of-ux-design.png">
+    </div>
+
+    <div class="cols-md-8">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            下載我們的免費電子書</font></font><b><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用戶體驗設計基礎知識，</font></font></i></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解UX設計中的核心概念。
+        </font></font></p>
+
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            在9章中，我們將介紹：進行用戶訪談，設計思維，交互設計，移動用戶體驗設計，可用性，用戶體驗研究等等！
+        </font></font></p>
+
+        <form method="POST" action="https://www.interaction-design.org/newsletter/subscribe-for-ebook" data-abide="" novalidate="novalidate">
+            <input type="hidden" name="_token" value="wdvPnpoAe2fiDWn83OFp4KtW8w28k5Ati2SHMXvs">
+            <input type="hidden" name="mailing_listID" value="48">
+            <div class="form__field">
+                <div class="inputGroup">
+                    <input name="email" type="email" placeholder="Enter your email address" title="輸入你的電子郵箱地址" data-abide-validator="email" required="" autocomplete="email">
+                    <div class="inputGroup__addon hideSmallOnly">
+                        <button class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免費下載電子書</font></font></button>
+                    </div>
+                </div>
+                <small class="error"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要一個有效的電子郵箱地址。</font></font></small>
+            </div>
+            <div class="out-top-small">
+                <div class="idfCheckbox">
+    <input type="hidden" name="subscribe-newsletter" value="0">
+    <input type="checkbox" id="freeEbookDialog_subscribe-newsletter" name="subscribe-newsletter" value="1" class="idfCheckboxInput newsletterCheckbox visually-hidden" checked="">
+    <label for="freeEbookDialog_subscribe-newsletter"><span class="check-mark"><span></span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每週免費獲得UX設計學習資料</font></font></label>
+    <div class="idfCheckbox__uncheckedHint">
+        
+        <img class="in-none image image--tiny layzr-loaded" src="./定性用戶研究的最佳實踐_files/arrow-newsletter-checkbox.svg">
+        <div class="out-top-medium out-left-tiny">
+            <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我們的無廣告新聞簡報之後是</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">98,412位設計師</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 確定您不想收到它？</font></font></em>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <div class="form__controls">
+                <button class="button button--block displaySmallOnly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免費下載電子書</font></font></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <a class="close-reveal-modal" aria-label="Close"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">×</font></font></a>
+</div>
+
+            </div>
+<link rel="stylesheet" href="./定性用戶研究的最佳實踐_files/css">
+<link rel="stylesheet" href="./定性用戶研究的最佳實踐_files/font-awesome.min.css">
+<script src="./定性用戶研究的最佳實踐_files/require.min.js" data-main="require.config"></script>
+    <script>
+        require(['components/socialSharing'], function() {
+            // self-initialize component
+        });
+    </script>
+    <script>
+        require(['components/socialSharing'], function() {
+            // self-initialize component
+        });
+    </script>
+        <script src="./定性用戶研究的最佳實踐_files/__roadblock.js" defer=""></script>
+        <script src="./定性用戶研究的最佳實踐_files/publication.js" defer=""></script>
+    <script src="./定性用戶研究的最佳實踐_files/templateWidgetManager.js" defer=""></script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"74db9a8928","applicationID":"21973063","transactionName":"YFwGY0tYCkdYWxEMWlkWJ0JKTQtZFkgQB1leWgVDUFYKGlhKEQxWW1xEcHxt","queueTime":0,"applicationTime":37,"atts":"TBsFFQNCGUk=","errorBeacon":"bam.nr-data.net","agent":""}</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./定性用戶研究的最佳實踐_files/translate_24dp.png" width="20" height="20" alt="Google 翻譯"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">建議更好的譯法</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","442210029247313");fbq("track","PageView");</script>
+<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=442210029247313&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+
+<div class="reveal-modal-bg" style="display: none;"></div></body><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/985705368/?random=1522916339592&amp;cv=9&amp;fst=1522916339592&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=900&amp;u_w=1440&amp;u_ah=878&amp;u_aw=1398&amp;u_cd=24&amp;u_his=5&amp;u_tz=480&amp;u_java=false&amp;u_nplug=4&amp;u_nmime=5&amp;gtm=G42&amp;sendb=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.interaction-design.org%2Fliterature%2Farticle%2Fbest-practices-for-qualitative-user-research&amp;tiba=Best%20Practices%20for%20Qualitative%20User%20Research%20%7C%20Interaction%20Design%20Foundation&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></html>

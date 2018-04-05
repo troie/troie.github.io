@@ -1,0 +1,1 @@
+document.write('<div id="adsense" class="hide">ad block checker. just countin\'.</div>');
