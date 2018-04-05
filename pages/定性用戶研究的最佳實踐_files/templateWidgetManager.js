@@ -1,1 +1,0 @@
-"use strict";require(["require.config"],function(){require(["jquery"],function(e){e(function(){window.currentUser.isGuest()?e(".js-displayForGuest").removeClass("u-hidden"):e(".js-displayForAuth").removeClass("u-hidden")})})});
