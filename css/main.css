@@ -93,7 +93,7 @@ textarea {
     line-height: 1.6;
 }
 .must_read a:hover{color: aquamarine;}
-/*.must_read a:visited{color: #999;}*/
+.must_read a:visited{color: #333;}
 
 
 
