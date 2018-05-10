@@ -94,8 +94,8 @@ textarea {
     font-weight: 200;
 }
 .list a:hover{color: #F7F57E;}
-.list date{color: #424e5a;font-weight: 100;margin-left: 10px;}
-.list a:visited{color: #424e5a;}
+.list date{color: #424e5a; font-weight: 100;margin-left: 10px;}
+.list a:visited{text-decoration: line-through;}
 
 
 
