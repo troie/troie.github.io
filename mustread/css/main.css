@@ -89,13 +89,13 @@ textarea {
 .list li{list-style: none}
 .list a{
     text-decoration: none;
-    color:dimgray;
+    color:#636e78;
     line-height: 1.6;
     font-weight: 200;
 }
-.list a:hover{color: aquamarine;}
-.list date{color: #444;font-weight: 100;margin-left: 10px;}
-.must_read a:visited{color: #444;}
+.list a:hover{color: #F7F57E;}
+.list date{color: #424e5a;font-weight: 100;margin-left: 10px;}
+.list a:visited{color: #424e5a;}
 
 
 
