@@ -85,14 +85,15 @@ textarea {
 
 /* my style */
 .must_read{ width: 600px;margin: 0 auto;}
-.must_read ul{ padding: 0;}
-.must_read li{list-style: none}
-.must_read a{
+.list ul{ padding: 0;}
+.list li{list-style: none}
+.list a{
     text-decoration: none;
     color:dimgray;
     line-height: 1.6;
 }
-.must_read a:hover{color: aquamarine;}
+.list a:hover{color: aquamarine;}
+.list date{color: #444;font-weight: 100;margin-left: 10px;}
 /*.must_read a:visited{color: #999;}*/
 
 
