@@ -95,7 +95,7 @@ textarea {
 }
 .list a:hover{color: aquamarine;}
 .list date{color: #444;font-weight: 100;margin-left: 10px;}
-/*.must_read a:visited{color: #999;}*/
+.must_read a:visited{color: #444;}
 
 
 
