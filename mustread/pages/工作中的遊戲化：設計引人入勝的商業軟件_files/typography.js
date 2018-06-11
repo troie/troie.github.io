@@ -1,0 +1,2 @@
+"use strict";define(["jquery"],function(t){function e(){var e=t('[class*="truncate-"]').not(".truncate-last");t.each(e,function(e,i){var n=t(i).attr("class").split(" ").filter(function(t){return t.startsWith("truncate-")}),r=n[n.length-1].split("-"),s=r[r.length-1];isNaN(parseInt(s))&&!isFinite(s)&&(s=1),t(i).css({display:"-webkit-box","-webkit-box-orient":"vertical","-webkit-line-clamp":s,"text-overflow":"ellipsis",overflow:"hidden"})})}return{truncateMultiline:function(){t(e)}}});
+//# sourceMappingURL=typography.js.map
