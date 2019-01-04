@@ -1,0 +1,13 @@
+.masthead h2{line-height: 2.5;font-weight: 400;}
+.card{border: none;}
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.complexity{border-radius: 50%;}
+
+section p{
+    font-size: 1.25rem;
+    line-height: 1.6;
+}

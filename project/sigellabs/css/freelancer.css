@@ -382,16 +382,3 @@ a:focus, a:hover, a:active {
   background-color: #1a252f;
   border-color: #1a252f;
 }
-.masthead h2{line-height: 2.5;font-weight: 400;}
-.card{border: none;}
-.lead {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-.complexity{border-radius: 50%;}
-
-section p{
-    font-size: 1.25rem;
-    line-height: 1.6;
-}

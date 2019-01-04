@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/sigellabs.css" rel="stylesheet">
 
   </head>
 
@@ -94,7 +95,7 @@
           </div>
           <div class="col-lg-4 mr-auto">
            <h3>什麼是運算思維？</h3>
-            <p class="lead"></p>
+            <p class="lead"><strong>運算思維（CT）</strong>是一個解決問題的過程，包括找出特徵和處裡方式。CT 對於程式的開發至關重要，但它也能用來面對學習及生活中的種種問題，包括數學，科學和人文科學。透過學習 CT ，讓孩子可以看到課堂上以及課堂外學校與生活的關係，讓學習能跟日常生活建立連結。</p>
           </div>
         </div>
         
@@ -115,7 +116,7 @@
               <img src="img/samlabs.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">SAM Labs</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">SAM Labs提供您所需的一切，為您的課堂提供最具吸引力的運算思維學習體驗。它將軟體和硬體無縫連接到涵蓋各種主題的課程計劃，使學習程式設計變得容易，建立實驗，產生互動都變得更有趣。</p>
 
               </div>
             </div>
@@ -125,7 +126,7 @@
               <img src="img/dashanddot.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Dash &amp; Dot</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Dash是一個會行走並進行障礙物識別的機器人，它還能對說話聲做出回應、唱歌或跳舞．使用Blockly、Wonder或其他應用程式，你可以自行創造Dash的行為模式，設計一個與眾不同的Dash世界！</p>
               </div>
             </div>
           </div>
@@ -134,7 +135,7 @@
               <img src="img/tello.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Tello EDU</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Tello 可以學習程式設計，教育版 App 支援 Scratch 、Python 、Swift 等多種程式設計語言，更可以用可視化的積木式程式來控制無人機，操作起降、俯仰、橫滾、加速及翻滾等飛行設定。</p>
               </div>
             </div>
           </div>
@@ -148,11 +149,14 @@
         <h2 class="text-center text-uppercase text-white">About</h2>
         <hr class="star-light mb-5">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+          <div class="col-md-6 col-lg-4">
+            <p class="lead">未來有哪些能力是學生最應該學習的？近9成老師表示，如何解決問題是學生未來最欠缺的能力，也有超過7成老師覺得溝通協調及人際合作也很重要，有78%教師認為現在的教育方式無助於培養這些能力。</p>
           </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          <div class="col-md-6 col-lg-4">
+            <p class="lead">資訊素養，特別是程式設計能力，已經和英文與數學一樣，成為現代教育的一種基本「識字能力」（Literacy）。全球超過 25 個國家已明確訂出教育政策，要人民從小就加強培養這些能力，目的不只是為了相關產業人才需求，更是著眼於國家未來整體的創新與競爭力。</p>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <p class="lead">是不是未來每個人都需要具備程式設計的能力？學習程式語言是為了學習電腦的思考方式，也是學習運算思維最簡單的方法，但學習 CT 並不是只有程式設計一種方式，我們希望提供孩子更多選擇，能在玩樂中學會運算思維，至於未來是不是學習程式語言，我們把選擇權還給孩子。</p>
           </div>
         </div>
 <!--
@@ -252,7 +256,7 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
+            <h4 class="text-uppercase mb-4">About Us</h4>
             <p class=" mb-0">Freelance is a free to use, open source Bootstrap theme created by
               <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
           </div>
@@ -262,7 +266,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; SIGEL Labs 2019</small>
+        <small>&copy; 2019 SIGEL Labs. All rights reserved. </small>
       </div>
     </div>
 
@@ -287,7 +291,21 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
-
+    
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA-DKUOTG8edlVOpvWybsaAxnIDMG079eY",
+    authDomain: "sigellabs.firebaseapp.com",
+    databaseURL: "https://sigellabs.firebaseio.com",
+    projectId: "sigellabs",
+    storageBucket: "sigellabs.appspot.com",
+    messagingSenderId: "799876583915"
+  };
+  firebase.initializeApp(config);
+</script>
+ 
   </body>
 
 </html>
