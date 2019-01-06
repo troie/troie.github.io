@@ -1,8 +1,12 @@
 .masthead{height: 100vh;}
 .masthead h1{margin-top: 25vh;}
 .masthead h2{line-height: 2.5;font-weight: 400;}
-.ct h1{font-size: 4.75em;}
-.ct h2{font-size: 1.75em;}
+/*.ct h1{font-size: 4.75em;}*/
+.h1, h1 {
+    font-size: 3.5rem;
+}
+.ct strong{font-size: 1.75em;line-height: 2.5;}
+.ct h3{font-weight: 200;line-height: 1.5;}
 .card{border: none;}
 .lead {
     font-size: 1.5rem;
