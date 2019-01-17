@@ -22,6 +22,7 @@ var dateTime = date + ' ' + time;
 
 $('#sendMsgButton').on("click", function () {
     var username = $("#username").val();
+    var childname = $("#chilename").val();
     var email = $("#email").val();
     var message = $("#message").val();
 
@@ -31,7 +32,7 @@ $('#sendMsgButton').on("click", function () {
 //            message: message,
 //            created: dateTime
 //        });
-    writeUserData(username, email, message, dateTime);
+    writeUserData(username, email, childname, message, dateTime);
     //        myDataRef.push({
     //            username: username,
     //            email: email,
