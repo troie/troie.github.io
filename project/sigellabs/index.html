@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,7 +39,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-<!--
+                    <!--
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#how">學會思考</a>
                     </li>
@@ -192,6 +192,16 @@
                             </div>
                         </div>
                         <div class="control-group">
+                            <div class="form-group controls mb-0 pb-2 age">
+                                <label for="exampleFormControlSelect1">年齡</label>
+                                <select class="form-control" id="age">
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Email 信箱</label>
                                 <input class="form-control" id="email" type="email" placeholder="Email 信箱" required="required" data-validation-required-message="請留下您的聯絡信箱">
@@ -212,7 +222,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        
+
                         <div id="success"></div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-xl" id="sendMsgButton">完成送出</button>
@@ -335,6 +345,7 @@
             messagingSenderId: "799876583915"
         };
         firebase.initializeApp(config);
+
     </script>
 
 

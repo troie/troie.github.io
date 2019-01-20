@@ -19,10 +19,16 @@ var dateTime = date + ' ' + time;
 //        
 //    }
 //});
+$('.table td').on("click","b",function(){
+//    delUserData();
+    alert(1)
+    console.log(1);
+});
 
-$('#sendMsgButton').on("click", function () {
+$('#sendMsgButton').on("click", function() {
     var username = $("#username").val();
     var childname = $("#childname").val();
+    var age = $("#age").val();
     var email = $("#email").val();
     var phone = $("#phone").val();
     var message = $("#message").val();
@@ -33,7 +39,7 @@ $('#sendMsgButton').on("click", function () {
     //            message: message,
     //            created: dateTime
     //        });
-    writeUserData(username, childname, email, phone, message, dateTime);
+    writeUserData(username, childname, age, email, phone, message, dateTime);
     //        myDataRef.push({
     //            username: username,
     //            email: email,
@@ -45,12 +51,13 @@ $('#sendMsgButton').on("click", function () {
 });
 
 
-function writeUserData(name, child, email, mobile, msg, created) {
+function writeUserData(name, child, age, email, mobile, msg, created) {
     var newPostKey = firebase.database().ref().child('posts').push().key;
-//    firebase.database().ref('users/' + newPostKey).set({
+    //    firebase.database().ref('users/' + newPostKey).set({
     db.ref('users/' + newPostKey).set({
             username: name,
             childname: child,
+            age: age,
             email: email,
             phone: mobile,
             message: msg,
@@ -58,7 +65,7 @@ function writeUserData(name, child, email, mobile, msg, created) {
         })
         .then(function () {
             alert('報名成功！')
-            console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = " + newPostKey);
+//            console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = " + newPostKey);
         })
         .catch(function (error) {
             alert('失敗了');
@@ -66,27 +73,26 @@ function writeUserData(name, child, email, mobile, msg, created) {
         });
 }
 
-//myDataRef.on('child_added', function (snapshot) {
-//    var message = snapshot.val();
-//    displayChatMessage(message.name, message.text);
-//});
-//
-//$('button').on("click",function () {
-//        var email = $('#email').val();
-//        if(email.length > 0){
-//        myDataRef2.push({
-//            email: email
-//        });
-//        $('#email').val('');
-//            }
-//});
 function getData() {
+    var hello='<table class="table table-striped"><thead class="thead-dark"><tr><th>家長</th><th>學員</th><th>年齡</th><th>email</th><th>phone</th><th>message</th><th>created</th></tr></thead><tbody>';
     db.ref("users").once('value', function (snapshot) {
         var data = snapshot.val();
-        console.log(data);
+//        console.log(data);
+        $.each(data, function (index, value) {
+//            console.log('My array has at position ' + index + ', user: '+ value.username+' // email :'+ value.email+ ' // ctrated:'+value.created);
+            hello += '<tr><td>'+ value.username+'</td><td>'+ value.childname + '</td><td>' + value.age +' </td><td>'+ value.email+ '</td><td>'+ value.phone+ '</td><td>'+ value.message+'</td><td>'+ value.created +'</td></tr>';
+        });
+        hello += '</tbody></table>';
+//        alert(hello);
+        $( ".hello" ).append( hello );
     });
 }
 
+function delUserData(){
+    alert(1);
+//    alert($(this).data('uid'));
+    db.ref("users/" + uid ).remove();
+}
 function displayChatMessage(name, text) {
     $('<div/>').text(text).prepend($('<em/>').text(name + ': ')).appendTo($('#messagesDiv'));
     $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;

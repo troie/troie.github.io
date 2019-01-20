@@ -27,3 +27,4 @@ section p{
 .contact dd{color: silver;}
 .contact i{text-decoration: line-through}
 .contact strong{color: #f00;}
+.age label{font-size: 1.2em;color: #495057;width: 100%;text-align: left}
