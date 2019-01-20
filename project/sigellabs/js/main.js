@@ -54,6 +54,7 @@ function writeUserData(name, child, email, msg, created) {
             created: created
         })
         .then(function () {
+            alert('報名成功！')
             console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = "+newPostKey);
         })
         .catch(function (error) {
