@@ -24,6 +24,7 @@ $('#sendMsgButton').on("click", function () {
     var username = $("#username").val();
     var childname = $("#childname").val();
     var email = $("#email").val();
+    var phone = $("#phone").val();
     var message = $("#message").val();
 
 //    db.push({
@@ -32,7 +33,7 @@ $('#sendMsgButton').on("click", function () {
 //            message: message,
 //            created: dateTime
 //        });
-    writeUserData(username, email, childname, message, dateTime);
+    writeUserData(username, email, childname, phone, message, dateTime);
     //        myDataRef.push({
     //            username: username,
     //            email: email,
@@ -44,20 +45,21 @@ $('#sendMsgButton').on("click", function () {
 });
 
 
-function writeUserData(name, child, email, msg, created) {
+function writeUserData(name, child, email, mobile, msg, created) {
     var newPostKey = firebase.database().ref().child('posts').push().key;
     firebase.database().ref('users/'+newPostKey).set({
             username: name,
         childname:child,
             email: email,
+            phone: mobile,
             message: msg,
             created: created
         })
-        .then(function () {
+        .then(function() {
             alert('報名成功！')
             console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = "+newPostKey);
         })
-        .catch(function (error) {
+        .catch(function(error) {
          alert('失敗了');
             console.log("失敗了");
         });
