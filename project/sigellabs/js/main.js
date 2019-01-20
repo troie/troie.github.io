@@ -27,12 +27,12 @@ $('#sendMsgButton').on("click", function () {
     var phone = $("#phone").val();
     var message = $("#message").val();
 
-//    db.push({
-//            username: username,
-//            email: email,
-//            message: message,
-//            created: dateTime
-//        });
+    //    db.push({
+    //            username: username,
+    //            email: email,
+    //            message: message,
+    //            created: dateTime
+    //        });
     writeUserData(username, childname, email, phone, message, dateTime);
     //        myDataRef.push({
     //            username: username,
@@ -41,26 +41,27 @@ $('#sendMsgButton').on("click", function () {
     //            created: dateTime
     //        });
 
-//    alert(1)
+    //    alert(1)
 });
 
 
 function writeUserData(name, child, email, mobile, msg, created) {
     var newPostKey = firebase.database().ref().child('posts').push().key;
-    firebase.database().ref('users/'+newPostKey).set({
+//    firebase.database().ref('users/' + newPostKey).set({
+    db.ref('users/' + newPostKey).set({
             username: name,
-        childname:child,
+            childname: child,
             email: email,
             phone: mobile,
             message: msg,
             created: created
         })
-        .then(function() {
+        .then(function () {
             alert('報名成功！')
-            console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = "+newPostKey);
+            console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = " + newPostKey);
         })
-        .catch(function(error) {
-         alert('失敗了');
+        .catch(function (error) {
+            alert('失敗了');
             console.log("失敗了");
         });
 }
@@ -79,7 +80,12 @@ function writeUserData(name, child, email, mobile, msg, created) {
 //        $('#email').val('');
 //            }
 //});
-
+function getData() {
+    db.ref("chinese/Bob").once('value', function (snapshot) {
+        var data = snapshot.val();
+        console.log(data);
+    });
+}
 
 function displayChatMessage(name, text) {
     $('<div/>').text(text).prepend($('<em/>').text(name + ': ')).appendTo($('#messagesDiv'));
