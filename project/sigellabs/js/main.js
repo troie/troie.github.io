@@ -81,7 +81,7 @@ function writeUserData(name, child, email, mobile, msg, created) {
 //            }
 //});
 function getData() {
-    db.ref("chinese/Bob").once('value', function (snapshot) {
+    db.ref("users").once('value', function (snapshot) {
         var data = snapshot.val();
         console.log(data);
     });
