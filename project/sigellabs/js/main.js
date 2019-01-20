@@ -44,10 +44,11 @@ $('#sendMsgButton').on("click", function () {
 });
 
 
-function writeUserData(name, email, msg, created) {
+function writeUserData(name, child, email, msg, created) {
     var newPostKey = firebase.database().ref().child('posts').push().key;
     firebase.database().ref('users/'+newPostKey).set({
             username: name,
+        childname:child,
             email: email,
             message: msg,
             created: created
