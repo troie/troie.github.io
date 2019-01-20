@@ -33,7 +33,7 @@ $('#sendMsgButton').on("click", function () {
 //            message: message,
 //            created: dateTime
 //        });
-    writeUserData(username, email, childname, phone, message, dateTime);
+    writeUserData(username, childname, email, phone, message, dateTime);
     //        myDataRef.push({
     //            username: username,
     //            email: email,
