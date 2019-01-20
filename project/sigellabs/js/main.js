@@ -58,6 +58,7 @@ function writeUserData(name, child, email, msg, created) {
             console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = "+newPostKey);
         })
         .catch(function (error) {
+         alert('失敗了');
             console.log("失敗了");
         });
 }
