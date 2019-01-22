@@ -1,19 +1,20 @@
+var db = firebase.database();
 var today = new Date();
 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 var dateTime = date + ' ' + time;
 
-$('#sendMsgButton').keypress(function (e) {
-    if (e.keyCode == 13) {
-        var username = $("#username").val();
-        var childname = $("#childname").val();
-        var age = $("#age").val();
-        var email = $("#email").val();
-        var phone = $("#phone").val();
-        var message = $("#message").val();
-        writeUserData(username, childname, age, email, phone, message, dateTime);
-    }
-});
+//$('#sendMsgButton').keypress(function (e) {
+//    if (e.keyCode == 13) {
+//        var username = $("#username").val();
+//        var childname = $("#childname").val();
+//        var age = $("#age").val();
+//        var email = $("#email").val();
+//        var phone = $("#phone").val();
+//        var message = $("#message").val();
+//        writeUserData(username, childname, age, email, phone, message, dateTime);
+//    }
+//});
 
 
 $('#sendMsgButton').on("click", function () {
@@ -29,7 +30,7 @@ $('#sendMsgButton').on("click", function () {
 
 
 function writeUserData(name, child, age, email, mobile, msg, created) {
-    var db = firebase.database();
+    
     var newPostKey = firebase.database().ref().child('posts').push().key;
     //    firebase.database().ref('users/' + newPostKey).set({
     db.ref('users/' + newPostKey).set({
@@ -52,7 +53,7 @@ function writeUserData(name, child, age, email, mobile, msg, created) {
 }
 
 function getData() {
-    var db = firebase.database();
+//    var db = firebase.database();
     var hello = '<table class="table table-striped"><thead class="thead-dark"><tr><th>家長</th><th>學員</th><th>年齡</th><th>email</th><th>phone</th><th>message</th><th>created</th></tr></thead><tbody>';
     db.ref("users").once('value', function (snapshot) {
         var data = snapshot.val();
