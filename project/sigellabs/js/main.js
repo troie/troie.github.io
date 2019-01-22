@@ -1,31 +1,22 @@
-//var database = firebase.database().ref;
-//var myDataRef = new Firebase('https://sigellabs.firebaseio.com');
-var db = firebase.database();
-//var myDataRef = new Firebase('https://sigellabs.firebaseio.com/');
-
 var today = new Date();
 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 var dateTime = date + ' ' + time;
 
-//$('#sendMsgButton').keypress(function (e) {
-//    if (e.keyCode == 13) {
-////        myDataRef.push({
-////            username: username,
-////            email: email,
-////            message: message,
-////            created: dateTime
-////        });
-//        
-//    }
-//});
-$('.table td').on("click","b",function(){
-//    delUserData();
-    alert(1)
-    console.log(1);
+$('#sendMsgButton').keypress(function (e) {
+    if (e.keyCode == 13) {
+        var username = $("#username").val();
+        var childname = $("#childname").val();
+        var age = $("#age").val();
+        var email = $("#email").val();
+        var phone = $("#phone").val();
+        var message = $("#message").val();
+        writeUserData(username, childname, age, email, phone, message, dateTime);
+    }
 });
 
-$('#sendMsgButton').on("click", function() {
+
+$('#sendMsgButton').on("click", function () {
     var username = $("#username").val();
     var childname = $("#childname").val();
     var age = $("#age").val();
@@ -33,25 +24,12 @@ $('#sendMsgButton').on("click", function() {
     var phone = $("#phone").val();
     var message = $("#message").val();
 
-    //    db.push({
-    //            username: username,
-    //            email: email,
-    //            message: message,
-    //            created: dateTime
-    //        });
     writeUserData(username, childname, age, email, phone, message, dateTime);
-    //        myDataRef.push({
-    //            username: username,
-    //            email: email,
-    //            message: message,
-    //            created: dateTime
-    //        });
-
-    //    alert(1)
 });
 
 
 function writeUserData(name, child, age, email, mobile, msg, created) {
+    var db = firebase.database();
     var newPostKey = firebase.database().ref().child('posts').push().key;
     //    firebase.database().ref('users/' + newPostKey).set({
     db.ref('users/' + newPostKey).set({
@@ -65,7 +43,7 @@ function writeUserData(name, child, age, email, mobile, msg, created) {
         })
         .then(function () {
             alert('報名成功！')
-//            console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = " + newPostKey);
+            //            console.log("username=" + name + " / email=" + email + "/ message=" + msg + " / today=" + created + " key = " + newPostKey);
         })
         .catch(function (error) {
             alert('失敗了');
@@ -74,25 +52,27 @@ function writeUserData(name, child, age, email, mobile, msg, created) {
 }
 
 function getData() {
-    var hello='<table class="table table-striped"><thead class="thead-dark"><tr><th>家長</th><th>學員</th><th>年齡</th><th>email</th><th>phone</th><th>message</th><th>created</th></tr></thead><tbody>';
+    var db = firebase.database();
+    var hello = '<table class="table table-striped"><thead class="thead-dark"><tr><th>家長</th><th>學員</th><th>年齡</th><th>email</th><th>phone</th><th>message</th><th>created</th></tr></thead><tbody>';
     db.ref("users").once('value', function (snapshot) {
         var data = snapshot.val();
-//        console.log(data);
+        //        console.log(data);
         $.each(data, function (index, value) {
-//            console.log('My array has at position ' + index + ', user: '+ value.username+' // email :'+ value.email+ ' // ctrated:'+value.created);
-            hello += '<tr><td>'+ value.username+'</td><td>'+ value.childname + '</td><td>' + value.age +' </td><td>'+ value.email+ '</td><td>'+ value.phone+ '</td><td>'+ value.message+'</td><td>'+ value.created +'</td></tr>';
+            //            console.log('My array has at position ' + index + ', user: '+ value.username+' // email :'+ value.email+ ' // ctrated:'+value.created);
+            hello += '<tr><td>' + value.username + '</td><td>' + value.childname + '</td><td>' + value.age + ' </td><td>' + value.email + '</td><td>' + value.phone + '</td><td>' + value.message + '</td><td>' + value.created + '</td></tr>';
         });
         hello += '</tbody></table>';
-//        alert(hello);
-        $( ".hello" ).append( hello );
+        //        alert(hello);
+        $(".hello").append(hello);
     });
 }
 
-function delUserData(){
+function delUserData() {
     alert(1);
-//    alert($(this).data('uid'));
-    db.ref("users/" + uid ).remove();
+    //    alert($(this).data('uid'));
+    db.ref("users/" + uid).remove();
 }
+
 function displayChatMessage(name, text) {
     $('<div/>').text(text).prepend($('<em/>').text(name + ': ')).appendTo($('#messagesDiv'));
     $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;

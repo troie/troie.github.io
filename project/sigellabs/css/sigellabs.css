@@ -24,7 +24,7 @@ section p{
 }
 .floating-label-form-group input, .floating-label-form-group textarea,.contact dt, .contact dd{font-size: 1.2em;line-height: 1.5;}
 .contact dl{margin-top: 30px;}
-.contact dd{color: silver;}
+.contact dd{color: #495057;}
 .contact i{text-decoration: line-through}
 .contact strong{color: #f00;}
 .age label{font-size: 1.2em;color: #495057;width: 100%;text-align: left}
