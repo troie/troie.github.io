@@ -22,6 +22,11 @@ section p{
     font-size: 1.25rem;
     line-height: 1.6;
 }
+.comp h3{line-height: 3;}
+.comp table{color: #fff;}
+thead th{background: #fdd30f;}
+tbody{background: #00c0c3;}
+.break{background: #fff;color: #00c0c3;}
 .register{margin-top: .8em;}
 .floating-label-form-group input, .floating-label-form-group textarea,.contact dt, .contact dd{font-size: 1.2em;line-height: 1.5;}
 .contact dl{margin-top: 30px;}
@@ -30,11 +35,3 @@ section p{
 .contact i{text-decoration: line-through}
 .contact strong{color: #f00;}
 .age label{font-size: 1.2em;color: #495057;width: 100%;text-align: left}
-
-**相機**
-
-- 拍照：5MP（2592x1936）
-- 視角：82.6°
-- 影片：HD720P30
-- 格式：JPG（照片）; MP4（視頻）
-- EIS 防手震 ：有
