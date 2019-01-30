@@ -30,7 +30,7 @@ $('#sendMsgButton').on("click", function () {
 
 
 function writeUserData(name, child, age, email, mobile, msg, created) {
-    
+
     var newPostKey = firebase.database().ref().child('posts').push().key;
     //    firebase.database().ref('users/' + newPostKey).set({
     db.ref('users/' + newPostKey).set({
@@ -53,20 +53,23 @@ function writeUserData(name, child, age, email, mobile, msg, created) {
 }
 
 function getData() {
-//    var db = firebase.database();
     var hello = '<table class="table table-striped"><thead class="thead-dark"><tr><th>家長</th><th>學員</th><th>年齡</th><th>email</th><th>phone</th><th>message</th><th>created</th></tr></thead><tbody>';
     db.ref("users").once('value', function (snapshot) {
         var data = snapshot.val();
         //        console.log(data);
         $.each(data, function (index, value) {
             //            console.log('My array has at position ' + index + ', user: '+ value.username+' // email :'+ value.email+ ' // ctrated:'+value.created);
-            hello += '<tr><td>' + value.username + '</td><td>' + value.childname + '</td><td>' + value.age + ' </td><td>' + value.email + '</td><td>' + value.phone + '</td><td>' + value.message + '</td><td>' + value.created + '</td></tr>';
+            hello += '<tr><td>' + value.username + '</td><td>' + value.childname + '</td><td>' + value.age + ' </td><td>' + value.email + '</td><td>' + value.phone + '</td><td>' + value.message + '</td><td>' + value.created + '<b data-uid="' + index + '">del</b></td></tr>';
         });
         hello += '</tbody></table>';
-        //        alert(hello);
         $(".hello").append(hello);
     });
 }
+
+$('.hello').on('click', 'b', function () {
+    alert($(this).data('uid'))
+});
+
 
 function delUserData() {
     alert(1);
