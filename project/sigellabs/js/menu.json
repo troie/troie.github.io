@@ -1,0 +1,18 @@
+[
+    {
+        "link_name": "Home",
+        "link_url": "index.html"
+    },
+    {
+        "link_name": "Camp",
+        "link_url": "camp.html"
+    },
+    {
+        "link_name": "Blog",
+        "link_url": "https://medium.com/sigel-labs"
+    },
+    {
+        "link_name": "About",
+        "link_url": "about.html"
+    }
+]

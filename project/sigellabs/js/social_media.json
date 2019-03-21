@@ -1,0 +1,24 @@
+[
+    {
+        "link_name": "facebook",
+        "link_url": "https://www.facebook.com/Sigel-Labs-太陽實驗室-326193174669266/?modal=admin_todo_tour",
+        "link_icon":"fa-facebook-f"
+    },{
+        "link_name": "linkedin",
+        "link_url": "http://linkedin.com/company/sigellabs",
+        "link_icon":"fa-linkedin-in"
+    },
+    {
+        "link_name": "instagram",
+        "link_url": "https://www.instagram.com/sigellabs/",
+        "link_icon":"fa-instagram"
+    }
+    ,
+    {
+        "link_name": "medium",
+        "link_url": "https://medium.com/sigel-labs",
+        "link_icon":"fa-medium"
+    }
+]
+
+                        
