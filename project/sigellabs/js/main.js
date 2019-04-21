@@ -198,7 +198,7 @@ $(function () {
             });
     }
 
-
+    
     function delUserData() {
         //        alert(1);
         //    alert($(this).data('uid'));
