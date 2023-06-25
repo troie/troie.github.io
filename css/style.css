@@ -183,7 +183,9 @@ textarea {
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
+div{outline:2px dashed #f6511d;}
+div>div{outline-color: #ffb400;}
+div>div>div{outline-color: #ffb400;}
 @media print {
   *,
   *::before,
