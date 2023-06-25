@@ -1,2 +1,0 @@
-"use strict";require(["require.config"],function(){require(["modules/windowOpener","utils/listenOnce"],function(e,t){var n=function(t){var n=t.currentTarget,r=n.getAttribute("href"),i=n.getAttribute("target");r&&"_blank"===i&&(t.preventDefault(),e.open(r))},r=function(){document.querySelectorAll(".js-shareLink").forEach(function(e){e.addEventListener("click",n)})};"loading"===document.readyState?t(document,"DOMContentLoaded").then(r):r()})});
-//# sourceMappingURL=socialSharing.js.map

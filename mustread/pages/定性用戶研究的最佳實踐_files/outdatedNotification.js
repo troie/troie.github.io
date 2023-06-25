@@ -1,2 +1,0 @@
-"use strict";require(["modules/cookie"],function(e){try{new Function("async () => {}")()}catch(r){t=document.querySelector(".outdatedBrowserNotification"),o=document.querySelector(".outdatedBrowserNotification__close"),t&&(e.read("outdatedBrowserDismissed")||(t.removeAttribute("hidden"),o.addEventListener("click",function(){t.parentNode.removeChild(t),e.write("outdatedBrowserDismissed","yes",{days:7})})))}var t,o});
-//# sourceMappingURL=outdatedNotification.js.map

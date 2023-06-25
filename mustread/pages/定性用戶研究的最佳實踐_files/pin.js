@@ -1,2 +1,0 @@
-"use strict";define(["jquery"],function(t){var n=function(){var t=document.getElementsByTagName("html")[0];return function(){return parseInt(window.getComputedStyle(t).fontSize)}};function e(t,e){e&&!isNaN(e)||(e=t.data("size")||1);var i=1.25*e*n();t.width(i),t.height(i);var r=t.find(".js-pinLabel"),a=.8*i;r.width(a),r.height(a);var u=.5*e;u<.7&&(u=.7),r.css({fontSize:u+"em"})}return{init:function(n){var i,r,a=t(".pin");i=a,r=n,t.each(i,function(n,i){e(t(i),r)})},setPinSize:e}});
-//# sourceMappingURL=pin.js.map

@@ -1,2 +1,0 @@
-"use strict";require(["require.config"],function(){require(["jquery"],function(e){e(function(){var t;t=e("ul.sort"),e.each(t,function(t,n){var r=e(n).children("li").get();r.sort(function(t,r){var i=e(t).text().toUpperCase(),c=e(r).text().toUpperCase();return n.classList.contains("desc")?i<c?1:i>c?-1:0:i>c?1:i<c?-1:0}),e.each(r,function(t,r){e(n).append(r)})}),e(document).on("click","li.toggler",function(t){t.preventDefault(),e(t.target).closest("li.toggler").find("ul").slideToggle()})})})});
-//# sourceMappingURL=list.js.map
